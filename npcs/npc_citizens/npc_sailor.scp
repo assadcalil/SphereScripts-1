@@ -1,0 +1,113 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_sailor]
+ID=c_man
+NAME=#NAMES_HUMANMALE the sailor
+DESIRES=i_gold
+AVERSIONS=t_trap
+HIREDAYWAGE=50
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Sailor (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   FENCING={20.0 30.0}
+   FISHING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+   ITEM=i_bandana,1,R2
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_cutlass
+
+[CHARDEF c_sailor_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the sailor
+DESIRES=i_gold
+AVERSIONS=t_trap
+HIREDAYWAGE=50
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Sailor (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   FENCING={20.0 30.0}
+   FISHING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+   ITEM=i_bandana,1,R2
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_cutlass

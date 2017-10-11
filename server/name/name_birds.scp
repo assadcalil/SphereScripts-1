@@ -1,0 +1,29 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[NAMES NAMES_BIRDS]
+21
+Chickadee
+Crossbill
+Cuckoo
+Finch
+Hawk
+Kingfisher
+Lapwing
+Nightingale
+Nuthatch
+Plover
+Skylark
+Sparrow
+Starling
+Swallow
+Swift
+Tern
+Thrush
+Towhee
+Warbler
+Woodpecker
+Wren
+
+[EOF]

@@ -1,0 +1,137 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_ranger]
+ID=c_man
+NAME=#NAMES_HUMANMALE the ranger
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Ranger (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   ARCHERY={50.0 75.0}
+   BOWCRAFT={25.0 50.0}
+   CAMPING={20.0 30.0}
+   CARTOGRAPHY={20.0 30.0}
+   DETECTINGHIDDEN={25.0 50.0}
+   HEALING={20.0 30.0}
+   HIDING={25.0 50.0}
+   LUMBERJACKING={25.0 50.0}
+   MAGICRESISTANCE={25.0 50.0}
+   STEALTH={25.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={25.0 50.0}
+   TRACKING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_pants_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_brown
+   ITEM=random_hats
+   COLOR=colors_green
+   ITEM=random_armor_leather_european
+   ITEM=random_armor_leather_european,1,R2
+   ITEM=random_armor_leather_european,1,R2
+   ITEM=random_armor_leather_european,1,R2
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_archer_normal
+   ITEM=i_arrow,{5 20}
+   ITEM=i_xbolt,{5 20}
+
+[CHARDEF c_ranger_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the ranger
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Ranger (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   ARCHERY={50.0 75.0}
+   BOWCRAFT={25.0 50.0}
+   CAMPING={20.0 30.0}
+   CARTOGRAPHY={20.0 30.0}
+   DETECTINGHIDDEN={25.0 50.0}
+   HEALING={20.0 30.0}
+   HIDING={25.0 50.0}
+   LUMBERJACKING={25.0 50.0}
+   MAGICRESISTANCE={25.0 50.0}
+   STEALTH={25.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={25.0 50.0}
+   TRACKING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_pants_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_brown
+   ITEM=random_hats
+   COLOR=colors_green
+   ITEM=random_armor_leather_european
+   ITEM=random_armor_leather_european,1,R2
+   ITEM=random_armor_leather_european,1,R2
+   ITEM=random_armor_leather_european,1,R2
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_archer_normal
+   ITEM=i_arrow,{5 20}
+   ITEM=i_xbolt,{5 20}

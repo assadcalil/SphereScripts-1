@@ -1,0 +1,65 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 0eea]
+DEFNAME=i_coin_copper
+TYPE=t_coin
+VALUE=1
+WEIGHT=0
+DUPELIST=0eeb,0eec
+
+CATEGORY=Economy
+SUBSECTION=Coins
+DESCRIPTION=Copper Coin
+
+ON=@Create
+   ATTR=attr_identified
+
+[ITEMDEF 0ef0]
+DEFNAME=i_coin_silver
+TYPE=t_coin
+VALUE=1
+WEIGHT=0
+DUPELIST=0ef1,0ef2
+
+CATEGORY=Economy
+SUBSECTION=Coins
+DESCRIPTION=Silver Coin
+
+ON=@Create
+   ATTR=attr_identified
+
+[ITEMDEF 0eed]
+DEFNAME=i_gold
+TYPE=t_gold
+VALUE=1
+WEIGHT=0
+DUPELIST=0eee,0eef
+
+CATEGORY=Economy
+SUBSECTION=Coins
+DESCRIPTION=Gold Coin
+
+ON=@Create
+   ATTR=attr_identified
+
+[ITEMDEF 0eeb]
+DUPEITEM=0eea
+
+[ITEMDEF 0eec]
+DUPEITEM=0eea
+
+[ITEMDEF 0ef1]
+DUPEITEM=0ef0
+
+[ITEMDEF 0ef2]
+DUPEITEM=0ef0
+
+[ITEMDEF 0eee]
+DUPEITEM=0eed
+
+[ITEMDEF 0eef]
+DUPEITEM=0eed
+
+[EOF]

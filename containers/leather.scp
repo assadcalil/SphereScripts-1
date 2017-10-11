@@ -1,0 +1,36 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 0e75]
+DEFNAME=i_backpack
+TYPE=t_container
+TDATA2=03c
+FLIP=1
+DYE=1
+VALUE=22
+WEIGHT=3.0
+
+//RESOURCES=4 i_hides_cut
+//SKILLMAKE=Tailoring 15.0,t_sewing_kit
+
+CATEGORY=Containers
+SUBSECTION=Leather
+DESCRIPTION=Backpack
+
+[ITEMDEF 0e76]
+DEFNAME=i_bag
+TYPE=t_container
+TDATA2=03d
+FLIP=1
+DYE=1
+VALUE=11
+WEIGHT=2.0
+//RESOURCES=2 i_hides_cut
+//SKILLMAKE=Tailoring 10.0,t_sewing_kit
+
+CATEGORY=Containers
+SUBSECTION=Leather
+DESCRIPTION=Bag
+
+[EOF]

@@ -1,0 +1,83 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME COLOR_ORE]
+color_o_iron          0 //option: 0763
+
+//////////
+// Ores //
+//////////
+
+[ITEMDEF 019b7]
+DEFNAME=i_ore_iron
+NAME=Iron Ore
+TYPE=t_ore
+SKILLMAKE=mining 0.0
+TDATA1=i_ingot_iron
+WEIGHT=2
+VALUE=4
+DUPELIST=019b8,019b9,019ba
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Ore (Small Pile)
+
+[ITEMDEF 019b8]
+//iron ore medium pile
+DUPEITEM=019B7
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Ore (Medium Pile)
+
+[ITEMDEF 019b9]
+//iron ore large pile
+DUPEITEM=019B7
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Ore (Large Pile)
+
+[ITEMDEF 019ba]
+//iron ore pile leftovers
+DUPEITEM=019B7
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Ore
+
+////////////
+// Ingots //
+////////////
+
+[ITEMDEF 01bef]
+DEFNAME=i_ingot_iron
+TYPE=t_ingot
+RESOURCES=i_ore_iron
+SKILLMAKE=20.0 mining
+TDATA1=20.0
+TDATA2=50.0
+WEIGHT=2
+DUPELIST=01bf0,01bf1,01bf2,01bf3,01bf4
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Iron Ingot
+
+[ITEMDEF 01bf0]
+//Pile of 3 iron ingots facing SE
+DUPEITEM=01bef
+
+[ITEMDEF 01bf1]
+//Pile of 5 iron ingots facing SE
+DUPEITEM=01bef
+
+[ITEMDEF 01bf2]
+//Iron ingot facing SW
+DUPEITEM=01bef
+
+[ITEMDEF 01bf3]
+//Pile of 3 iron ingots facing SW
+DUPEITEM=01bef
+
+[ITEMDEF 01bf4]
+//Pile of 5 iron ingots facing SW
+DUPEITEM=01bef
+
+[EOF]

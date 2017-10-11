@@ -1,0 +1,14 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[AREADEF a_map_malas]
+NAME=Malas
+GROUP=World
+
+P=848,160,-90,3
+RECT=0,0,2554,2042,3
+
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[EOF]

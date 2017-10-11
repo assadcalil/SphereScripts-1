@@ -1,0 +1,128 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME resources_color]
+color_o_granite     0b8e  //09c2
+color_o_marble      0b8b  //0b8c,05b2
+color_o_sandstone   0501
+
+
+[ITEMDEF i_sand]
+ID=i_ore_iron
+NAME=sand
+TYPE=t_ore //t_sand
+TDATA1=i_glass_raw
+VALUE=1
+WEIGHT=3.0
+SKILLMAKE=MINING 60.0
+CATEGORY=Resources
+SUBSECTION=Rock
+DESCRIPTION=Sand
+ON=@Create
+   COLOR=035
+
+[ITEMDEF i_rock_granite]
+ID=01779
+NAME=high quality granite
+TYPE=t_normal
+VALUE=5
+WEIGHT=10.0
+SKILLMAKE=Mining 100.0
+CATEGORY=Resources
+SUBSECTION=Rock
+DESCRIPTION=Granite
+ON=@Create
+   COLOR=color_o_granite
+
+[ITEMDEF i_rock_marble]
+ID=01779
+NAME=high quality marble
+TYPE=t_normal
+VALUE=5
+WEIGHT=10.0
+SKILLMAKE=Mining 100.0
+CATEGORY=Resources
+SUBSECTION=Rock
+DESCRIPTION=Marble
+ON=@Create
+   COLOR=color_o_marble
+
+[ITEMDEF i_rock_sandstone]
+ID=01779
+NAME=high quality sandstone
+TYPE=t_normal
+VALUE=5
+WEIGHT=10.0
+SKILLMAKE=Mining 100.0
+CATEGORY=Resources
+SUBSECTION=Rock
+DESCRIPTION=Sandstone
+ON=@Create
+   COLOR=color_o_sandstone
+
+[ITEMDEF i_dry_reed]
+//obtained by using t_plantclipping_tool on a plant
+ID=01bd5
+NAME=dry reed%s
+TYPE=t_normal
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Gardener
+DESCRIPTION=Dry Reeds
+
+[ITEMDEF i_parchment]
+ID=01044
+NAME=parchment
+TYPE=t_normal
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Scribe
+DESCRIPTION=Parchment
+ON=@Create
+   COLOR=0491
+
+[ITEMDEF i_saltpeter]
+ID=i_cannon_powder
+NAME=saltpeter
+TYPE=t_normal
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemist
+DESCRIPTION=Saltpeter
+ON=@Create
+   COLOR=047e
+
+[ITEMDEF i_tigerpelt_black]
+ID=i_tigerpelt
+NAME=black tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Black Tiger Pelt
+ON=@Create
+   COLOR=color_tigerpelt_black
+
+[ITEMDEF i_tigerpelt_white]
+ID=i_tigerpelt
+NAME=white tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=White Tiger Pelt
+
+[ITEMDEF i_workable_glass]
+ID=04b80
+NAME=workable glass
+RESOURCES=10 i_sand
+SKILLMAKE=Alchemy 100.0,t_glassblowing_tool
+CATEGORY=Resources
+SUBSECTION=Glassblowing
+DESCRIPTION=Workable Glass
+
+[EOF]

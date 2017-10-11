@@ -1,0 +1,30 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF i_bank_check]
+ID=i_deed
+NAME=bank check
+WEIGHT=1.0
+CATEGORY=Provisions - Deeds
+SUBSECTION=Misc
+DESCRIPTION=Bank Check
+ON=@Create
+   ATTR=attr_newbie
+   COLOR=034
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1060738,<MORE>	//value: ~1_val~
+ON=@AfterClick
+   LOCAL.ClickMsgText .= ": <MORE>"
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>) || (<CONT.TYPE> != t_eq_bank_box)
+    SRC.SYSMESSAGE That must be in your bank box to use it.
+    return 1
+   ELIF (<SERV.FeatureTOL> & 02)	//FEATURE_TOL_VIRTUALGOLD
+    SRC.VIRTUALGOLD += <MORE>
+   ELSE
+    SRC.GOLD += <MORE>
+   ENDIF
+   SRC.SYSMESSAGE Gold was deposited in your account: <MORE>
+   REMOVE
+   return 1

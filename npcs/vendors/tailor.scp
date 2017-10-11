@@ -1,0 +1,230 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_tailor]
+ID=c_man
+NAME=#NAMES_HUMANMALE the tailor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tailor (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={50.0 75.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAILORING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_TAILOR
+   BUY=VENDOR_B_TAILOR
+
+[CHARDEF c_tailor_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the tailor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tailor (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAILORING={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_TAILOR
+   BUY=VENDOR_B_TAILOR
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Tailor
+SELL=i_sewing_kit,{2 24}
+SELL=i_scissors,{2 24}
+SELL=i_dye_tub,{2 24}
+SELL=i_DYES,{2 24}
+SELL=i_shirt_plain,{2 24}
+SELL=i_shirt_fancy,{2 24}
+SELL=i_pants_short,{2 24}
+SELL=i_pants_long,{2 24}
+SELL=i_dress_full,{2 24}
+SELL=i_dress_plain,{2 24}
+SELL=i_skirt_long,{2 24}
+SELL=i_skirt_short,{2 24}
+SELL=i_kilt,{2 24}
+SELL=i_apron_half,{2 24}
+SELL=i_robe,{2 24}
+SELL=i_cape,{2 24}
+SELL=i_doublet,{2 24}
+SELL=i_tunic,{2 24}
+SELL=i_jester_suit,{2 24}
+SELL=i_hat_jester,{2 24}
+SELL=i_hat_floppy,{2 24}
+COLOR=colors_all
+SELL=i_hat_wide_brim,{2 24}
+COLOR=colors_all
+SELL=i_cap,{2 24}
+COLOR=colors_all
+SELL=i_hat_straw_tall,{2 24}
+COLOR=colors_all
+SELL=i_hat_straw,{2 24}
+COLOR=colors_all
+SELL=i_hat_wizards,{2 24}
+COLOR=colors_all
+SELL=i_leather_cap,{2 24}
+COLOR=colors_all
+SELL=i_hat_feather,{2 24}
+COLOR=colors_all
+SELL=i_hat_tricorne,{2 24}
+COLOR=colors_all
+SELL=i_bandana,{2 24}
+COLOR=colors_all
+SELL=i_skull_cap,{2 24}
+COLOR=colors_all
+SELL=i_cloth,{2 24}
+COLOR=colors_all
+SELL=i_cloth,{2 24}
+COLOR=colors_all
+SELL=i_cloth,{2 24}
+COLOR=colors_all
+SELL=i_cloth,{2 24}
+COLOR=colors_all
+SELL=i_cloth_bolt,{2 24}
+COLOR=colors_all
+SELL=i_cloth_bolt,{2 24}
+COLOR=colors_all
+SELL=i_cloth_bolt,{2 24}
+COLOR=colors_all
+SELL=i_cotton,{2 24}
+SELL=i_FLAX_BUNDLE,{2 24}
+SELL=i_thread,{2 24}
+
+[TEMPLATE VENDOR_B_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Tailor
+BUY=i_sewing_kit,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_dye_tub,{2 24}
+BUY=i_dyes,{2 24}
+BUY=i_shirt_plain,{2 24}
+BUY=i_shirt_fancy,{2 24}
+BUY=i_pants_short,{2 24}
+BUY=i_pants_long,{2 24}
+BUY=i_dress_full,{2 24}
+BUY=i_dress_plain,{2 24}
+BUY=i_skirt_long,{2 24}
+BUY=i_skirt_short,{2 24}
+BUY=i_kilt,{2 24}
+BUY=i_apron_half,{2 24}
+BUY=i_robe,{2 24}
+BUY=i_cape,{2 24}
+BUY=i_CAPE,24
+BUY=i_doublet,{2 24}
+BUY=i_jester_suit,{2 24}
+BUY=i_hat_jester,{2 24}
+BUY=i_tunic,{2 24}
+BUY=i_hat_floppy,{2 24}
+BUY=i_hat_wide_brim,{2 24}
+BUY=i_cap,{2 24}
+BUY=i_hat_straw_tall,{2 24}
+BUY=i_hat_straw,{2 24}
+BUY=i_hat_wizards,{2 24}
+BUY=i_leather_cap,{2 24}
+BUY=i_hat_feather,{2 24}
+BUY=i_hat_tricorne,{2 24}
+BUY=i_bandana,{2 24}
+BUY=i_skull_cap,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_cotton,{2 24}
+BUY=i_FLAX_BUNDLE,{2 24}
+BUY=i_thread,{2 24}
+
+[EOF]

@@ -1,0 +1,108 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+
+[CHARDEF c_guild_warrior]
+ID=c_man
+NAME=#NAMES_HUMANMALE the warrior guildmaster
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Guildmasters
+DESCRIPTION=Warrior (human male)
+ON=@Create
+   TAG.OVERRIDE.TRAINSKILLMAX=500
+   TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
+   NPC=brain_human
+   COLOR=colors_skin
+   STR={96 110}
+   DEX={91 105}
+   INT={81 95}
+   ARMSLORE={55.0 78.0}
+   FENCING={55.0 78.0}
+   PARRYING={75.0 98.0}
+   SWORDSMANSHIP={65.0 88.0}
+   WRESTLING={55.0 78.0}
+   MACEFIGHTING={65.0 88.0}
+   TACTICS={75.0 98.0}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM=RANDOM_LIGHT
+   ITEM=i_platemail_chest
+   ITEM=i_platemail_leggings
+   ITEM=i_platemail_arms
+   ITEM=i_platemail_gloves
+   ITEM=random_armor_head_european
+   ITEM={ random_tunics_all 1 random_robes_human 1 random_capes_all 1 }
+   COLOR=colors_all
+   ITEM=i_platemail_gorget
+   ITEM=i_axe_double
+   ITEM=random_coin_purse
+
+[CHARDEF c_guild_warrior_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the warrior guildmistress
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Guildmasters
+DESCRIPTION=Warrior (human female)
+ON=@Create
+   TAG.OVERRIDE.TRAINSKILLMAX=500
+   TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
+   NPC=brain_human
+   COLOR=colors_skin
+   STR={96 110}
+   DEX={91 105}
+   INT={81 95}
+   ARMSLORE={55.0 78.0}
+   FENCING={55.0 78.0}
+   PARRYING={75.0 98.0}
+   SWORDSMANSHIP={65.0 88.0}
+   WRESTLING={55.0 78.0}
+   MACEFIGHTING={65.0 88.0}
+   TACTICS={75.0 98.0}
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+ON=@NPCRestock
+   ITEM=RANDOM_LIGHT
+   ITEM=i_platemail_chest
+   ITEM=i_platemail_leggings
+   ITEM=i_platemail_arms
+   ITEM=i_platemail_gloves
+   ITEM=random_armor_head_european
+   ITEM={ random_tunics_all 1 random_robes_human 1 random_capes_all 1 }
+   COLOR=colors_all
+   ITEM=i_platemail_gorget
+   ITEM=i_axe_double
+   ITEM=random_coin_purse
+
+[EOF]

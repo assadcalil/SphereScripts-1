@@ -1,0 +1,238 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 03b44]
+DEFNAME=i_face_1
+NAME=Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b45]
+DEFNAME=i_face_2
+NAME=Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b46]
+DEFNAME=i_face_3
+NAME=Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b47]
+DEFNAME=i_face_4
+NAME=Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b48]
+DEFNAME=i_face_5
+NAME=Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b49]
+DEFNAME=i_face_6
+NAME=Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4a]
+DEFNAME=i_face_7
+NAME=Face 7
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4b]
+DEFNAME=i_face_8
+NAME=Face 8
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 8
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4c]
+DEFNAME=i_face_9
+NAME=Face 9
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 9
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4d]
+DEFNAME=i_face_10
+NAME=Face 10
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 10
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4e]
+DEFNAME=i_face_anime
+NAME=Face (Anime)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Anime
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4f]
+DEFNAME=i_face_hellian
+NAME=Face (Hellian)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Hellian
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b50]
+DEFNAME=i_face_juka
+NAME=Face (Juka)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Juka
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b51]
+DEFNAME=i_face_undead
+NAME=Face (Undead)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Undead
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b52]
+DEFNAME=i_face_meer
+NAME=Face (Meer)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Meer
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b53]
+DEFNAME=i_face_elder
+NAME=Face (Elder)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Elder
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b54]
+DEFNAME=i_face_orc
+NAME=Face (Orc)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Orc
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b55]
+DEFNAME=i_face_pirate
+NAME=Face (Pirate)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Pirate
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b56]
+DEFNAME=i_face_native_papuan
+NAME=Face (Native Papuan)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Native Papuan
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b57]
+DEFNAME=i_face_vampire
+NAME=Face (Vampire)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Vampire
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 05679]
+DEFNAME=i_face_gargoyle_1
+NAME=Gargoyle Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567a]
+DEFNAME=i_face_gargoyle_2
+NAME=Gargoyle Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567b]
+DEFNAME=i_face_gargoyle_3
+NAME=Gargoyle Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567c]
+DEFNAME=i_face_gargoyle_4
+NAME=Gargoyle Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567d]
+DEFNAME=i_face_gargoyle_5
+NAME=Gargoyle Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567e]
+DEFNAME=i_face_gargoyle_6
+NAME=Gargoyle Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 6
+ON=@Create
+   ATTR=attr_newbie
+[EOF]

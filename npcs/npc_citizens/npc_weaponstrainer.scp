@@ -1,0 +1,115 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_weaponstrainer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the weapons trainer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Weapons Trainer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 110}
+   DEX={45 55}
+   INT={45 55}
+
+   EVALUATINGINTEL={75.0 100.0}
+   FENCING={75.0 100.0}
+   MACEFIGHTING={75.0 100.0}
+   PARRYING={75.0 100.0}
+   SWORDSMANSHIP={75.0 100.0}
+   TACTICS={75.0 100.0}
+   THROWING={75.0 100.0}
+   WRESTLING={75.0 100.0}
+
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM={ i_leather_tunic 1 i_studded_tunic 1 i_ringmail_tunic 1 i_chainmail_tunic 1 }
+   ITEM={ i_leather_leggings 1 i_studded_leggings 1 i_ringmail_leggings 1 i_chainmail_leggings 1 }
+   ITEM={ i_leather_sleeves 1 i_studded_sleeves 1 i_ringmail_sleeves 1 }
+   ITEM={ i_leather_gloves 1 i_studded_gloves 1 i_ringmail_gloves 1 }
+   ITEM={ i_leather_cap 1 i_chainmail_coif 1 }
+   ITEM={ i_leather_gorget 1 i_studded_gorget 1 }
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+   ITEM=random_capes_all,1,R3
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_armor_shield_european
+   ITEM=random_weapon_sword_normal
+
+[CHARDEF c_weaponstrainer_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the weapons trainer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Weapons Trainer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 110}
+   DEX={45 55}
+   INT={45 55}
+
+   EVALUATINGINTEL={75.0 100.0}
+   FENCING={75.0 100.0}
+   MACEFIGHTING={75.0 100.0}
+   PARRYING={75.0 100.0}
+   SWORDSMANSHIP={75.0 100.0}
+   TACTICS={75.0 100.0}
+   THROWING={75.0 100.0}
+   WRESTLING={75.0 100.0}
+
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM={ i_leather_tunic 1 i_studded_tunic 1 i_ringmail_tunic 1 i_chainmail_tunic 1 }
+   ITEM={ i_leather_leggings 1 i_studded_leggings 1 i_ringmail_leggings 1 i_chainmail_leggings 1 }
+   ITEM={ i_leather_sleeves 1 i_studded_sleeves 1 i_ringmail_sleeves 1 }
+   ITEM={ i_leather_gloves 1 i_studded_gloves 1 i_ringmail_gloves 1 }
+   ITEM={ i_leather_cap 1 i_chainmail_coif 1 }
+   ITEM={ i_leather_gorget 1 i_studded_gorget 1 }
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+   ITEM=random_capes_all,1,R3
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_armor_shield_european
+   ITEM=random_weapon_sword_normal

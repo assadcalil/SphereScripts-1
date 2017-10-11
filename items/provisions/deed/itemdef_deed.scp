@@ -1,0 +1,28 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 014ef]
+DEFNAME=i_deed
+TYPE=t_deed
+FLIP=1
+WEIGHT=1
+CATEGORY=Provisions - Deeds
+SUBSECTION=House Deeds
+DESCRIPTION=Deed (Blank)
+DUPELIST=014f0
+
+[ITEMDEF 014f0]
+//deed
+DUPEITEM=014ef
+
+[ITEMDEF 01f23]
+DEFNAME=i_deed2
+NAME=deed
+TYPE=t_deed
+WEIGHT=0.2
+CATEGORY=Provisions - Deeds
+SUBSECTION=House Deeds
+DESCRIPTION=Deed 2 (Blank)
+
+[EOF]

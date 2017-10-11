@@ -1,0 +1,235 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+
+/////////////////
+// Dread Lords //
+/////////////////
+
+[CHARDEF c_dreadlord]
+ID=c_man
+NAME=#NAMES_HUMANMALE the dread lord
+DAM=10,20
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+CATEGORY=Evil NPC
+SUBSECTION=Dread Lords
+DESCRIPTION=Dread Lord
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_monster
+   FAME={2500 2999}
+   KARMA={-3500 -3999}
+   STR={200 250}
+   DEX={100 150}
+   INT={91 105}
+   DETECTINGHIDDEN={90.0 100.0}
+   MAGICRESISTANCE={65.0 88.0}
+   PARRYING={75.0 98.0}
+   SWORDSMANSHIP={80.0 95.0}
+   TACTICS={80.0 98.0}
+   WRESTLING={67.0 90.0}
+   RESCOLD={1 10}
+   RESENERGY={10 20}
+   RESFIRE={1 10}
+   RESPOISON={10 20}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=loot_dreadlord
+   ITEM=loot_ai_healer
+
+[CHARDEF c_dreadlord_captain]
+ID=c_man
+NAME=#NAMES_HUMANMALE the dread lord captain
+DAM=10,20
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+CATEGORY=Evil NPC
+SUBSECTION=Dread Lords
+DESCRIPTION=Dread Lord Captain
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_monster
+   FAME={2500 2999}
+   KARMA={-3500 -3999}
+   STR={350 400}
+   DEX={200 250}
+   INT={200 250}
+   ARCHERY={80.0 120.0}
+   EVALUATINGINTEL={70.0 80.0}
+   FENCING={50.0 70.0}
+   MACEFIGHTING={50.0 70.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={65.0 88.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={85.0 98.0}
+   SWORDSMANSHIP={90.0 95.0}
+   TACTICS={90.0 98.0}
+   WRESTLING={67.0 90.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=loot_ai_hard
+   ITEM=loot_dreadlord
+   ITEM=random_magic_custom_lesser,R50
+
+[CHARDEF c_dreadranger]
+ID=c_man
+NAME=#NAMES_HUMANMALE the dread ranger
+DAM=18,20
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+CATEGORY=Evil NPC
+SUBSECTION=Dread Lords
+DESCRIPTION=Dread Ranger
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_monster
+   FAME={2500 2999}
+   KARMA={-3500 -3999}
+   STR={200 250}
+   DEX={150 180}
+   INT={71 85}
+   ARCHERY={99.0 100.0}
+   FENCING={50.0 70.0}
+   DETECTINGHIDDEN={90.0 100.0}
+   MACEFIGHTING={50.0 70.0}
+   MAGICRESISTANCE={65.0 88.0}
+   PARRYING={85.0 95.0}
+   SWORDSMANSHIP={60.0 90.0}
+   TACTICS={80.0 98.0}
+   WRESTLING={67.0 90.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=loot_ai_hard
+   ITEM=loot_dreadlord
+   ITEM=random_magic_custom_lesser,1,R80
+
+[CHARDEF c_dreadlord_general]
+ID=c_man
+NAME=#NAMES_HUMANMALE the dread general
+DAM=18,28
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+CATEGORY=Evil NPC
+SUBSECTION=Dread Lords
+DESCRIPTION=Dread Lord General
+ON=@Create
+   NPC=brain_monster
+   COLOR=colors_skin
+   FAME={3000 3499}
+   KARMA={-3000 -3499}
+   STR={425 475}
+   DEX={200 250}
+   INT={200 250}
+   ARCHERY={80.0 120.0}
+   EVALUATINGINTEL={70.0 80.0}
+   FENCING={50.0 70.0}
+   MACEFIGHTING={50.0 70.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={65.0 88.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={105.0 128.0}
+   SWORDSMANSHIP={90.0 100.0}
+   TACTICS={90.0 98.0}
+   WRESTLING={67.0 99.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={30 40}
+   RESPOISON={50 60}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=loot_ai_hard
+   ITEM=loot_dreadlord
+   ITEM=random_magic_custom_greater,1,R40
+
+[CHARDEF c_dreadhorse]
+ID=c_man
+NAME=#NAMES_HUMANMALE dreaded horseman
+SOUND=snd_human_m_die_01
+CAN=MT_WALK|MT_RUN
+DAM=10,25
+DESIRES=r_ruins,i_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+CATEGORY=Evil NPC
+SUBSECTION=Dread Lords
+DESCRIPTION=Dreaded Horseman
+ON=@Create
+   NPC=brain_monster
+   COLOR=colors_skin
+   STR={275 300}
+   DEX={100 150}
+   INT={181 195}
+   FAME={2500 2999}
+   KARMA={-3500 -3999}
+   ARCHERY={80.0 120.0}
+   DETECTINGHIDDEN={60.0 90.0}
+   FENCING={50.0 70.0}
+   MACEFIGHTING={50.0 70.0}
+   MAGICRESISTANCE={65.0 88.0}
+   PARRYING={75.0 98.0}
+   SWORDSMANSHIP={80.0 95.0}
+   TACTICS={80.0 98.0}
+   WRESTLING={67.0 90.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={40 50}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@EnvironChange
+   IF !<SRC.RESTEST 1 i_mt_horse_gray>
+      NEWITEM=i_mt_horse_gray
+      NEW.EQUIP
+   ENDIF
+   RETURN 1
+ON=@SkillStart
+   IF !<SRC.RESTEST 1 i_mt_horse_gray>
+      NEWITEM=i_mt_horse_gray
+      NEW.EQUIP
+   ENDIF
+   RETURN 1
+ON=@Death
+   IF <SRC.RESTEST 1 i_mt_horse_gray>
+      SRC.FINDID.i_mt_horse_gray.REMOVE
+   ENDIF
+   RETURN 0
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=loot_dreadlord
+   ITEM=loot_ai_hard
+   ITEMNEWBIE=i_mt_horse_gray
+
+[EOF]

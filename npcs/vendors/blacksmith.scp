@@ -1,0 +1,733 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_blacksmith]
+ID=c_man
+NAME=#NAMES_HUMANMALE the blacksmith
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Blacksmith (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={85 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={50.0 75.0}
+   BLACKSMITHING={50.0 75.0}
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MINING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   THROWING={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+   ITEM=i_apron_full
+   COLOR=colors_red
+   ITEM={ i_cap 1 i_bandana 1 i_skull_cap 1 }
+   COLOR=colors_red
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM={ i_hammer_sledge 1 i_hammer_smith 1 }
+
+   BUY=VENDOR_B_ARMORER_LEATHER
+   BUY=VENDOR_B_ARMORER_RING
+   BUY=VENDOR_B_ARMORER_CHAIN
+   BUY=VENDOR_B_ARMORER_PLATE
+   BUY=VENDOR_B_ARMORER_SHIELDS
+   BUY=VENDOR_B_WEAPONS_BLADED
+   BUY=VENDOR_B_WEAPONS_BLUNT
+   BUY=VENDOR_B_MAGIC_ARMOR
+   BUY=VENDOR_B_MAGIC_WEAPONS
+   BUY=VENDOR_B_BLACKSMITH
+   
+   SELL=VENDOR_S_BLACKSMITH
+   SELL=VENDOR_S_WEAPONS_BLUNT
+   SELL=VENDOR_S_WEAPONS_BLADED
+   //FIXME: Buys ingots
+
+[CHARDEF c_blacksmith_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the blacksmith
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Blacksmith (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={85 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={50.0 75.0}
+   BLACKSMITHING={50.0 75.0}
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MINING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   THROWING={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=i_boots_calf
+   COLOR=colors_neutral
+   ITEM=i_apron_full
+   COLOR=colors_red
+   ITEM={ i_cap 1 i_bandana 1 i_skull_cap 1 }
+   COLOR=colors_red
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM={ i_hammer_sledge 1 i_hammer_smith 1 }
+
+   BUY=VENDOR_B_ARMORER_LEATHER
+   BUY=VENDOR_B_ARMORER_RING
+   BUY=VENDOR_B_ARMORER_CHAIN
+   BUY=VENDOR_B_ARMORER_PLATE
+   BUY=VENDOR_B_ARMORER_SHIELDS
+   BUY=VENDOR_B_WEAPONS_BLADED
+   BUY=VENDOR_B_WEAPONS_BLUNT
+   BUY=VENDOR_B_MAGIC_ARMOR
+   BUY=VENDOR_B_MAGIC_WEAPONS
+   BUY=VENDOR_B_BLACKSMITH
+
+   SELL=VENDOR_S_BLACKSMITH
+   SELL=VENDOR_S_WEAPONS_BLUNT
+   SELL=VENDOR_S_WEAPONS_BLADED
+   //SELL=VENDOR_S_ARMORER_LEATHER
+   //SELL=VENDOR_S_ARMORER_RING
+   //SELL=VENDOR_S_ARMORER_CHAIN
+   //FIXME: Buys ingots
+
+/////////////////
+//Template vend//
+/////////////////
+
+//Armorer Leather
+
+[TEMPLATE VENDOR_S_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Leather Armourer
+SELL=i_leather_cap,{10 15}
+SELL=i_leather_gorget,{10 15}
+SELL=i_leather_sleeves,{10 15}
+SELL=i_leather_tunic,{10 15}
+SELL=i_leather_leggings,{10 15}
+SELL=i_leather_gloves,{10 15}
+SELL=i_studded_gorget,{10 15}
+SELL=i_studded_sleeves,{10 15}
+SELL=i_studded_tunic,{10 15}
+SELL=i_studded_leggings,{10 15}
+SELL=i_studded_gloves,{10 15}
+SELL=i_armor_female_studded,{10 15}
+SELL=i_armor_female_leather,{10 15}
+SELL=i_armor_female_shorts,{10 15}
+SELL=i_armor_female_skirt,{10 15}
+SELL=i_armor_female_bustier,{10 15}
+SELL=i_armor_female_bustier_studded,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Leather Armourer
+BUY=i_leather_gorget,{10 15}
+BUY=i_leather_cap,{10 15}
+BUY=i_leather_sleeves,{10 15}
+BUY=i_leather_tunic,{10 15}
+BUY=i_leather_leggings,{10 15}
+BUY=i_leather_gloves,{10 15}
+BUY=i_studded_gorget,{10 15}
+BUY=i_studded_sleeves,{10 15}
+BUY=i_studded_tunic,{10 15}
+BUY=i_studded_leggings,{10 15}
+BUY=i_studded_gloves,{10 15}
+BUY=i_armor_female_studded,{10 15}
+BUY=i_armor_female_leather,{10 15}
+BUY=i_armor_female_shorts,{10 15}
+BUY=i_armor_female_skirt,{10 15}
+BUY=i_armor_female_bustier,{10 15}
+BUY=i_armor_female_bustier_studded,{10 15}
+
+//Armorer Ring
+
+[TEMPLATE VENDOR_S_ARMORER_RING]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Ring Armourer
+SELL=i_ringmail_tunic,{10 15}
+SELL=i_ringmail_leggings,{10 15}
+SELL=i_ringmail_sleeves,{10 15}
+SELL=i_ringmail_gloves,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_RING]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Ring Armourer
+BUY=i_ringmail_tunic,{10 15}
+BUY=i_ringmail_leggings,{10 15}
+BUY=i_ringmail_sleeves,{10 15}
+BUY=i_ringmail_gloves,{10 15}
+
+//Armorer Chain
+
+[TEMPLATE VENDOR_S_ARMORER_CHAIN]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Chain Armourer
+SELL=i_chainmail_coif,{10 15}
+COLOR=colors_metal
+SELL=i_chainmail_tunic,{10 15}
+COLOR=colors_metal
+SELL=i_chainmail_leggings,{10 15}
+COLOR=colors_metal
+
+[TEMPLATE VENDOR_B_ARMORER_CHAIN]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Chain Armourer
+BUY=i_chainmail_coif,{10 15}
+BUY=i_chainmail_tunic,{10 15}
+BUY=i_chainmail_leggings,{10 15}
+
+//Armorer Plate
+
+[TEMPLATE VENDOR_S_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Plate Armourer
+SELL=i_platemail_gorget,{10 15}
+SELL=i_platemail_chest,{10 15}
+SELL=i_platemail_leggings,{10 15}
+SELL=i_platemail_arms,{10 15}
+SELL=i_platemail_gloves,{10 15}
+SELL=i_platemail_helm,{10 15}
+SELL=i_helm_closed,{10 15}
+SELL=i_helm_open,{10 15}
+SELL=i_helm_nose,{10 15}
+SELL=i_bascinet,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Plate Armourer
+BUY=i_platemail_gorget,{10 15}
+BUY=i_platemail_chest,{10 15}
+BUY=i_platemail_leggings,{10 15}
+BUY=i_platemail_arms,{10 15}
+BUY=i_platemail_gloves,{10 15}
+BUY=i_platemail_helm,{10 15}
+BUY=i_helm_closed,{10 15}
+BUY=i_helm_open,{10 15}
+BUY=i_helm_nose,{10 15}
+BUY=i_bascinet,{10 15}
+
+//Armorer Shields
+
+[TEMPLATE VENDOR_S_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Shield Armourer
+SELL=i_shield_buckler,{10 15}
+SELL=i_shield_wood,{10 15}
+SELL=i_shield_kite_wood,{10 15}
+COLOR=colors_all
+SELL=i_shield_kite_metal,{10 15}
+COLOR=colors_all
+SELL=i_shield_round_bronze,{10 15}
+SELL=i_shield_round_metal,{10 15}
+SELL=i_shield_heater,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Shield Armourer
+BUY=i_shield_buckler,{10 15}
+BUY=i_shield_wood,{10 15}
+BUY=i_shield_kite_wood,{10 15}
+BUY=i_shield_kite_metal,{10 15}
+BUY=i_shield_round_bronze,{10 15}
+BUY=i_shield_round_metal,{10 15}
+BUY=i_shield_heater,{10 15}
+
+//Weapons Bladed
+
+[TEMPLATE VENDOR_S_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Bladed Weaponsmith
+SELL=i_axe_exec,{10 15}
+SELL=i_bardiche,{10 15}
+SELL=i_axe_battle,{10 15}
+SELL=i_axe_battle_large,{10 15}
+SELL=i_bow,{10 15}
+SELL=i_knife_butcher,{10 15}
+SELL=i_crossbow,{10 15}
+SELL=i_crossbow_heavy,{10 15}
+SELL=i_cutlass,{10 15}
+SELL=i_dagger,{10 15}
+SELL=i_halberd,{10 15}
+SELL=i_hammer_pick,{10 15}
+SELL=i_katana,{10 15}
+SELL=i_kryss,{10 15}
+SELL=i_sword_broad,{10 15}
+SELL=i_sword_long,{10 15}
+SELL=i_sword_long_b,{10 15}
+SELL=i_sword_viking,{10 15}
+SELL=i_cleaver_meat,{10 15}
+SELL=i_axe,{10 15}
+SELL=i_axe_double,{10 15}
+SELL=i_pickaxe,{10 15}
+SELL=i_pitchfork,{10 15}
+SELL=i_scimitar,{10 15}
+SELL=i_knife_skinning,{10 15}
+SELL=i_axe_two_hand,{10 15}
+SELL=i_axe_war,{10 15}
+
+[TEMPLATE VENDOR_B_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Bladed Weaponsmith
+BUY=i_axe_exec,{10 15}
+BUY=i_bardiche,{10 15}
+BUY=i_axe_battle,{10 15}
+BUY=i_axe_battle_large,{10 15}
+BUY=i_bow,{10 15}
+BUY=i_knife_butcher,{10 15}
+BUY=i_crossbow,{10 15}
+BUY=i_crossbow_heavy,{10 15}
+BUY=i_cutlass,{10 15}
+BUY=i_dagger,{10 15}
+BUY=i_halberd,{10 15}
+BUY=i_hammer_pick,{10 15}
+BUY=i_katana,{10 15}
+BUY=i_kryss,{10 15}
+BUY=i_sword_broad,{10 15}
+BUY=i_sword_long,{10 15}
+BUY=i_sword_long_b,{10 15}
+BUY=i_sword_viking,{10 15}
+BUY=i_cleaver_meat,{10 15}
+BUY=i_axe,{10 15}
+BUY=i_axe_double,{10 15}
+BUY=i_pickaxe,{10 15}
+BUY=i_pitchfork,{10 15}
+BUY=i_scimitar,{10 15}
+BUY=i_knife_skinning,{10 15}
+BUY=i_axe_two_hand,{10 15}
+BUY=i_axe_war,{10 15}
+BUY=i_log,{10 15}
+BUY=i_ingot_iron,{10 15}
+
+// Weapons Blunt
+
+[TEMPLATE VENDOR_S_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Blunt Weaponsmith
+SELL=i_staff_black,{10 15}
+SELL=i_club,{10 15}
+SELL=i_staff_gnarled,{10 15}
+SELL=i_mace,{10 15}
+SELL=i_maul,{10 15}
+SELL=i_staff_quarter,{10 15}
+SELL=i_shepherds_crook,{10 15}
+SELL=i_hammer_smith,{10 15}
+SELL=i_spear_short,{10 15}
+SELL=i_spear,{10 15}
+SELL=i_hammer_war,{10 15}
+SELL=i_mace_war,{10 15}
+
+[TEMPLATE VENDOR_B_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Blunt Weaponsmith
+BUY=i_staff_black,{10 15}
+BUY=i_club,{10 15}
+BUY=i_staff_gnarled,{10 15}
+BUY=i_mace,{10 15}
+BUY=i_maul,{10 15}
+BUY=i_staff_quarter,{10 15}
+BUY=i_shepherds_crook,{10 15}
+BUY=i_spear_short,{10 15}
+BUY=i_hammer_smith,{10 15}
+BUY=i_spear,{10 15}
+BUY=i_hammer_war,{10 15}
+BUY=i_mace_war,{10 15}
+BUY=i_ingot_iron,{10 15}
+BUY=i_log,{10 15}
+
+//Magic Armor
+
+[TEMPLATE VENDOR_S_MAGIC_ARMOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Magic Armourer
+SELL=i_buckler_shield_defense
+SELL=i_wooden_shield_defense
+SELL=i_bronze_shield_defense
+SELL=i_metal_shield_defense
+SELL=i_metal_kite_shield_defense
+SELL=i_wooden_kite_shield_defense
+SELL=i_heater_shield_defense
+SELL=i_platemail_defense
+SELL=i_platemail_leggings_defense
+SELL=i_platemail_arms_defense
+SELL=i_platemail_helm_defense
+SELL=i_platemail_gorget_defense
+SELL=i_platemail_gauntlets_defense
+SELL=i_platemail_defense_female
+SELL=i_chainmail_coif_defense
+SELL=i_chainmail_leggings_defense
+SELL=i_chainmail_tunic_defense
+SELL=i_ringmail_leggings_defense
+SELL=i_ringmail_sleeves_defense
+SELL=i_ringmail_gloves_defense
+SELL=i_ringmail_tunic_defense
+
+[TEMPLATE VENDOR_B_MAGIC_ARMOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Magic Armourer
+BUY=i_buckler_shield_defense
+BUY=i_buckler_shield_guarding
+BUY=i_buckler_shield_hardening
+BUY=i_buckler_shield_fortification
+BUY=i_buckler_shield_invulnerability
+BUY=i_wooden_shield_defense
+BUY=i_wooden_shield_guarding
+BUY=i_wooden_shield_hardening
+BUY=i_wooden_shield_fortification
+BUY=i_wooden_shield_invulnerability
+BUY=i_bronze_shield_defense
+BUY=i_bronze_shield_guarding
+BUY=i_bronze_shield_hardening
+BUY=i_bronze_shield_fortification
+BUY=i_bronze_shield_invulnerability
+BUY=i_metal_shield_defense
+BUY=i_metal_shield_guarding
+BUY=i_metal_shield_hardening
+BUY=i_metal_shield_fortification
+BUY=i_metal_shield_invulnerability
+BUY=i_metal_kite_shield_defense
+BUY=i_metal_kite_shield_guarding
+BUY=i_metal_kite_shield_hardening
+BUY=i_metal_kite_shield_fortification
+BUY=i_metal_kite_shield_invulnerability
+BUY=i_wooden_kite_shield_defense
+BUY=i_wooden_kite_shield_guarding
+BUY=i_wooden_kite_shield_hardening
+BUY=i_wooden_kite_shield_fortification
+BUY=i_wooden_kite_shield_invulnerability
+BUY=i_heater_shield_defense
+BUY=i_heater_shield_guarding
+BUY=i_heater_shield_hardening
+BUY=i_heater_shield_fortification
+BUY=i_heater_shield_invulnerability
+BUY=i_platemail_defense
+BUY=i_platemail_guarding
+BUY=i_platemail_hardening
+BUY=i_platemail_fortification
+BUY=i_platemail_invulnerability
+BUY=i_platemail_leggings_defense
+BUY=i_platemail_leggings_guarding
+BUY=i_platemail_leggings_hardening
+BUY=i_platemail_leggings_fortification
+BUY=i_platemail_leggings_invulnerability
+BUY=i_platemail_arms_defense
+BUY=i_platemail_arms_guarding
+BUY=i_platemail_arms_hardening
+BUY=i_platemail_arms_fortification
+BUY=i_platemail_arms_invulnerability
+BUY=i_platemail_helm_defense
+BUY=i_platemail_helm_guarding
+BUY=i_platemail_helm_hardening
+BUY=i_platemail_helm_fortification
+BUY=i_platemail_helm_invulnerability
+BUY=i_platemail_gorget_defense
+BUY=i_platemail_gorget_guarding
+BUY=i_platemail_gorget_hardening
+BUY=i_platemail_gorget_fortification
+BUY=i_platemail_gorget_invulnerability
+BUY=i_platemail_gauntlets_defense
+BUY=i_platemail_gauntlets_guarding
+BUY=i_platemail_gauntlets_hardening
+BUY=i_platemail_gauntlets_fortification
+BUY=i_platemail_gauntlets_invulnerability
+BUY=i_platemail_defense_female
+BUY=i_platemail_guarding_female
+BUY=i_platemail_hardening_female
+BUY=i_platemail_fortification_female
+BUY=i_platemail_invulnerability_female
+BUY=i_chainmail_coif_defense
+BUY=i_chainmail_coif_guarding
+BUY=i_chainmail_coif_hardening
+BUY=i_chainmail_coif_fortification
+BUY=i_chainmail_coif_invulnerability
+BUY=i_chainmail_leggings_defense
+BUY=i_chainmail_leggings_guarding
+BUY=i_chainmail_leggings_hardening
+BUY=i_chainmail_leggings_fortification
+BUY=i_chainmail_leggings_invulnerability
+BUY=i_chainmail_tunic_defense
+BUY=i_chainmail_tunic_guarding
+BUY=i_chainmail_tunic_hardening
+BUY=i_chainmail_tunic_fortification
+BUY=i_chainmail_tunic_invulnerability
+BUY=i_ringmail_leggings_defense
+BUY=i_ringmail_leggings_guarding
+BUY=i_ringmail_leggings_hardening
+BUY=i_ringmail_leggings_fortification
+BUY=i_ringmail_leggings_invulnerability
+BUY=i_ringmail_sleeves_defense
+BUY=i_ringmail_sleeves_guarding
+BUY=i_ringmail_sleeves_hardening
+BUY=i_ringmail_sleeves_fortification
+BUY=i_ringmail_sleeves_invulnerability
+BUY=i_ringmail_gloves_defense
+BUY=i_ringmail_gloves_guarding
+BUY=i_ringmail_gloves_hardening
+BUY=i_ringmail_gloves_fortification
+BUY=i_ringmail_gloves_invulnerability
+BUY=i_ringmail_tunic_defense
+BUY=i_ringmail_tunic_guarding
+BUY=i_ringmail_tunic_hardening
+BUY=i_ringmail_tunic_fortification
+BUY=i_ringmail_tunic_invulnerability
+
+//Magic Weapons
+
+[TEMPLATE VENDOR_S_MAGIC_WEAPONS]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Magic Weaponsmith
+
+[TEMPLATE VENDOR_B_MAGIC_WEAPONS]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Magic Weaponsmith
+BUY=i_scimitar_ruin
+BUY=i_scimitar_might
+BUY=i_scimitar_force
+BUY=i_scimitar_power
+BUY=i_scimitar_vanq
+BUY=i_crossbow_ruin
+BUY=i_crossbow_might
+BUY=i_crossbow_force
+BUY=i_crossbow_power
+BUY=i_crossbow_vanq
+BUY=i_halberd_ruin
+BUY=i_halberd_might
+BUY=i_halberd_force
+BUY=i_halberd_power
+BUY=i_halberd_vanq
+BUY=i_bardiche_ruin
+BUY=i_bardiche_might
+BUY=i_bardiche_force
+BUY=i_bardiche_power
+BUY=i_bardiche_vanq
+BUY=i_cutlass_ruin
+BUY=i_cutlass_might
+BUY=i_cutlass_force
+BUY=i_cutlass_power
+BUY=i_cutlass_vanq
+BUY=i_sword_viking_ruin
+BUY=i_sword_viking_might
+BUY=i_sword_viking_force
+BUY=i_sword_viking_power
+BUY=i_sword_viking_vanq
+BUY=i_crossbow_heavy_ruin
+BUY=i_crossbow_heavy_might
+BUY=i_crossbow_heavy_force
+BUY=i_crossbow_heavy_power
+BUY=i_crossbow_heavy_vanq
+BUY=i_katana_ruin
+BUY=i_katana_might
+BUY=i_katana_force
+BUY=i_katana_power
+BUY=i_katana_vanq
+BUY=i_bow_ruin
+BUY=i_bow_might
+BUY=i_bow_force
+BUY=i_bow_power
+BUY=i_bow_vanq
+BUY=i_pitchfork_ruin
+BUY=i_pitchfork_might
+BUY=i_pitchfork_force
+BUY=i_pitchfork_power
+BUY=i_pitchfork_vanq
+BUY=i_broadsword_ruin
+BUY=i_broadsword_might
+BUY=i_broadsword_force
+BUY=i_broadsword_power
+BUY=i_broadsword_vanq
+BUY=i_kryss_ruin
+BUY=i_kryss_might
+BUY=i_kryss_force
+BUY=i_kryss_power
+BUY=i_kryss_vanq
+BUY=i_spear_ruin
+BUY=i_spear_might
+BUY=i_spear_force
+BUY=i_spear_power
+BUY=i_spear_vanq
+BUY=i_sword_long_ruin
+BUY=i_sword_long_might
+BUY=i_sword_long_force
+BUY=i_sword_long_power
+BUY=i_sword_long_vanq
+BUY=i_spear_short_ruin
+BUY=i_spear_short_might
+BUY=i_spear_short_force
+BUY=i_spear_short_power
+BUY=i_spear_short_vanq
+BUY=i_war_fork_ruin
+BUY=i_war_fork_might
+BUY=i_war_fork_force
+BUY=i_war_fork_power
+BUY=i_war_fork_vanq
+BUY=i_club_ruin
+BUY=i_club_might
+BUY=i_club_force
+BUY=i_club_power
+BUY=i_club_vanq
+BUY=i_mace_ruin
+BUY=i_mace_might
+BUY=i_mace_force
+BUY=i_mace_power
+BUY=i_mace_vanq
+BUY=i_maul_ruin
+BUY=i_maul_might
+BUY=i_maul_force
+BUY=i_maul_power
+BUY=i_maul_vanq
+BUY=i_mace_war_ruin
+BUY=i_mace_war_might
+BUY=i_mace_war_force
+BUY=i_mace_war_power
+BUY=i_mace_war_vanq
+BUY=i_hammer_pick_ruin
+BUY=i_hammer_pick_might
+BUY=i_hammer_pick_force
+BUY=i_hammer_pick_power
+BUY=i_hammer_pick_vanq
+BUY=i_hammer_war_ruin
+BUY=i_hammer_war_might
+BUY=i_hammer_war_force
+BUY=i_hammer_war_power
+BUY=i_hammer_war_vanq
+BUY=i_axe_ruin
+BUY=i_axe_might
+BUY=i_axe_force
+BUY=i_axe_power
+BUY=i_axe_vanq
+BUY=i_axe_exec_ruin
+BUY=i_axe_exec_might
+BUY=i_axe_exec_force
+BUY=i_axe_exec_power
+BUY=i_axe_exec_vanq
+BUY=i_axe_battle_ruin
+BUY=i_axe_battle_might
+BUY=i_axe_battle_force
+BUY=i_axe_battle_power
+BUY=i_axe_battle_vanq
+BUY=i_axe_double_ruin
+BUY=i_axe_double_might
+BUY=i_axe_double_force
+BUY=i_axe_double_power
+BUY=i_axe_double_vanq
+BUY=i_axe_two_hand_ruin
+BUY=i_axe_two_hand_might
+BUY=i_axe_two_hand_force
+BUY=i_axe_two_hand_power
+BUY=i_axe_two_hand_vanq
+//BUY=i_axe_war_ruin
+//BUY=i_axe_war_might
+//BUY=i_axe_war_force
+//BUY=i_axe_war_power
+//BUY=i_axe_war_vanquisihng
+BUY=i_axe_battle_large_ruin
+BUY=i_axe_battle_large_might
+BUY=i_axe_battle_large_force
+BUY=i_axe_battle_large_power
+BUY=i_axe_battle_large_vanq
+
+//Blacksmith
+
+[TEMPLATE VENDOR_S_BLACKSMITH]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Blacksmith
+SELL=i_ingot_iron,{4 18}
+SELL=i_tongs,{4 18}
+//SELL=metal_goods,{4 18}
+
+[TEMPLATE VENDOR_B_BLACKSMITH]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Blacksmith
+BUY=i_kindling,{4 18}
+BUY=i_log,{4 18}
+BUY=i_ingot_iron,{44 88}
+BUY=i_tongs,{4 18}

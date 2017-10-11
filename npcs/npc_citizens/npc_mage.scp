@@ -1,0 +1,145 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_mage]
+ID=c_man
+NAME=#NAMES_HUMANMALE the mage
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Mage (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   ALCHEMY={20.0 30.0}
+   ANATOMY={20.0 30.0}
+   DETECTINGHIDDEN={20.0 30.0}
+   EVALUATINGINTEL={50.0 100.0}
+   FOCUS={50.0 100.0}
+   HEALING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   INSCRIPTION={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGERY={50.0 100.0}
+   MAGICRESISTANCE={50.0 100.0}
+   MEDITATION={50.0 100.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R2
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+   ITEM=random_hats,1,R2
+   COLOR=colors_all
+   ITEM=random_tunics_all,1,R2
+   COLOR=colors_all
+   ITEM=random_capes_all,1,R2
+   COLOR=colors_all
+   ITEM=random_robes_elven,1,R5
+   COLOR=colors_all
+   ITEM=random_jewelry
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal
+
+[CHARDEF c_mage_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the mage
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Mage (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   ALCHEMY={20.0 30.0}
+   ANATOMY={20.0 30.0}
+   DETECTINGHIDDEN={20.0 30.0}
+   EVALUATINGINTEL={50.0 100.0}
+   FOCUS={50.0 100.0}
+   HEALING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   INSCRIPTION={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGERY={50.0 100.0}
+   MAGICRESISTANCE={50.0 100.0}
+   MEDITATION={50.0 100.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+   ITEM=random_skirts_human,1,R2
+   COLOR=colors_all
+   ITEM=random_hats,1,R2
+   COLOR=colors_all
+   ITEM=random_tunics_all,1,R2
+   COLOR=colors_all
+   ITEM=random_capes_all,1,R2
+   COLOR=colors_all
+   ITEM=random_robes_elven,1,R5
+   COLOR=colors_all
+   ITEM=random_dresses,1,R5
+   COLOR=colors_all
+   ITEM=random_jewelry
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal

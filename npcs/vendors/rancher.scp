@@ -1,0 +1,141 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_rancher]
+ID=c_man
+NAME=#NAMES_HUMANMALE the rancher
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Rancher (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   CAMPING={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAMING={20.0 30.0}
+   VETERINARY={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_boots_all
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_mace_normal
+   ITEM=i_shepherds_crook,1,R2
+
+   SELL=VENDOR_S_RANCHER
+   BUY=VENDOR_B_RANCHER
+
+[CHARDEF c_rancher_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the rancher
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Rancher (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   CAMPING={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAMING={20.0 30.0}
+   VETERINARY={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_boots_all
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_mace_normal
+   ITEM=i_shepherds_crook,1,R2
+
+   SELL=VENDOR_S_RANCHER
+   BUY=VENDOR_B_RANCHER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_RANCHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Rancher
+
+[TEMPLATE VENDOR_B_RANCHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Rancher
+
+[EOF]

@@ -1,0 +1,209 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_mageshop]
+ID=c_man
+NAME=#NAMES_HUMANMALE the mage
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Mage (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   EVALUATINGINTEL={50.0 75.0}
+   HEALING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   INSCRIPTION={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGERY={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={50.0 75.0}
+   SPELLWEAVING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_pants_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_green
+   ITEM=i_robe
+   COLOR=colors_blue
+   ITEM=i_hat_wizards
+   COLOR=colors_blue
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_MAGE_SHOP
+   BUY=VENDOR_B_MAGE_SHOP
+
+[CHARDEF c_mageshop_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the mage
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Mage (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   EVALUATINGINTEL={50.0 75.0}
+   HEALING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   INSCRIPTION={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGERY={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={50.0 75.0}
+   SPELLWEAVING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_skirts_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_green
+   ITEM=i_robe
+   COLOR=colors_blue
+   ITEM=i_hat_wizards
+   COLOR=colors_blue
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_MAGE_SHOP
+   BUY=VENDOR_B_MAGE_SHOP
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_MAGE_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Mage
+SELL=random_first_circle,{4 24}
+SELL=random_second_circle,{4 24}
+SELL=random_third_circle,{4 24}
+SELL=random_fourth_circle,{4 24}
+SELL=i_rune_marker,{2 10}
+SELL=i_scroll_blank,{10 15}
+SELL=i_reag_batwing,{21 206}
+SELL=i_reag_blackmoor,{21 206}
+SELL=i_reag_black_pearl,{21 206}
+SELL=i_reag_blood_moss,{21 206}
+SELL=i_reag_blood_spawn,{21 206}
+SELL=i_reag_blood_vial,{21 206}
+SELL=i_reag_bone,{21 206}
+SELL=i_reag_brimstone,{21 206}
+SELL=i_reag_daemon_bone,{21 206}
+SELL=i_reag_fertile_dirt,{21 206}
+SELL=i_reag_dragon_blood,{21 206}
+SELL=i_reag_executioners_cap,{21 206}
+SELL=i_reag_garlic,{21 206}
+SELL=i_reag_ginseng,{21 206}
+SELL=i_reag_mandrake_root,{21 206}
+SELL=i_reag_eye_of_newt,{21 206}
+SELL=i_reag_nightshade,{21 206}
+SELL=i_reag_obsidian,{21 206}
+SELL=i_reag_pig_iron,{21 206}
+SELL=i_reag_pumice,{21 206}
+SELL=i_reag_sulfur_ash,{21 206}
+SELL=i_reag_spider_silk,{21 206}
+SELL=i_reag_nox_crystal,{21 206}
+SELL=i_reag_grave_dust,{21 206}
+SELL=i_reag_dead_wood,{21 206}
+SELL=i_reag_wyrm_heart,{21 206}
+SELL=i_spellbook,{3 27}
+
+[TEMPLATE VENDOR_B_MAGE_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Mage
+BUY=random_first_circle,{4 24}
+BUY=random_second_circle,{4 24}
+BUY=random_third_circle,{4 24}
+BUY=random_fourth_circle,{4 24}
+BUY=i_rune_marker,{2 10}
+BUY=i_scroll_blank,{10 15}
+BUY=i_reag_batwing,{4 24}
+BUY=i_reag_blackmoor,{4 24}
+BUY=i_reag_black_pearl,{4 24}
+BUY=i_reag_blood_moss,{4 24}
+BUY=i_reag_blood_spawn,{4 24}
+BUY=i_reag_blood_vial,{4 24}
+BUY=i_reag_bone,{4 24}
+BUY=i_reag_brimstone,{4 24}
+BUY=i_reag_daemon_bone,{4 24}
+BUY=i_reag_fertile_dirt,{4 24}
+BUY=i_reag_dragon_blood,{4 24}
+BUY=i_reag_executioners_cap,{4 24}
+BUY=i_reag_garlic,{4 24}
+BUY=i_reag_ginseng,{4 24}
+BUY=i_reag_mandrake_root,{4 24}
+BUY=i_reag_eye_of_newt,{4 24}
+BUY=i_reag_nightshade,{4 24}
+BUY=i_reag_obsidian,{4 24}
+BUY=i_reag_pig_iron,{4 24}
+BUY=i_reag_pumice,{4 24}
+BUY=i_reag_sulfur_ash,{4 24}
+BUY=i_reag_spider_silk,{4 24}
+BUY=i_reag_nox_crystal,{4 24}
+BUY=i_reag_grave_dust,{4 24}
+BUY=i_reag_dead_wood,{4 24}
+BUY=i_reag_wyrm_heart,{4 24}
+
+[EOF]

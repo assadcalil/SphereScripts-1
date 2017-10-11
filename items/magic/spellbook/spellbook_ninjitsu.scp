@@ -1,0 +1,92 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[COMMENT sphere_item_magic_ninjitsu_bushido]
+
+This file contains all things relating to Ninjitsu and Bushido, such as:
+
+* Spellbooks
+* Spell runes
+
+[ITEMDEF 023a0]
+DEFNAME=i_spellbook_ninjitsu
+NAME=Book of Ninjitsu
+TYPE=t_spellbook_ninjitsu
+TDATA3=500
+TDATA4=8
+VALUE=435
+WEIGHT=3.0
+CATEGORY=Provisions - Alchemy & Magic
+SUBSECTION=Books
+DESCRIPTION=Book of Ninjitsu
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+   MORE1=0ff
+
+[ITEMDEF 023a1]
+DEFNAME=i_rune_focus_attack
+NAME=focus attack
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Focus Attack
+
+[ITEMDEF 023a2]
+DEFNAME=i_rune_death_strike
+NAME=death strike
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Death Strike
+
+[ITEMDEF 023a3]
+DEFNAME=i_rune_animal_form
+NAME=animal form
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Animal Form
+
+[ITEMDEF 023a4]
+DEFNAME=i_rune_ki_attack
+NAME=ki attack
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Ki Attack
+
+[ITEMDEF 023a5]
+DEFNAME=i_rune_suprise_attack
+NAME=suprise attack
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Suprise Attack
+
+[ITEMDEF 023a6]
+DEFNAME=i_rune_backstab
+NAME=backstab
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Backstab
+
+[ITEMDEF 023a7]
+DEFNAME=i_rune_shadowjump
+NAME=shadow jump
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Shadow Jump
+
+[ITEMDEF 023a8]
+DEFNAME=i_rune_mirror_image
+NAME=mirror image
+TYPE=t_spellicon
+CATEGORY=Spell Icons
+SUBSECTION=Ninjitsu
+DESCRIPTION=Mirror Image
+
+
+[EOF]

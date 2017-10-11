@@ -1,0 +1,196 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_tavernkeeper]
+ID=c_man
+NAME=#NAMES_HUMANMALE the tavernkeeper
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tavernkeeper (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={20.0 30.0}
+   BUSHIDO={20.0 30.0}
+   COOKING={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_apron_half
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_mace_normal
+
+   SELL=VENDOR_S_TAVERNKEEPER
+   BUY=VENDOR_B_TAVERNKEEPER
+
+[CHARDEF c_tavernkeeper_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the tavernkeeper
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tavernkeeper (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={20.0 30.0}
+   BUSHIDO={20.0 30.0}
+   COOKING={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_apron_half
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_mace_normal
+
+   SELL=VENDOR_S_TAVERNKEEPER
+   BUY=VENDOR_B_TAVERNKEEPER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_TAVERNKEEPER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Tavernkeeper
+SELL=i_bottle_ale,{6 26}
+SELL=i_bottle_wine,{6 26}
+SELL=i_bottle_liquor,{6 26}
+SELL=i_JUG_CIDER,{6 26}
+SELL=i_pitcher_ale,{6 26}
+SELL=i_pitcher_cider,{6 26}
+SELL=i_pitcher_glass,{6 26}
+SELL=i_pitcher_liquor,{6 26}
+SELL=i_pitcher_milk,{6 26}
+SELL=i_pitcher_wine,{6 26}
+SELL=i_pitcher_water,{6 26}
+SELL=i_bread_loaf,{6 26}
+SELL=i_cheese_wheel,{6 26}
+SELL=i_bird_cooked,{6 26}
+SELL=i_lamb_leg,{6 26}
+SELL=i_bird_cooked,{6 26}
+SELL=i_bowl_wood_carrots,{6 26}
+SELL=i_bowl_wood_corn,{6 26}
+SELL=i_bowl_wood_lettuce,{6 26}
+SELL=i_bowl_wood_peas,{6 26}
+SELL=i_bowl_pewter_potatoes,{6 26}
+SELL=i_bowl_stew_lg,{6 26}
+SELL=i_bowl_TOMATO_SOUP,{6 26}
+SELL=i_pie_baked,{6 26}
+SELL=i_chessboard,{6 26}
+SELL=i_checkerboard,{6 26}
+SELL=i_backgammon_game,{6 26}
+SELL=i_dice_cup,{6 26}
+
+[TEMPLATE VENDOR_B_TAVERNKEEPER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Tavernkeeper
+BUY=i_chessboard,{6 26}
+BUY=i_checkerboard,{6 26}
+BUY=i_dice_cup,{6 26}
+BUY=i_backgammon_game,{6 26}
+BUY=i_bottle_ale,{6 26}
+BUY=i_bottle_wine,{6 26}
+BUY=i_bottle_liquor,{6 26}
+BUY=i_JUG_CIDER,{6 26}
+BUY=i_pitcher_ale,{6 26}
+BUY=i_pitcher_cider,{6 26}
+BUY=i_pitcher_glass,{6 26}
+BUY=i_pitcher_liquor,{6 26}
+BUY=i_pitcher_milk,{6 26}
+BUY=i_pitcher_wine,{6 26}
+BUY=i_pitcher_water,{6 26}
+BUY=i_bread_loaf,{6 26}
+BUY=i_cheese_wheel,{6 26}
+BUY=i_bird_cooked,{6 26}
+BUY=i_lamb_leg,{6 26}
+BUY=i_bird_cooked,{6 26}
+BUY=i_bowl_wood_carrots,{6 26}
+BUY=i_bowl_wood_corn,{6 26}
+BUY=i_bowl_wood_lettuce,{6 26}
+BUY=i_bowl_wood_peas,{6 26}
+BUY=i_bowl_pewter_potatoes,{6 26}
+BUY=i_bowl_stew_lg,{6 26}
+BUY=i_bowl_TOMATO_SOUP,{6 26}
+BUY=i_pie_baked,{6 26}
+
+[EOF]

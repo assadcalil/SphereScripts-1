@@ -1,0 +1,224 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_tinker]
+ID=c_man
+NAME=#NAMES_HUMANMALE the tinker
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tinker (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={50.0 75.0}
+   LOCKPICKING={25.0 50.0}
+   MAGICRESISTANCE={20.0 30.0}
+   REMOVETRAP={50.0 75.0}
+   TACTICS={20.0 30.0}
+   TINKERING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_tinker_tools
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_TINKER
+   BUY=VENDOR_B_TINKER
+
+[CHARDEF c_tinker_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the tinker
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Tinker (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   FENCING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={50.0 75.0}
+   LOCKPICKING={25.0 50.0}
+   MAGICRESISTANCE={20.0 30.0}
+   REMOVETRAP={50.0 75.0}
+   TACTICS={20.0 30.0}
+   TINKERING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_tinker_tools
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_TINKER
+   BUY=VENDOR_B_TINKER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_TINKER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Tinker
+
+// SELL=VENDOR_S_CARPENTER
+
+SELL=i_clock,{4 34}
+SELL=i_nails,{4 34}
+SELL=i_clock_parts,{4 34}
+SELL=i_axle_and_gears,{4 34}
+SELL=i_gears,{4 34}
+SELL=i_hinge,{4 34}
+SELL=i_sextant,{4 34}
+SELL=i_sextant_parts,{4 34}
+SELL=i_sticks,{4 34}
+SELL=i_springs,{4 34}
+SELL=i_key_copper,{4 34}
+SELL=i_key_gold,{4 34}
+SELL=i_key_iron,{4 34}
+SELL=i_key_rusty,{4 34}
+SELL=i_key_ring,{4 34}
+SELL=i_lockpick,{4 34}
+SELL=i_tinker_tools,{4 34}
+SELL=i_board,{4 34}
+SELL=i_ingot_iron,{4 34}
+SELL=i_sewing_kit,{4 34}
+SELL=i_knife_draw,{4 34}
+SELL=i_froe,{4 34}
+SELL=i_inshave,{4 34}
+SELL=i_scorp,{4 34}
+SELL=i_knife_butcher,{4 34}
+SELL=i_scissors,{4 34}
+SELL=i_tongs,{4 34}
+SELL=i_saw_dovetail,{4 34}
+SELL=i_saw,{4 34}
+SELL=i_hammer,{4 34}
+SELL=i_hammer_smith,{4 34}
+SELL=i_hammer_sledge,{4 34}
+SELL=i_shovel,{4 34}
+SELL=i_plane_moulding,{4 34}
+SELL=i_plane_smoothing,{4 34}
+SELL=i_plane_jointing,{4 34}
+SELL=i_pickaxe,{4 34}
+SELL=i_drum,{4 34}
+SELL=i_tambourine,{4 34}
+SELL=i_lyre,{4 34}
+SELL=i_lute,{4 34}
+
+[TEMPLATE VENDOR_B_TINKER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Tinker
+BUY=i_drum,{4 34}
+BUY=i_tambourine,{4 34}
+BUY=i_lyre,{4 34}
+BUY=i_lute,{4 34}
+BUY=i_kindling,{4 34}
+BUY=i_clock,{4 34}
+BUY=i_clock_parts,{4 34}
+BUY=i_axle_and_gears,{4 34}
+BUY=i_gears,{4 34}
+BUY=i_hinge,{4 34}
+BUY=i_sextant,{4 34}
+BUY=i_sextant_parts,{4 34}
+BUY=i_sticks,{4 34}
+BUY=i_springs,{4 34}
+BUY=i_key_copper,{4 34}
+BUY=i_key_gold,{4 34}
+BUY=i_key_iron,{4 34}
+BUY=i_key_rusty,{4 34}
+BUY=i_key_magic,{4 34}
+BUY=i_key_ring,{4 34}
+BUY=i_lockpick,{4 34}
+BUY=i_lockpick_set,{4 34}
+BUY=i_tinker_tools,{4 34}
+BUY=i_ingot_iron,{4 34}
+BUY=i_log,{4 34}
+BUY=i_board,{4 34}
+BUY=i_sewing_kit,{4 34}
+BUY=i_knife_draw,{4 34}
+BUY=i_froe,{4 34}
+BUY=i_inshave,{4 34}
+BUY=i_scorp,{4 34}
+BUY=i_knife_butcher,{4 34}
+BUY=i_scissors,{4 34}
+BUY=i_tongs,{4 34}
+BUY=i_saw_dovetail,{4 34}
+BUY=i_saw,{4 34}
+BUY=i_hammer,{4 34}
+BUY=i_hammer_smith,{4 34}
+BUY=i_hammer_sledge,{4 34}
+BUY=i_shovel,{4 34}
+BUY=i_plane_moulding,{4 34}
+BUY=i_plane_smoothing,{4 34}
+BUY=i_plane_jointing,{4 34}
+BUY=i_pickaxe,{4 34}
+
+[EOF]

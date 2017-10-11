@@ -1,0 +1,17 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 0dfc]
+DEFNAME=i_scissors_barber
+TYPE=t_scissors
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Barber Scissors
+DUPELIST=0dfd
+
+[ITEMDEF 0dfd]
+DUPEITEM=0dfc
+
+[EOF]

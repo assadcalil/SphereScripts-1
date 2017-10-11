@@ -1,0 +1,49 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+
+/////////////
+// Insects //
+/////////////
+
+[CHARDEF c_spider_lord]
+ID=c_champ_mephitis
+NAME=spider lord
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+ARMOR=25
+DAM=31,55
+TAG.SlayerGroup=SPIDER,ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Spiders
+DESCRIPTION=Spider Lord
+ON=@Create
+   NPC=brain_monster
+   FAME={3500 3999}
+   KARMA={-3500 -3999}
+   STR={276 300}
+   MAXHITS={346 460}
+   INT={36 60}
+   DEX={96 115}
+   MAGICRESISTANCE={45.0 60.0}
+   TACTICS={65.0 85.0}
+   WRESTLING={70.0 85.0}
+   ANATOMY={30.0 75.0}
+   POISONING={60.0 80.0}
+   RESCOLD={20 30}
+   RESENERGY={20 30}
+   RESFIRE={10 20}
+   RESPOISON=100
+ON=@NpcRestock
+   ITEM=loot_ai_hard
+   ITEM=i_gold,{125 175}
+   ITEM=i_reag_spider_silk,5
+   ITEM=i_potion_poison,R4
+ON=@GetHit
+   IF !(<R9>)
+      SERV.NEWNPC c_spider_dread
+      NEW.P=<P>
+      NEW.HOME=<NEW.P>
+      NEW.HOMEDIST=7
+      NEW.f_NPCRemovalTimer 1200
+   ENDIF

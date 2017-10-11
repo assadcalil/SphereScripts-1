@@ -1,0 +1,155 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_vet]
+ID=c_man
+NAME=#NAMES_HUMANMALE the veterinarian
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Veterinarian (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   FENCING={20.0 30.0}
+   HEALING={20.0 30.0}
+   HERDING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   VETERINARY={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_red
+   ITEM=random_pants_human
+   COLOR=colors_blue
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_VET
+   BUY=VENDOR_B_VET
+
+[CHARDEF c_vet_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the veterinarian
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Veterinarian (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   FENCING={20.0 30.0}
+   HEALING={20.0 30.0}
+   HERDING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   VETERINARY={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_red
+   ITEM=random_pants_human
+   COLOR=colors_blue
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_VET
+   BUY=VENDOR_B_VET
+
+/////////////////
+//Template vend//
+/////////////////
+
+
+[TEMPLATE VENDOR_S_VET]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Veterinarian
+SELL=i_bandage,{6 66}
+SELL=i_pet_horse_tan,{0 2}
+SELL=i_pet_horse_gray,{0 2}
+SELL=i_pet_horse_brown_lt,{0 2}
+SELL=i_pet_horse_brown_dk,{0 2}
+SELL=i_pet_horse_pack,{0 3}
+SELL=i_pet_llama_pack,{0 3}
+SELL=i_pet_dog,{2 13}
+SELL=i_pet_cat,{2 13}
+
+[TEMPLATE VENDOR_B_VET]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Veterinarian
+BUY=i_bandage,{6 26}
+BUY=i_hay_sheaf,{6 26}
+BUY=i_fruit_apple,{6 26}
+BUY=i_fruit_carrot,{6 26}
+BUY=I_FRUIT_LETTUCE,{6 26}
+BUY=i_ribs_raw,{6 26}
+BUY=I_BIRD_RAW,{6 26}
+BUY=i_CARCASS_BEEF,{6 26}
+BUY=i_CARCASS_OTHER,{6 26}
+
+[EOF]

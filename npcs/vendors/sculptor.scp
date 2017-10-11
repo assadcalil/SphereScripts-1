@@ -1,0 +1,102 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_body_sculptor]
+ID=c_man
+NAME=#NAMES_HUMANMALE the body sculptor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_bodysculptor
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Body Sculptor (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_bright
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
+
+[CHARDEF c_body_sculptor_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the body sculptor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_bodysculptor
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Body Sculptor (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_bright
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
+
+//////////
+//DIALOG//
+//////////
+
+[Function body]
+Dialog d_body_sculptor
+
+[DIALOG d_body_sculptor]
+50,50
+
+resizepic 50 10 2600 450 125
+dhtmlgump 100 40 350 20 0 0 Choose your body modification:
+
+button 100 75 4005 4007 1 0 1
+dhtmlgump 140 75 300 20 0 0 New face style
+
+[DIALOG d_body_sculptor BUTTON]
+ON=1
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ENDIF
+SRC.CHANGEFACE
+
+[EOF]

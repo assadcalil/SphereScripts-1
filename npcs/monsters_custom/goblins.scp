@@ -1,0 +1,120 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+/////////////
+// Goblins //
+/////////////
+
+[CHARDEF c_goblin_chief]
+ID=c_goblin_green
+NAME=goblin chief
+CAN=MT_WALK|MT_RUN|MT_EQUIP
+DAM=5,12
+ARMOR=13
+BLOODCOLOR=colors_green
+TAG.SlayerGroup=ORC
+CATEGORY=Monsters
+SUBSECTION=Goblins
+DESCRIPTION=Goblin Chief
+ON=@Create
+   COLOR=colors_green
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-3000 -3499}
+   STR={65 90}
+   DEX={60 80}
+   INT={36 60}
+   MACEFIGHTING={50.0 70.0}
+   MAGICRESISTANCE={50.0 75.0}
+   PARRYING={50.0 70.0}
+   SWORDSMANSHIP={50.0 70.0}
+   TACTICS={55.0 80.0}
+   WRESTLING={50.0 70.0}
+   RESCOLD={1 10}
+   RESENERGY={1 10}
+   RESFIRE={1 10}
+   RESPOISON={1 10}
+ON=@NPCRestock
+   ITEM={ i_boots_thigh 1 0 1 }
+   ITEM={ meager_gold_pile 1 0 1 }
+   ITEM={ meager_backpack 1 average_backpack 3 }
+   ITEM=random_armor_all
+   ITEM=random_weapon_all_normal
+
+[CHARDEF c_goblin_shaman]
+ID=c_goblin_green
+NAME=goblin shaman
+DAM=5,13
+ARMOR=14
+BLOODCOLOR=colors_green
+TAG.SlayerGroup=ORC
+CATEGORY=Monsters
+SUBSECTION=Goblins
+DESCRIPTION=Goblin Shaman
+ON=@Create
+   COLOR=colors_green
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-3000 -3499}
+   STR={45 65}
+   DEX={60 70}
+   INT={70 80}
+   EVALUATINGINTEL={70.0 80.0}
+   MAGERY={60.0 85.0}
+   MAGICRESISTANCE={51.6 75.2}
+   MEDITATION={65.0 75.0}
+   PARRYING={56.2 75.2}
+   TACTICS={55.7 88.5}
+   WRESTLING={46.5 68.6}
+   RESCOLD=0
+   RESENERGY={1 10}
+   RESFIRE=0
+   RESPOISON={1 10}
+ON=@NPCRestock
+   ITEM=random_armor_all
+   CONTAINER=i_backpack
+   MOREZ={0 45}
+   MOREM={0 20}
+   ITEM=random_coin_purse
+   ITEM=average_gold_pile,{1 3}
+   ITEM={ random_first_circle 4 random_second_circle 8 0 16 }
+
+[CHARDEF c_goblin_lord]
+ID=c_goblin_green
+NAME=goblin lord
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_USEHANDS
+DAM=5,10
+ARMOR=14
+BLOODCOLOR=colors_green
+TAG.SlayerGroup=ORC
+CATEGORY=Monsters
+SUBSECTION=Goblins
+DESCRIPTION=Goblin Lord
+ON=@Create
+   COLOR=colors_green
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-3000 -3499}
+   STR={70 95}
+   DEX={40 50}
+   INT={85 115}
+   MACEFIGHTING={40.0 55.0}
+   MAGICRESISTANCE={25.0 35.0}
+   PARRYING={45.0 60.0}
+   TACTICS={45.0 55.5}
+   WRESTLING={50.0 65.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={1 10}
+   RESPOISON={20 30}
+ON=@NPCRestock
+   ITEM=loot_ai_healer
+   ITEM=random_coin_purse
+   ITEM=i_boots_thigh
+   ITEM=average_gold_pile
+   ITEM=random_scroll,R3
+   ITEM=i_leather_tunic,R7
+   ITEM=random_armor_all
+   ITEM=random_weapon_all_normal
+

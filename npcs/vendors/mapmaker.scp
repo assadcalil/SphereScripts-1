@@ -1,0 +1,146 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_mapmaker]
+ID=c_man
+NAME=#NAMES_HUMANMALE the mapmaker
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Mapmaker (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   CAMPING={20.0 30.0}
+   CARTOGRAPHY={50.0 75.0}
+   FENCING={20.0 30.0}
+   INSCRIPTION={25.0 50.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+   ITEM=random_shield
+
+   SELL=VENDOR_S_MAPMAKER
+   BUY=VENDOR_B_MAPMAKER
+
+[CHARDEF c_mapmaker_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the mapmaker
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Mapmaker (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   CAMPING={20.0 30.0}
+   CARTOGRAPHY={50.0 75.0}
+   FENCING={20.0 30.0}
+   INSCRIPTION={25.0 50.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+   ITEM=random_shield
+
+   SELL=VENDOR_S_MAPMAKER
+   BUY=VENDOR_B_MAPMAKER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_MAPMAKER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Mapmaker
+SELL=i_map_blank,40
+SELL=i_mapmakers_pen,20
+SELL=i_scroll_blank,40
+
+[TEMPLATE VENDOR_B_MAPMAKER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Mapmaker
+BUY=i_scroll_blank
+BUY=i_mapmakers_pen
+BUY=i_map_blank
+BUY=i_map_local
+BUY=i_map_city
+BUY=i_map_sea_chart
+BUY=i_map_world
+
+[EOF]

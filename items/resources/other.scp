@@ -1,0 +1,149 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 01020]
+DEFNAME=i_feathers_red_white
+TYPE=t_feather
+FLIP=1
+WEIGHT=0.1
+RESOURCES=2 i_feather
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Feathers (2 Red & White)
+DUPELIST=01021
+
+[ITEMDEF 01021]
+//feathers
+DUPEITEM=01020
+
+[ITEMDEF 01bd1]
+DEFNAME=i_feather
+TYPE=t_feather
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Feathers (White)
+DUPELIST=0dfa,0dfb,01bd2,01bd3
+
+[ITEMDEF 01bd2]
+//feathers (3)
+DUPEITEM=01bd1
+
+[ITEMDEF 01bd3]
+//Pile of White feathers
+DUPEITEM=01bd1
+
+[ITEMDEF 0223a]
+DEFNAME=i_crystals_broken
+NAME=broken crystals
+TYPE=t_normal
+VALUE=2
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Crystalline Fragments
+DUPELIST=0223b,0223c,0223d,0223e,0223f,02240,02241,02242,02243,02244,02245,02246,02247,02248,02249
+ON=@Create
+   DORAND 7
+      NAME=crystalline fragments
+      NAME=broken crystals
+      NAME=shattered crystals
+      NAME=scattered crystals
+      NAME=crushed crystals
+      NAME=jagged crystals
+      NAME=crystal pieces 
+   ENDDO
+
+[ITEMDEF 0223b]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223c]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223d]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223e]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223f]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02240]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02241]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02242]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02243]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02244]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02245]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02246]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02247]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02248]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02249]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 09bcc]
+DEFNAME=i_tigerpelt
+NAME=tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Tiger Pelt
+DUPELIST=09bcd
+ON=@Create
+   COLOR=color_tigerpelt_orange
+
+[ITEMDEF 09bcd]
+//Tiger Pelt
+DUPEITEM=09bcc
+
+[ITEMDEF 09bce]
+DEFNAME=i_dragonturtle_scute
+NAME=dragon turtle scute%s
+TYPE=t_normal
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Dragon Turtle Scute
+DUPELIST=09bcf
+
+[ITEMDEF 09bcf]
+//Dragon Turtle Scute
+DUPEITEM=09bce

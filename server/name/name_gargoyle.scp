@@ -1,0 +1,41 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[NAMES NAMES_GARGOYLE_MALE]
+15
+Anmanivas
+Au'Rek
+Bolesh
+Draxinusom
+Foranamo
+Ga'Kop
+G'Krill
+Hir'Roffe
+Inwisloklem
+Naxatilor
+Sai'Gem
+Sin'Vraal
+Teregus
+Valkadesh
+Zoterios
+
+[NAMES NAMES_GARGOYLE_FEMALE]
+15
+Ansikart
+Ane'Ska
+Artaios
+Aurvidlem
+Betra
+Forskis
+Inmanilem
+Khalora
+Quaeven
+Runeb
+Silamo
+Sil'Cor
+Tir'Pena
+T'Lem
+Zu'Teika
+
+[EOF]

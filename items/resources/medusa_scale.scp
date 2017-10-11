@@ -1,0 +1,13 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF i_medusa_scale]
+ID=026b4
+NAME=Medusa scale%s
+TYPE=t_normal
+CATEGORY=Quest
+SUBSECTION=Medusa
+DESCRIPTION=Medusa Scale
+ON=@Create
+   COLOR={04f2 1 08af 1}

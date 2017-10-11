@@ -1,0 +1,155 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_farmer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the farmer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Farmer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   CAMPING={20.0 30.0}
+   FENCING={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_hats
+   COLOR=colors_neutral
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_FARMER
+   BUY=VENDOR_B_FARMER
+
+[CHARDEF c_farmer_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the farmer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Farmer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   CAMPING={20.0 30.0}
+   FENCING={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_hats
+   COLOR=colors_neutral
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_FARMER
+   BUY=VENDOR_B_FARMER
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_FARMER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Farmer
+SELL=i_fruit_cabbage,{10 40}
+SELL=i_fruit_lettuce,{10 40}
+SELL=i_fruit_corn,{10 40}
+SELL=i_EGGS_FRESH,{10 40}
+SELL=i_pitcher_milk,{10 40}
+SELL=i_hay_sheaf,{10 40}
+
+SELL=i_fruit_cantaloupe,{10 40}
+SELL=i_fruit_carrot,{10 40}
+SELL=i_fruit_honeydewmelon,{10 40}
+SELL=i_fruit_squash,{10 40}
+SELL=i_fruit_onion,{10 40}
+SELL=i_fruit_pumpkin,{10 40}
+SELL=i_fruit_gourd_yellow,{10 40}
+SELL=i_fruit_turnip,{10 40}
+SELL=i_fruit_watermelon,{10 40}
+SELL=i_fruit_peach,{10 40}
+SELL=i_fruit_pear,{10 40}
+SELL=i_fruit_lemon,{10 40}
+SELL=i_fruit_lime,{10 40}
+SELL=i_fruit_grapes,{10 40}
+SELL=i_fruit_apple,{10 40}
+
+[TEMPLATE VENDOR_B_FARMER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Farmer
+BUY=i_kindling,{30 60}
+BUY=i_flour_sack,{30 60}
+BUY=i_hay_sheaf,{30 60}
+
+[EOF]

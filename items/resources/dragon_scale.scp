@@ -1,0 +1,111 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 026b1]
+DEFNAME=i_dragonscale
+NAME=dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Dragon Scales
+
+[ITEMDEF 026b2]
+//Dragon Scales
+DUPEITEM=026b1
+
+[ITEMDEF 026b3]
+//Dragon Scales
+DUPEITEM=026b1
+
+[ITEMDEF 026b4]
+//Dragon Scales
+DUPEITEM=026b1
+
+[ITEMDEF 026b5]
+//Dragon Scales
+DUPEITEM=026b1
+
+[ITEMDEF 026b6]
+//Dragon Scales
+DUPEITEM=026b1
+
+[ITEMDEF i_dragonscale_black]
+ID=i_dragonscale
+NAME=black dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=Black Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_black
+
+[ITEMDEF i_dragonscale_blue]
+ID=i_dragonscale
+NAME=blue dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=Blue Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_blue
+
+[ITEMDEF i_dragonscale_green]
+ID=i_dragonscale
+NAME=green dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=Green Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_green
+
+[ITEMDEF i_dragonscale_red]
+ID=i_dragonscale
+NAME=red dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=Red Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_red
+
+[ITEMDEF i_dragonscale_yellow]
+ID=i_dragonscale
+NAME=yellow dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=Yellow Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_yellow
+
+[ITEMDEF i_dragonscale_white]
+ID=i_dragonscale
+NAME=white dragon scale%s
+TYPE=t_normal
+VALUE=17
+WEIGHT=0.7
+CATEGORY=Resources
+SUBSECTION=Dragon Scales
+DESCRIPTION=White Dragon Scales
+ON=@Create
+   DISPID={026b1 026b6}
+   COLOR=color_dragonscale_white

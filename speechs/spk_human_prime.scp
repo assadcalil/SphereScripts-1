@@ -1,0 +1,52 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[SPEECH spk_human_prime]
+// If i am human - check these speech responses first.
+
+ON=*
+	// Whenever I hear anything check this first.
+	IF ( <flags>& statf_war )	// I'm in war mode.
+		IF ( <memory>&034 ) // Speaker is evil to me // (MEMORY_FIGHT|MEMORY_HARMEDBY|MEMORY_IRRITATEDBY) == 034
+			if ( Rand( 5 ))
+				return 1
+			endif
+			dorand 3
+				SAY You will not talk your way out of this
+				SAY Be quiet and fight scoundrel
+				SAY Fight me coward!
+			enddo
+		ELSE
+			if ( Rand( 2 ))
+				return 1
+			endif
+			dorand 4
+				SAY I am too busy fighting to speak with thee.
+				SAY Sorry I can't speak to you while fighting.
+				SAY Sorry I won't speak to you while fighting.
+				SAY Sorry I shouldn't speak to you while fighting.
+			enddo
+		ENDIF
+		RETURN 1	// process no more.
+	ENDIF
+	RETURN 0	// process more.
+
+ON=*train*
+ON=*teach*
+	// Can they teach skills ?
+	if ( <NPC> >= brain_human ) && ( <NPC> <= brain_animal_trainer ) && ( <NPC> != brain_guard )
+		train <args>
+		return 1	// process no more.
+	endif
+	return 0	// process more.
+
+ON=*hire*
+	// Can i be hired ?
+	if ( <typedef.hiredaywage> )
+		hire
+		return 1	// process no more.
+	endif
+	return 0	// process more.
+
+[EOF]

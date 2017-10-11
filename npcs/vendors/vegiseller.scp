@@ -1,0 +1,171 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_vegiseller]
+ID=c_man
+NAME=#NAMES_HUMANMALE the vegetable seller
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Vegetable Seller (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   FENCING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_VEGSELLER
+   BUY=VENDOR_B_VEGSELLER
+
+[CHARDEF c_vegiseller_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the vegetable seller
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Vegetable Seller (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   FENCING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+   ITEM=random_hats
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+   SELL=VENDOR_S_VEGSELLER
+   BUY=VENDOR_B_VEGSELLER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_VEGSELLER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Vegetable Seller
+SELL=i_EGGS_FRESH,{6 26}
+SELL=i_pitcher_milk,{6 26}
+SELL=i_fruit_lettuce,{6 26}
+SELL=i_fruit_cabbage,{6 26}
+SELL=i_fruit_cantaloupe,{6 26}
+SELL=i_fruit_carrot,{6 26}
+SELL=i_fruit_honeydewmelon,{6 26}
+SELL=i_fruit_squash,{6 26}
+SELL=i_fruit_onion,{6 26}
+SELL=i_fruit_pumpkin,{6 26}
+SELL=i_fruit_gourd_yellow,{6 26}
+SELL=i_fruit_turnip,{6 26}
+SELL=i_fruit_watermelon,{6 26}
+SELL=i_fruit_corn,{6 26}
+SELL=i_fruit_peach,{6 26}
+SELL=i_fruit_pear,{6 26}
+SELL=i_fruit_lemon,{6 26}
+SELL=i_fruit_lime,{6 26}
+SELL=i_fruit_grapes,{6 26}
+SELL=i_fruit_apple,{6 26}
+SELL=i_hay_sheaf,{6 26}
+
+[TEMPLATE VENDOR_B_VEGSELLER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Vegetable Seller
+BUY=i_fruit_cabbage,{6 26}
+BUY=i_fruit_cantaloupe,{6 26}
+BUY=i_fruit_carrot,{6 26}
+BUY=i_fruit_honeydewmelon,{6 26}
+BUY=i_fruit_squash,{6 26}
+BUY=i_fruit_lettuce,{6 26}
+BUY=i_fruit_onion,{6 26}
+BUY=i_fruit_pumpkin,{6 26}
+BUY=i_fruit_gourd_yellow,{6 26}
+BUY=i_fruit_turnip,{6 26}
+BUY=i_fruit_watermelon,{6 26}
+BUY=i_fruit_corn,{6 26}
+BUY=i_EGGS_FRESH,{6 26}
+BUY=i_pitcher_milk,{6 26}
+BUY=i_fruit_peach,{6 26}
+BUY=i_fruit_pear,{6 26}
+BUY=i_fruit_lemon,{6 26}
+BUY=i_fruit_lime,{6 26}
+BUY=i_fruit_grapes,{6 26}
+BUY=i_fruit_apple,{6 26}
+BUY=i_hay_sheaf,{6 26}
+
+[EOF]

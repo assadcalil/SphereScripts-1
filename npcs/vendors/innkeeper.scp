@@ -1,0 +1,213 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_innkeeper]
+ID=c_man
+NAME=#NAMES_HUMANMALE the innkeeper
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Innkeeper (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   CAMPING={50.0 75.0}
+   COOKING={20.0 30.0}
+   FORENSICS={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   SNOOPING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAILORING={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_sword_long_b
+   ITEM=random_shield
+
+   SELL=VENDOR_S_INNKEEPER
+   BUY=VENDOR_B_INNKEEPER
+
+[CHARDEF c_innkeeper_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the innkeeper
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Innkeeper (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   CAMPING={50.0 75.0}
+   COOKING={20.0 30.0}
+   FORENSICS={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   SNOOPING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAILORING={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats,1,R5
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_sword_long_b
+   ITEM=random_shield
+
+   SELL=VENDOR_S_INNKEEPER
+   BUY=VENDOR_B_INNKEEPER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_INNKEEPER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Innkeeper
+SELL=i_bottle_ale,{5 25}
+SELL=i_BOTTLE_WINE,{5 25}
+SELL=i_bottle_liquor,{5 25}
+SELL=i_JUG_CIDER,{5 25}
+SELL=i_pitcher_milk,{5 25}
+SELL=i_pitcher_ale,{5 25}
+SELL=i_pitcher_cider,{5 25}
+SELL=i_pitcher_liquor,{5 25}
+SELL=i_pitcher_wine,{5 25}
+SELL=i_pitcher_water,{5 25}
+SELL=i_bread_loaf,{5 25}
+SELL=i_cheese_wheel,{5 25}
+SELL=i_bird_cooked,{5 25}
+SELL=i_lamb_leg,{5 25}
+SELL=i_chicken_leg,{5 25}
+SELL=i_ribs_cooked,{5 25}
+SELL=i_bowl_wood_carrots,{5 25}
+SELL=i_bowl_wood_corn,{5 25}
+SELL=i_bowl_wood_lettuce,{5 25}
+SELL=i_bowl_wood_peas,{5 25}
+SELL=i_bowl_pewter_potatoes,{5 25}
+SELL=i_bowl_stew_lg,{5 25}
+SELL=i_bowl_TOMATO_SOUP,{5 25}
+SELL=i_pie_baked,{5 25}
+SELL=i_fruit_peach,{5 25}
+SELL=i_fruit_pear,{5 25}
+SELL=i_fruit_grapes,{5 25}
+SELL=i_fruit_apple,{5 25}
+SELL=i_fruit_banana,{5 25}
+SELL=i_torch,{5 25}
+SELL=i_candle,{5 25}
+SELL=i_backpack,{5 25}
+SELL=i_chessboard,{5 25}
+SELL=i_checkerboard,{5 25}
+SELL=i_backgammon_game,{5 25}
+SELL=i_dice_cup,{5 25}
+SELL=i_deed_vendor,{5 25}
+
+[TEMPLATE VENDOR_B_INNKEEPER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Innkeeper
+BUY=i_deed_vendor,{5 25}
+BUY=i_chessboard,{5 25}
+BUY=i_checkerboard,{5 25}
+BUY=i_dice_cup,{5 25}
+BUY=i_backgammon_game,{5 25}
+BUY=i_bottle_ale,{5 25}
+BUY=i_bottle_wine,{5 25}
+BUY=i_bottle_liquor,{5 25}
+BUY=i_JUG_CIDER,{5 25}
+BUY=i_pitcher_ale,{5 25}
+BUY=i_pitcher_cider,{5 25}
+BUY=i_pitcher_glass,{5 25}
+BUY=i_pitcher_liquor,{5 25}
+BUY=i_pitcher_milk,{5 25}
+BUY=i_pitcher_wine,{5 25}
+BUY=i_pitcher_water,{5 25}
+BUY=i_bread_loaf,{5 25}
+BUY=i_cheese_wheel,{5 25}
+BUY=I_BIRD_RAW,{5 25}
+BUY=i_lamb_leg_raw,{5 25}
+BUY=i_ribs_raw,{5 25}
+BUY=i_ribs_cooked,{5 25}
+BUY=i_pie_baked,{5 25}
+BUY=i_fruit_peach,{5 25}
+BUY=i_fruit_pear,{5 25}
+BUY=i_fruit_grapes,{5 25}
+BUY=i_fruit_apple,{5 25}
+BUY=i_fruit_banana,{5 25}
+BUY=i_torch,{5 25}
+BUY=i_candle,{5 25}
+
+[EOF]

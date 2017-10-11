@@ -1,0 +1,38 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME colors_resources_wood]
+color_l_yew        04a8
+
+////////
+//Logs//
+////////
+
+[ITEMDEF i_log_yew]
+ID=i_log
+NAME=yew log%s
+TYPE=t_log
+CATEGORY=Resources
+SUBSECTION=Wood
+DESCRIPTION=Yew Log
+
+ON=@Create
+COLOR=color_l_yew
+
+/////////
+//Board//
+/////////
+
+[ITEMDEF i_board_yew]
+ID=i_board
+NAME=Yew board%s
+TYPE=t_board
+CATEGORY=Resources
+SUBSECTION=Boards
+DESCRIPTION=Yew Board
+
+ON=@Create
+COLOR=color_l_yew
+
+[EOF]

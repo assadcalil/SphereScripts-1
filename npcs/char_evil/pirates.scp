@@ -1,0 +1,91 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+
+/////////////
+// Pirates //
+/////////////
+
+[CHARDEF c_pirate_m]
+ID=c_man
+NAME=#NAMES_HUMANMALE the pirate
+DAM=6,18
+CATEGORY=Evil NPC
+SUBSECTION=Outlaws & Rogues
+DESCRIPTION=Pirate (male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_thief
+   FAME={1000 1499}
+   KARMA={-3000 -3499}
+   STR={86 100}
+   DEX={86 100}
+   INT={71 85}
+   FENCING={25.0 48.0}
+   MACEFIGHTING={25.0 48.0}
+   MAGICRESISTANCE={65.0 88.0}
+   PARRYING={65.0 88.0}
+   SWORDSMANSHIP={55.0 78.0}
+   TACTICS={65.0 88.0}
+   WRESTLING={45.0 68.0}
+   RESCOLD={1 10}
+   RESENERGY={1 10}
+   RESFIRE={1 10}
+   RESPOISON={1 10}
+   ITEMNEWBIE=RANDOM_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=RANDOM_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=i_shirt_plain
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_cutlass
+   //ITEM=i_map_treasure,1,R50
+   ITEM=random_coin_purse
+
+[CHARDEF c_pirate_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the pirate
+DAM=6,18
+CATEGORY=Evil NPC
+SUBSECTION=Outlaws & Rogues
+DESCRIPTION=Pirate (female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_thief
+   FAME={1000 1499}
+   KARMA={-3000 -3499}
+   STR={86 100}
+   DEX={86 100}
+   INT={71 85}
+   FENCING={25.0 48.0}
+   MACEFIGHTING={25.0 48.0}
+   MAGICRESISTANCE={65.0 88.0}
+   PARRYING={65.0 88.0}
+   SWORDSMANSHIP={55.0 78.0}
+   TACTICS={65.0 88.0}
+   WRESTLING={45.0 68.0}
+   RESCOLD={1 10}
+   RESENERGY={1 10}
+   RESFIRE={1 10}
+   RESPOISON={1 10}
+   ITEMNEWBIE=RANDOM_female_hair
+   COLOR=colors_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=i_shirt_plain
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_cutlass
+   //ITEM=i_map_treasure,1,R50
+   ITEM=random_coin_purse
+

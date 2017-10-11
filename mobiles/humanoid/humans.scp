@@ -1,0 +1,422 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano & Thiago Calil
+VERSION=0.56d
+
+/////////////////
+//Default Human//
+/////////////////
+
+[NEWBIE MALE_DEFAULT]
+item=i_gold,1000
+item=i_book_sm
+item=i_candle
+item=i_dagger
+item=i_shirt_plain
+item=i_pants_short
+item=i_shoes_plain
+item=bag_of_magery_reagents
+
+[NEWBIE FEMALE_DEFAULT]
+item=i_gold,1000
+item=i_book_sm
+item=i_candle
+item=i_dagger
+item=i_shirt_plain
+item=i_pants_short
+item=i_shoes_plain
+item=bag_of_magery_reagents
+
+////////////////////
+//Profession Human//
+////////////////////
+
+[NEWBIE PROFESSION_WARRIOR]
+item=i_leather_tunic
+
+[NEWBIE PROFESSION_NECROMANCER]
+item=i_spellbook_necromancy
+MORE1=08981
+item=i_bone_helmet
+item=i_bone_harvester
+item=i_leather_tunic
+COLOR=02c3
+item=i_leather_sleeves
+COLOR=02c3
+item=i_leather_gloves
+COLOR=02c3
+item=i_leather_gorget
+COLOR=02c3
+item=i_leather_leggings
+COLOR=02c3
+item=i_skirt_long
+COLOR=02c3
+item=i_sandals
+COLOR=08fd
+
+[NEWBIE PROFESSION_PALADIN]
+item=i_spellbook_chivalry
+MORE1=03ff
+item=i_sword_broad
+item=i_helm_open
+item=i_platemail_gorget
+item=i_ringmail_sleeves
+item=i_ringmail_tunic
+item=i_ringmail_leggings
+item=i_boots_thigh
+COLOR=0748
+item=i_cape
+COLOR=0cf
+item=i_sash
+COLOR=0cf
+
+[NEWBIE PROFESSION_SAMURAI]
+item=i_spellbook_bushido
+item=i_scissors
+item=i_bandage,50
+item=i_hakama_shita
+COLOR=02c3
+item=i_hakama
+COLOR=02c3
+item=i_shoes_tabi
+COLOR=02c3
+item=i_hakama_tattsuke
+COLOR=022d
+item=i_bokuto
+item=i_leather_jingasa
+
+[NEWBIE PROFESSION_NINJA]
+item=i_spellbook_ninjitsu
+item=i_hat_kasa
+item=i_hakama_tattsuke
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+item=i_hakama_shita
+COLOR=02c3
+item=i_boots_tabi
+COLOR=02c3
+item=i_bomb_smoke
+item=i_tekagi
+
+/////////////////////
+// Skill templates //
+/////////////////////
+
+[NEWBIE ALCHEMY]
+item=i_bottle_empty,4
+item=i_mortar_pestle
+item=i_robe
+COLOR=colors_pink
+
+[NEWBIE ANATOMY]
+item=i_bandage,3
+item=i_robe
+COLOR=colors_yellow
+
+[NEWBIE ANIMALLORE]
+item=i_shepherds_crook
+item=i_robe
+COLOR=colors_blue
+
+[NEWBIE ARCHERY]
+item=i_arrow,25
+item=i_bow
+
+[NEWBIE ARMSLORE]
+item={i_kryss 1 i_katana 1 i_club 1}
+
+[NEWBIE BEGGING]
+item=i_staff_gnarled
+
+[NEWBIE BLACKSMITHING]
+item=i_tongs
+item=i_pickaxe
+item=i_ingot_iron,50
+item=i_apron_half
+COLOR=colors_yellow
+
+[NEWBIE BUSHIDO]
+item=i_spellbook_bushido
+item=i_hakama
+item=i_hat_kasa
+
+[NEWBIE BOWCRAFT]
+item=i_board,14
+item=i_feather,5
+item=i_arrow_shaft,5
+
+[NEWBIE CAMPING]
+item=i_bedroll
+item=i_kindling,5
+
+[NEWBIE CARPENTRY]
+item=i_board,10
+item=i_saw
+item=i_apron_half
+COLOR=colors_yellow
+
+[NEWBIE CARTOGRAPHY]
+item=i_map_blank
+item=i_map_blank
+item=i_map_blank
+item=i_map_blank
+item=i_sextant
+
+[NEWBIE COOKING]
+item=i_kindling,2
+item=i_lamb_leg_raw
+item=i_chicken_leg_raw
+item=i_fish_cut_raw
+item=i_flour_sack
+item=i_pitcher_water
+
+[NEWBIE CHIVALRY]
+item=i_spellbook_chivalry
+
+[NEWBIE DETECTINGHIDDEN]
+item=i_cape
+COLOR=0455
+
+[NEWBIE ENTICEMENT]
+item=random_instrument_human
+
+[NEWBIE EVALUATINGINTEL]
+//empty
+
+[NEWBIE FENCING]
+item=i_kryss
+
+[NEWBIE FISHING]
+item=i_fishing_pole
+COLOR=colors_yellow
+item=i_hat_floppy
+COLOR=colors_yellow
+
+[NEWBIE FORENSICS]
+//empty
+
+[NEWBIE HEALING]
+item=i_bandage,50
+item=i_scissors
+
+[NEWBIE HERDING]
+item=i_shepherds_crook
+
+[NEWBIE HIDING]
+item=i_cape
+COLOR=0455
+
+[NEWBIE INSCRIPTION]
+item=i_scroll_blank,2
+item=i_book_lg
+
+[NEWBIE itemID]
+item=i_staff_gnarled
+
+[NEWBIE LOCKPICKING]
+item=i_lockpick,20
+
+[NEWBIE LUMBERJACKING]
+item=i_hatchet
+
+[NEWBIE MACEFIGHTING]
+item=i_club
+
+[NEWBIE MAGERY]
+item=i_spellbook
+MORE1=0382a8c38		//3 spells on circle 1-4 (to enable full spellbook just set MORE1=0ffffffff and MORE2=0ffffffff)
+item=random_first_circle
+item=random_second_circle
+item=random_third_circle
+item=i_hat_wizards
+item=i_robe
+COLOR=colors_blue
+
+[NEWBIE MAGICRESISTANCE]
+//empty
+
+[NEWBIE MINING]
+item=i_pickaxe
+
+[NEWBIE MUSICIANSHIP]
+item=random_instrument_human
+
+[NEWBIE NECROMANCY]
+//empty
+
+[NEWBIE NINJITSU]
+item=i_spellbook_ninjitsu
+item=i_hakama
+COLOR=02c3
+item=i_hat_kasa
+
+[NEWBIE PARRYING]
+item=i_shield_wood
+
+[NEWBIE PEACEMAKING]
+item=random_instrument_human
+
+[NEWBIE POISONING]
+item=i_potion_poisonless,2
+
+[NEWBIE PROVOCATION]
+item=random_instrument_human
+
+[NEWBIE SNOOPING]
+item=i_lockpick,20
+
+[NEWBIE SPIRITSPEAK]
+item=i_cape
+COLOR=0455
+
+[NEWBIE STEALING]
+item=i_lockpick,20
+
+[NEWBIE SWORDSMANSHIP]
+item=i_katana
+
+[NEWBIE TACTICS]
+item=i_katana
+
+[NEWBIE TAILORING]
+item=i_cloth_bolt
+item=i_sewing_kit
+
+[NEWBIE TAMING]
+//empty
+
+[NEWBIE TASTEID]
+//empty
+
+[NEWBIE TINKERING]
+//empty
+
+[NEWBIE TRACKING]
+item=i_knife_skinning
+item=i_boots_calf
+COLOR=colors_yellow
+
+[NEWBIE VETERINARY]
+item=i_bandage,5
+item=i_scissors
+
+[NEWBIE WRESTLING]
+item=i_leather_gloves
+
+[NEWBIE THROWING]
+item=i_spellbook_mystic
+MORE1=0ab
+
+//////////////////
+//Chardef Humans//
+//////////////////
+
+[NAMES NAMES_HUMANOID_MALE]
+Male name one
+Male name two
+
+[NAMES NAMES_HUMANOID_FEMALE]
+Female name one
+Female name two
+
+[ITEMDEF 02106]
+DEFNAME=i_pet_man
+NAME=Human man
+TYPE=t_figurine
+
+[ITEMDEF 02107]
+DEFNAME=i_pet_woman
+NAME=woman
+TYPE=t_figurine
+
+[CHARDEF 0190]
+DEFNAME=c_man
+NAME=#NAMES_HUMANOID_MALE
+ICON=i_pet_man
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_MOUNT
+DAM=1,4
+//DESIRES=r_civilization,t_coin,t_gold,t_gem,t_potion
+//AVERSIONS=t_trap,e_carnivores3
+//FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=20
+//RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+//TSPEECH=spk_human_prime
+//TSPEECH=spk_human_default
+//TEVENTS=e_Human_HearUnk
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Humanoid
+SUBSECTION=Human
+DESCRIPTION=Male
+
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+
+[CHARDEF 0191]
+DEFNAME=c_woman
+NAME=#NAMES_HUMANOID_FEMALE
+ICON=i_pet_woman
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_USEHANDS|MT_EQUIP|MT_MOUNT
+DAM=1,4
+//DESIRES=r_civilization,t_coin,t_gold,t_gem,t_potion
+//AVERSIONS=t_trap,e_carnivores3
+//FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=20
+//RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+//TSPEECH=spk_human_prime
+//TSPEECH=spk_human_default
+//TEVENTS=e_Human_HearUnk
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Humanoid
+SUBSECTION=Human
+DESCRIPTION=Woman
+
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+
+[CHARDEF 0192]
+DEFNAME=c_ghost_man
+NAME=ghost
+ICON=i_pet_man
+CAN=MT_WALK|MT_RUN|MT_GHOST|MT_EQUIP
+//DESIRES=r_civilization
+//AVERSIONS=t_trap,e_carnivores3
+BLOODCOLOR=-1
+
+CATEGORY=Humanoid
+SUBSECTION=Human
+DESCRIPTION=Man Ghost
+
+ON=@Create
+   NPC=brain_human
+
+[CHARDEF 0193]
+DEFNAME=c_ghost_woman
+NAME=ghost
+ICON=i_pet_woman
+CAN=MT_WALK|MT_RUN|MT_GHOST|MT_FEMALE|MT_EQUIP
+//DESIRES=r_civilization
+//AVERSIONS=t_trap,e_carnivores3
+BLOODCOLOR=-1
+
+CATEGORY=Humanoid
+SUBSECTION=Human
+DESCRIPTION=Woman Ghost
+
+ON=@Create
+   NPC=brain_human
+
+[EOF]

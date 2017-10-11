@@ -1,0 +1,12 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 09b2]
+DEFNAME=i_bankbox
+NAME=Bank Box
+LAYER=layer_bankbox
+TYPE=t_eq_bank_box
+TDATA2=04a
+
+[EOF]

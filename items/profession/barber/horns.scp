@@ -1,0 +1,228 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 04258]
+DEFNAME=i_horn_gargoyle_male_1
+NAME=Male Horn 1
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04259]
+DEFNAME=i_horn_gargoyle_male_2
+NAME=Male Horn 2
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425a]
+DEFNAME=i_horn_gargoyle_male_3
+NAME=Male Horn 3
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425b]
+DEFNAME=i_horn_gargoyle_male_4
+NAME=Male Horn 4
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425c]
+DEFNAME=i_horn_gargoyle_male_5
+NAME=Male Horn 5
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425d]
+DEFNAME=i_horn_gargoyle_male_6
+NAME=Male Horn 6
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425e]
+DEFNAME=i_horn_gargoyle_male_7
+NAME=Male Horn 7
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425f]
+DEFNAME=i_horn_gargoyle_male_8
+NAME=Male Horn 8
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 8
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04260]
+//FIXME: what is this?
+
+[ITEMDEF 04261]
+DEFNAME=i_horn_gargoyle_female_1
+NAME=Female Horn 1
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04262]
+DEFNAME=i_horn_gargoyle_female_2
+NAME=Female Horn 2
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04273]
+DEFNAME=i_horn_gargoyle_female_3
+NAME=Female Horn 3
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04274]
+DEFNAME=i_horn_gargoyle_female_4
+NAME=Female Horn 4
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04275]
+DEFNAME=i_horn_gargoyle_female_5
+NAME=Female Horn 5
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042aa]
+DEFNAME=i_horn_gargoyle_female_6
+NAME=Female Horn 6
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ab]
+DEFNAME=i_horn_gargoyle_female_7
+NAME=Female Horn 7
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ad]
+DEFNAME=i_horn_gargoyle_facial_1
+NAME=Male Facial Horn 1
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Facial Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ae]
+DEFNAME=i_horn_gargoyle_facial_2
+NAME=Male Facial Horn 2
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Facial Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042af]
+DEFNAME=i_horn_gargoyle_facial_3
+NAME=Male Facial Horn 3
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Facial Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042b0]
+DEFNAME=i_horn_gargoyle_facial_4
+NAME=Male Facial Horn 4
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Facial Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042b1]
+DEFNAME=i_horn_gargoyle_female_8
+NAME=Female Horn 8
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 8
+ON=@Create
+   ATTR=attr_newbie
+
+[EOF]

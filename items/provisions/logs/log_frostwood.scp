@@ -1,0 +1,38 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME colors_resources_wood]
+color_l_frostwood  047f
+
+////////
+//Logs//
+////////
+
+[ITEMDEF i_log_frostwood]
+ID=i_log
+NAME=frostwood log%s
+TYPE=t_log
+CATEGORY=Resources
+SUBSECTION=Wood
+DESCRIPTION=Frostwood Log
+
+ON=@Create
+COLOR=color_l_frostwood
+
+/////////
+//Board//
+/////////
+
+[ITEMDEF i_board_frostwood]
+ID=i_board
+NAME=frostwood board%s
+TYPE=t_board
+CATEGORY=Resources
+SUBSECTION=Boards
+DESCRIPTION=Frostwood Board
+
+ON=@Create
+COLOR=color_l_frostwood
+
+[EOF]

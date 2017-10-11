@@ -1,0 +1,288 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_provis]
+ID=c_man
+NAME=#NAMES_HUMANMALE the provisioner
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Provisioner (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={20.0 30.0}
+   CARTOGRAPHY={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   ITEMID={50.0 75.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_red
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_sword_normal
+
+   SELL=VENDOR_S_PROVISIONER
+   BUY=VENDOR_B_PROVISIONER
+
+[CHARDEF c_provis_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the provisioner
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Provisioner (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={20.0 30.0}
+   CARTOGRAPHY={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   ITEMID={50.0 75.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_light
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_hats
+   COLOR=colors_red
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_sword_normal
+
+   SELL=VENDOR_S_PROVISIONER
+   BUY=VENDOR_B_PROVISIONER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_PROVISIONER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Provisioner
+SELL=i_arrow,{40 100}
+SELL=i_xbolt,{40 100}
+SELL=i_backpack,{4 50}
+SELL=i_pouch,{4 50}
+SELL=i_bag,{4 80}
+SELL=i_candle,{10 40}
+SELL=i_torch,{10 40}
+SELL=i_lantern,{10 40}
+SELL=i_oil_flask,{10 40}
+SELL=i_lockpick,{20 80}
+SELL=i_hat_floppy,{5 28}
+COLOR=colors_all
+SELL=i_hat_wide_brim,{5 28}
+COLOR=colors_all
+SELL=i_cap,{5 28}
+COLOR=colors_all
+SELL=i_hat_straw_tall,{5 28}
+COLOR=colors_all
+SELL=i_hat_straw,{5 28}
+COLOR=colors_all
+SELL=i_hat_wizards,{5 28}
+COLOR=colors_all
+SELL=i_leather_cap,{5 28}
+COLOR=colors_all
+SELL=i_hat_feather,{5 28}
+COLOR=colors_all
+SELL=i_hat_tricorne,{5 28}
+COLOR=colors_all
+SELL=i_bandana,{5 28}
+COLOR=colors_all
+SELL=i_skull_cap,{5 28}
+COLOR=colors_all
+SELL=i_bread_loaf,{5 38}
+SELL=i_lamb_leg,{5 38}
+SELL=i_chicken_leg,{5 38}
+SELL=i_bird_cooked,{5 38}
+SELL=i_bottle_ale,{5 38}
+SELL=i_bottle_wine,{5 38}
+SELL=i_bottle_liquor,{5 38}
+SELL=i_JUG_CIDER,{5 38}
+SELL=i_fruit_pear,{5 38}
+SELL=i_fruit_apple,{5 38}
+SELL=i_reag_garlic,{5 38}
+SELL=i_reag_ginseng,{5 38}
+SELL=i_BOTTLE_EMPTY,{5 38}
+SELL=i_BOOK_SM,{5 38}
+SELL=i_BOOK_LG,{5 38}
+SELL=i_Box_Wood,{5 38}
+SELL=i_key_copper,{5 38}
+SELL=i_bedroll,{5 38}
+SELL=i_kindling,{5 38}
+SELL=i_deed_GUILDSTONE,{5 38}
+SELL=i_chessboard,{5 38}
+SELL=i_checkerboard,{5 38}
+SELL=i_backgammon_game,{5 38}
+SELL=i_dice_cup,{5 38}
+
+[TEMPLATE VENDOR_B_PROVISIONER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Provisioner
+BUY=i_chessboard,{5 38}
+BUY=i_checkerboard,{5 38}
+BUY=i_dice_cup,{5 38}
+BUY=i_backgammon_game,{5 38}
+BUY=i_kindling,{5 38}
+BUY=i_bottle_empty,{5 38}
+BUY=i_Box_Wood,{5 38}
+BUY=i_key_copper,{5 38}
+BUY=i_arrow,{5 38}
+BUY=i_xbolt,{5 38}
+BUY=i_pouch,{5 38}
+BUY=i_backpack,{5 38}
+BUY=i_bag,{5 38}
+BUY=i_candle,{5 38}
+BUY=i_torch,{5 38}
+BUY=i_lantern,{5 38}
+BUY=i_oil_flask,{5 38}
+BUY=i_lockpick,{5 38}
+BUY=i_lockpick_set,{5 38}
+BUY=i_hat_floppy,{5 38}
+BUY=i_hat_wide_brim,{5 38}
+BUY=i_cap,{5 38}
+BUY=i_hat_straw_tall,{5 38}
+BUY=i_hat_straw,{5 38}
+BUY=i_hat_wizards,{5 38}
+BUY=i_leather_cap,{5 38}
+BUY=i_hat_feather,{5 38}
+BUY=i_hat_tricorne,{5 38}
+BUY=i_bandana,{5 38}
+BUY=i_skull_cap,{5 38}
+BUY=i_ingot_iron,{5 38}
+BUY=i_ingot_gold,{5 38}
+BUY=i_ingot_silver,{5 38}
+BUY=i_book_sm,{5 38}
+BUY=i_book_lg,{5 38}
+BUY=i_book_sm_pub,{5 38}
+BUY=i_book_lg_pub,{5 38}
+BUY=i_clock,{5 38}
+BUY=i_clock_parts,{5 38}
+BUY=i_axle_and_gears,{5 38}
+BUY=i_gears,{5 38}
+BUY=i_hinge,{5 38}
+BUY=i_sextant,{5 38}
+BUY=i_sextant_parts,{5 38}
+BUY=i_sticks,{5 38}
+BUY=i_springs,{5 38}
+BUY=i_key_ring,{5 38}
+BUY=i_log,{5 38}
+BUY=i_board,{5 38}
+BUY=i_sewing_kit,{5 38}
+BUY=i_knife_draw,{5 38}
+BUY=i_froe,{5 38}
+BUY=i_inshave,{5 38}
+BUY=i_scorp,{5 38}
+BUY=i_scissors,{5 38}
+BUY=i_tongs,{5 38}
+BUY=i_saw_dovetail,{5 38}
+BUY=i_saw,{5 38}
+BUY=i_hammer,{5 38}
+BUY=i_hammer_smith,{5 38}
+BUY=i_hammer_sledge,{5 38}
+BUY=i_shovel,{5 38}
+BUY=i_plane_moulding,{5 38}
+BUY=i_plane_smoothing,{5 38}
+BUY=i_plane_jointing,{5 38}
+BUY=i_deed_GUILDSTONE,10 20
+
+BUY=Vendor_B_Gems
+BUY=VENDOR_B_ARMORER_PLATE
+BUY=VENDOR_B_ARMORER_LEATHER
+BUY=VENDOR_B_ARMORER_SHIELDS
+BUY=VENDOR_B_ARMORER_CHAIN
+BUY=VENDOR_B_ARMORER_RING
+BUY=VENDOR_B_WEAPONS_BLADED
+BUY=VENDOR_B_WEAPONS_BLUNT
+BUY=VENDOR_B_BOWYER
+
+//GEMS
+
+[TEMPLATE VENDOR_B_GEMS]
+BUY=i_gem_star_sapphire,{5 38}
+BUY=i_gem_emerald,{5 38}
+BUY=i_gem_sapphire,{5 38}
+BUY=i_gem_ruby,{5 38}
+BUY=i_gem_citrine,{5 38}
+BUY=i_gem_amethyst,{5 38}
+BUY=i_gem_tourmaline,{5 38}
+BUY=i_gem_amber,{5 38}
+BUY=i_gem_diamond,{5 38}
+BUY=i_crystal_of_com_t1,{3 13}
+BUY=i_crystal_of_com_t2,{3 13}
+BUY=i_crystal_of_com_t3,{3 13}
+
+[EOF]

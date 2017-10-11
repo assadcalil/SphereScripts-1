@@ -1,0 +1,194 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_cook]
+ID=c_man
+NAME=#NAMES_HUMANMALE the cook
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Cook (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ALCHEMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   COOKING={50.0 75.0}
+   FISHING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   POISONING={25.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_apron_full
+   COLOR=colors_neutral
+   ITEM=i_bandana
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_cleaver_meat
+
+   SELL=VENDOR_S_COOK
+   BUY=VENDOR_B_COOK
+
+[CHARDEF c_cook_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the cook
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Cook (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ALCHEMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   COOKING={50.0 75.0}
+   FISHING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   POISONING={25.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=i_apron_full
+   COLOR=colors_neutral
+   ITEM=i_bandana
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_cleaver_meat
+
+   SELL=VENDOR_S_COOK
+   BUY=VENDOR_B_COOK
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_COOK]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Cook
+SELL=i_bread_french,{4 24}
+SELL=i_bread_loaf,{4 24}
+SELL=i_pie_baked,{4 24}
+SELL=i_cake,{4 24}
+SELL=i_muffin,{4 24}
+SELL=i_cheese_wheel,{4 24}
+SELL=i_bird_cooked,{4 24}
+SELL=i_lamb_leg,{4 24}
+SELL=i_chicken_leg,{4 24}
+SELL=i_bowl_wood_carrots,{4 24}
+SELL=i_bowl_wood_corn,{4 24}
+SELL=i_bowl_wood_lettuce,{4 24}
+SELL=i_bowl_wood_peas,{4 24}
+SELL=i_bowl_pewter_potatoes,{4 24}
+SELL=i_bowl_stew_lg,{4 24}
+SELL=i_bowl_TOMATO_SOUP,{4 24}
+SELL=i_pig_roast,{4 24}
+SELL=i_FLOUR_SACK,{4 24}
+SELL=i_jar_honey,{4 24}
+
+[TEMPLATE VENDOR_B_COOK]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Cook
+BUY=i_kindling,{4 24}
+BUY=i_FLOUR_SACK,{4 24}
+BUY=i_jar_honey,{4 24}
+BUY=i_fish_cut_raw,{4 24}
+BUY=i_fish_small,{4 24}
+BUY=i_fish_big_1,{4 24}
+BUY=i_fish_big_2,{4 24}
+BUY=i_fish_big_3,{4 24}
+BUY=i_fish_big_4,{4 24}
+BUY=i_ribs_raw,{4 24}
+BUY=i_bird_raw,{4 24}
+BUY=i_bread_loaf,{4 24}
+BUY=i_cheese_wheel,{4 24}
+BUY=i_fruit_cabbage,{4 24}
+BUY=i_fruit_lettuce,{4 24}
+BUY=i_fruit_onion,{4 24}
+BUY=i_pitcher_milk,{4 24}
+BUY=i_fruit_watermelon,{4 24}
+BUY=i_EGGS_FRESH,{4 24}
+BUY=i_fruit_cantaloupe,{4 24}
+BUY=i_fruit_carrot,{4 24}
+BUY=i_fruit_honeydewmelon,{4 24}
+BUY=i_fruit_squash,{4 24}
+BUY=i_fruit_pumpkin,{4 24}
+BUY=i_fruit_gourd_yellow,{4 24}
+BUY=i_fruit_turnip,{4 24}
+BUY=i_fruit_corn,{4 24}
+BUY=i_fruit_peach,{4 24}
+BUY=i_fruit_pear,{4 24}
+BUY=i_fruit_lemon,{4 24}
+BUY=i_fruit_lime,{4 24}
+BUY=i_fruit_grapes,{4 24}
+BUY=i_fruit_apple,{4 24}
+BUY=i_fruit_banana,{4 24}
+
+[EOF]

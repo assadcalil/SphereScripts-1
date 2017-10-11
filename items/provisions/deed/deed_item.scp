@@ -1,0 +1,155 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+/////////////
+//Deed Item//
+/////////////
+
+[ITEMDEF i_deed_bboardw]
+ID=i_deed
+NAME=Deed to a Bulletin Board W
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Bulletin Board W
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_bulletin_board
+
+[ITEMDEF i_deed_bboardn]
+ID=i_deed
+NAME=Deed to a Bulletin Board N
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Bulletin Board N
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_bulletin_board_2
+
+[ITEMDEF i_deed_spinwheel]
+ID=i_deed
+NAME=Deed to a Spinning Wheel
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Spinning Wheel
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_spinning_wheel
+
+[ITEMDEF i_deed_forge]
+ID=i_deed
+NAME=Deed to a Forge
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Forge
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_forge
+
+[ITEMDEF i_deed_anvil]
+ID=i_deed
+NAME=Deed to an Anvil
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Anvil
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_anvil
+
+[ITEMDEF i_deed_dummyw]
+ID=i_deed
+NAME=Deed to a Training Dummy
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Training Dummy
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_training_dummy
+
+[ITEMDEF i_deed_archbutte]
+ID=i_deed
+NAME=Deed to an Archery Butte
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Archery Butte
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=i_archery_butte
+
+[ITEMDEF i_deed_fount_br]
+ID=i_deed
+NAME=Deed to a Brown Fountain
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=Brown Fountain
+ON=@Create
+   MORE=i_multi_fount_brown
+
+[ITEMDEF i_deed_fount_wh]
+ID=i_deed
+NAME=Deed to a White Fountain
+CATEGORY=Provisions - Deeds
+SUBSECTION=Item Deeds
+DESCRIPTION=White Fountain
+ON=@Create
+   MORE=i_multi_fount_white
+
+
+
+[ITEMDEF i_deed_scaffold_and_trailer]
+ID=i_deed
+NAME=Deed to a Scaffold and Trailer
+CATEGORY=Provisions - Deeds
+SUBSECTION=Misc
+DESCRIPTION=Deed to Scaffold and Trailer
+ON=@Create
+   MORE=m_scaffold_and_trailer
+
+[ITEMDEF i_deed_forge_bellow]
+ID=i_deed
+NAME=Deed to a Large Forge with Bellow
+TYPE=t_deed
+CATEGORY=Provisions - Deeds
+SUBSECTION=Multi Item Deeds
+DESCRIPTION=Large Forge with Bellow
+ON=@Create
+   MORE=i_multi_forge_bellow
+
+[ITEMDEF i_deed_bearskin_rug]
+ID=i_deed
+NAME=Deed to a Bearskin Rug
+TYPE=t_deed
+CATEGORY=Provisions - Deeds
+SUBSECTION=Multi Item Deeds
+DESCRIPTION=Bearskin Rug
+ON=@Create
+   MORE=i_multi_bearskin_rug
+
+[ITEMDEF i_deed_polarbear_rug]
+ID=i_deed
+NAME=Deed to a Polar Bearskin Rug
+TYPE=t_deed
+CATEGORY=Provisions - Deeds
+SUBSECTION=Multi Item Deeds
+DESCRIPTION=Polar Bearskin Rug
+ON=@Create
+   MORE=i_multi_polarbear_rug
+
+[ITEMDEF i_deed_gardenshed_south]
+ID=i_deed
+NAME=Deed to a Garden Shed
+TYPE=t_deed
+CATEGORY=Provisions - Deeds
+SUBSECTION=Multi Item Deeds
+DESCRIPTION=Garden Shed
+ON=@Create
+   MORE=i_multi_gardenshed_south
+
+[EOF]

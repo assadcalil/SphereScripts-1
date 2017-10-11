@@ -1,0 +1,16 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME items_random_wearables]
+random_jewelry         { random_necklace 1 random_bracelets 1 random_earrings 1 random_rings 1 }
+random_jewelry_gargoyle { i_necklace_gargoyle 1 i_bracelet_gargoyle 1 i_ring_gargoyle 1 i_earrings_gargoyle 1 }
+random_necklace        { i_necklace_metal_beads 1 i_necklace_silver_beads 1 i_necklace_gold_beads 1 i_necklace_gold 1 i_necklace_silver 1 i_necklace_gargoyle 1 }
+random_bracelets       { i_bracelet_gold 1 i_bracelet_silver 1 i_bracelet_gargoyle 1 }
+random_rings           { i_ring_gold 1 i_ring_silver 1 i_ring_gargoyle 1 }
+random_earrings        { i_earrings_gold 1 i_earrings_silver 1 i_earrings_gargoyle 1 }
+
+random_clothing        { random_footwear_all 1 random_pants_all 1 random_shirts_all 1 random_headgear_all 1 random_skirts_all 1 random_aprons_all 1 random_tunics_all 1 random_robes_all 1 random_capes_all 1 }
+random_wearables       { random_clothing 1 random_jewelry 1 }
+
+[EOF]

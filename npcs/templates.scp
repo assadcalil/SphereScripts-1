@@ -1,0 +1,85 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME items_other]
+random_light           { i_candle 1 i_torch 1 i_lantern 1 }
+random_fishing_junk    { i_fishing_weight 1 i_fishing_pole 1 i_fish_cut_raw 1 i_fish_raw_head 1 i_fish_small 1 i_fish_big_1 1 i_fish_big_2 1 i_fish_big_3 1 i_fish_big_4 1 }
+
+[DEFNAME items_misc]
+random_instrument         { random_instrument_human 1 random_instrument_gargish 1 }
+random_instrument_human   { i_drum 1 i_tambourine 1 i_tambourine_tas 1 i_harp_large 1 i_lyre 1 i_lute 1 i_flute_bamboo 1 }
+random_instrument_gargish { i_aud_char 1 i_harp_gargoyle 1 i_lute_gargoyle 1 i_musical_instrument 1 i_drum_gargoyle 1 i_flute_gargoyle 1 }
+
+[DEFNAME items_clothing]
+//layer_shoes
+random_footwear_all    { i_boots_calf 1 i_sandals 1 i_shoes_plain 1 i_boots_thigh 1 i_boots_fur 1 i_shoes_tabi 1 i_boots_tabi 1 i_elven_boots 1 }
+random_footwear_human  { i_boots_calf 1 i_sandals 1 i_shoes_plain 1 i_boots_thigh 1 i_boots_fur 1 i_shoes_tabi 1 i_boots_tabi 1 }
+random_footwear_elven    i_elven_boots
+random_footwear_gargoyle i_gargish_leather_talons
+random_boots_all       { i_boots_calf 1 i_boots_thigh 1 i_boots_fur 1 i_boots_tabi 1 i_elven_boots 1 }
+random_boots_human     { i_boots_calf 1 i_boots_thigh 1 i_boots_fur 1 i_boots_tabi 1 }
+random_boots_elven       i_elven_boots
+random_shoes           { i_sandals 1 i_shoes_plain 1 i_shoes_tabi 1 }
+
+//layer_pants
+random_pants_all       { i_pants_short 1 i_pants_long 1 i_hakama_tattsuke 1 i_elven_pants 1 i_elven_pants 1 i_gargish_cloth_leggings_female 1 i_gargish_cloth_leggings 1 }
+random_pants_human     { i_pants_short 1 i_pants_long 1 i_hakama_tattsuke 1 }
+random_pants_elven       i_elven_pants
+random_pants_gargoyle  { i_gargish_cloth_leggings_female 1 i_gargish_leather_leggings_female 1 i_gargish_cloth_kilt_female 1 i_gargish_leather_kilt_female 1 i_gargish_cloth_leggings 1 i_gargish_leather_leggings 1 i_gargish_cloth_kilt 1 i_gargish_leather_kilt 1 i_gargish_leather_belt 1 }
+
+//layer_shirt
+random_shirts_all      { i_shirt_plain 1 i_shirt_fancy 1 i_shirt_checkered 1 i_elven_shirt 1 i_elven_shirt_female 1 }
+random_shirts_human    { i_shirt_plain 1 i_shirt_fancy 1 i_shirt_checkered 1 }
+random_shirts_elven    { i_elven_shirt 1 i_elven_shirt_female 1 }
+random_shirts_gargoyle { i_gargish_cloth_chest_female 1 i_gargish_cloth_chest 1 i_gargish_leather_wings 1 i_gargish_cloth_wings 1 i_gargish_sash_female 1 i_gargish_sash 1 }
+
+//layer_helm
+random_headgear_all    { i_mask_orc 1 i_bandana 1 i_skull_cap 1 i_mask_bear 1 i_mask_deer 1 i_mask_blue 1 i_mask_tribal_red 1 i_hat_floppy 1 i_hat_wide_brim 1 i_cap 1 i_hat_straw_tall 1 i_hat_straw 1 i_hat_wizards 1 i_bonnet 1 i_hat_feather 1 i_hat_tricorne 1 i_hat_jester 1 i_hat_kasa 1 i_hood_ninja 1 i_helm_garland 1 i_helm_circlet1 1 i_helm_circlet2 1 i_helm_circlet3 1 }
+random_headgear_human  { i_mask_orc 1 i_bandana 1 i_skull_cap 1 i_mask_bear 1 i_mask_deer 1 i_mask_blue 1 i_mask_tribal_red 1 i_hat_floppy 1 i_hat_wide_brim 1 i_cap 1 i_hat_straw_tall 1 i_hat_straw 1 i_hat_wizards 1 i_bonnet 1 i_hat_feather 1 i_hat_tricorne 1 i_hat_jester 1 i_hat_kasa 1 i_hood_ninja 1 }
+random_headgear_elven  { i_helm_garland 1 i_helm_circlet1 1 i_helm_circlet2 1 i_helm_circlet3 1 }
+random_hats            { i_hat_floppy 1 i_hat_wide_brim 1 i_cap 1 i_hat_straw_tall 1 i_hat_straw 1 i_hat_wizards 1 i_bonnet 1 i_hat_feather 1 i_hat_tricorne 1 i_hat_jester 1 i_bandana 1 i_skull_cap 1 i_hat_kasa 1 i_helm_garland 1 }
+random_masks           { i_mask_orc 1 i_mask_bear 1 i_mask_deer 1 i_mask_blue 1 i_mask_tribal_red 1 i_hood_ninja 1 }
+
+//layer_skirt
+random_skirts_all      { i_skirt_long 1 i_skirt_short 1 i_kilt 1 i_sarong_fur 1 i_hakama 1 i_gargish_cloth_kilt_female 1 i_gargish_cloth_kilt 1 }
+random_skirts_human    { i_skirt_long 1 i_skirt_short 1 i_kilt 1 i_sarong_fur 1 i_hakama 1 }
+random_skirts_gargoyle { i_gargish_cloth_kilt_female 1 i_gargish_leather_kilt_female 1 i_gargish_cloth_kilt 1 i_gargish_leather_kilt 1 }
+
+//layer_half_apron
+random_aprons_all      { i_apron_half 1 i_belt_ninja_leather 1 i_obi 1 i_woodland_belt 1 }
+random_aprons_human    { i_apron_half 1 i_belt_ninja_leather 1 i_obi 1 }
+random_aprons_elven      i_woodland_belt
+random_aprons_gargoyle   i_gargish_apron
+
+//layer_arms
+random_arms_gargoyle   { i_gargish_cloth_arms_female 1 i_gargish_leather_arms_female 1 i_gargish_cloth_arms 1 i_gargish_leather_arms 1 }
+
+//layer_chest
+random_chests_human    i_jacket_ninja
+random_chests_gargoyle { i_gargish_cloth_chest_female 1 i_gargish_leather_chest_female 1 i_gargish_cloth_chest 1 i_gargish_leather_chest 1 }
+
+//layer_tunic 
+random_tunics_all      { i_apron_full 1 i_sash 1 i_doublet 1 i_jester_suit 1 i_tunic 1 i_surcoat 1 i_shirt_formal 1 i_jinbaori 1 }
+random_tunics_manly    { i_sash 1 i_doublet 1 i_tunic 1 i_surcoat 1 i_shirt_formal 1 i_jinbaori 1 }
+
+//layer_robe  
+random_robes_all       { i_dress_full 1 i_dress_plain 1 i_robe 1 i_dress_gilded 1 i_robe2 1 i_dress_fancy2 1 i_dress_fancy3 1 i_dress_long 1 i_kimono_male 1 i_kimono_female2 1 i_kamishimo 1 i_hakama_shita 1 i_elven_male_robe1 1 i_elven_male_robe2 1 }
+random_robes_human     { i_dress_full 1 i_dress_plain 1 i_robe 1 i_dress_gilded 1 i_robe2 1 i_dress_fancy2 1 i_dress_fancy3 1 i_dress_long 1 i_kimono_male 1 i_kimono_female2 1 i_kamishimo 1 i_hakama_shita 1 }
+random_robes_elven     { i_elven_male_robe1 1 i_elven_male_robe2 1 }
+random_robes_gargoyle  { i_gargish_robe 1 i_gargish_robe_fancy 1 }
+random_robes_manly     { i_robe 1 i_robe2 1 i_kimono_male 1 i_kamishimo 1 i_hakama_shita 1 i_elven_male_robe1 1 i_elven_male_robe2 1 }
+random_dresses         { i_dress_full 1 i_dress_plain 1 i_dress_gilded 1 i_dress_fancy2 1 i_dress_fancy3 1 i_dress_long 1 i_kimono_female2 1 }
+
+//layer_cape  
+random_capes_all       { i_cape 1 i_cape_fur 1 }
+
+//layer_talisman
+random_talisman        { i_talisman1 1 i_talisman2 1 i_talisman3 1 i_talisman4 1 }
+
+[TEMPLATE random_coin_purse]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Random Pouch
+ITEM={ poor_pouch 16 meager_pouch 8 average_pouch 4 rich_pouch 2 loaded_pouch 1 }
+[EOF]

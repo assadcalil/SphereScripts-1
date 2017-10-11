@@ -1,0 +1,135 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_scribe]
+ID=c_man
+NAME=#NAMES_HUMANMALE the scribe
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Scribe (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   INSCRIPTION={50.0 75.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MEDITATION={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_robes_manly
+   COLOR=colors_green
+   ITEM=random_footwear_human
+   COLOR=colors_green
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+
+[CHARDEF c_scribe_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the scribe
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Scribe (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   INSCRIPTION={50.0 75.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MEDITATION={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_robes_human
+   COLOR=colors_green
+   ITEM=random_footwear_human
+   COLOR=colors_green
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_SCRIBE]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Scribe
+SELL=i_scroll_blank,{10 20}
+SELL=i_pen_and_ink,{5 10}
+SELL=i_book_sm,{5 10}
+SELL=i_book_lg,{5 10}
+SELL=i_deed_guildstone,1,R2
+
+[TEMPLATE VENDOR_B_SCRIBE]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Scribe
+BUY=i_scroll_blank,{5 10}
+BUY=i_pen_and_ink,{5 10}
+BUY=i_book_sm,{5 10}
+BUY=i_book_lg,{5 10}
+BUY=i_book_sm_pub,{5 10}
+BUY=i_book_lg_pub,{5 10}
+BUY=i_deed_guildstone,{5 10}
+BUY=i_parchment,{5 10}
+
+[EOF]

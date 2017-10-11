@@ -1,0 +1,225 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 03d86]
+DEFNAME=i_decorative_armor
+NAME=decorative armor
+TYPE=t_normal
+FLIP=1
+WEIGHT=190.0
+RESOURCES=5 i_ingot_gold,2 i_log,7 i_feather,1 i_helm_closed,1 i_platemail_arms,1 i_platemail_leggings,1 i_platemail_gorget,1 i_platemail_gloves,1 i_platemail_chest,1 i_axe_war
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Decorative Armor
+DESCRIPTION=Decorative Armor
+DUPELIST=03d87
+
+[ITEMDEF 013af]
+DEFNAME=i_axe_war
+TYPE=t_weapon_axe
+DAM=14,15
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=68
+WEIGHT=9.0
+TWOHANDS=N
+RESOURCES=11 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 48.4
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=War Axe
+CanUse=can_u_human|can_u_elf
+ReqStr=35
+TEVENTS=t_equipitem
+DUPELIST=013b0
+ON=@Create
+   HITPOINTS={36 48}
+   UsesMax=150
+
+[ITEMDEF 013b0]
+//War Axe
+DUPEITEM=013af
+
+[ITEMDEF 01415]
+DEFNAME=i_platemail_chest
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+VALUE=100
+WEIGHT=10.0
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Tunic
+CanUse=can_u_human|can_u_elf
+ReqStr=95
+TEVENTS=t_equipitem
+DUPELIST=01416
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01416]
+//platemail
+DUPEITEM=01415
+
+[ITEMDEF 01417]
+//platemail arms
+DUPEITEM=01410
+
+[ITEMDEF 01418]
+//platemail gloves
+DUPEITEM=01414
+
+[ITEMDEF 01419]
+//plate helm
+DUPEITEM=01412
+
+[ITEMDEF 0141a]
+//platemail legs
+DUPEITEM=01411
+
+[ITEMDEF 01410]
+DEFNAME=i_platemail_arms
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+VALUE=72
+WEIGHT=5.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 66.3,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Arms
+CanUse=can_u_human|can_u_elf
+ReqStr=80
+TEVENTS=t_equipitem
+DUPELIST=01417
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01411]
+DEFNAME=i_platemail_leggings
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+//LAYER=layer_legs
+VALUE=80
+WEIGHT=7.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 68.8,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Legs
+CanUse=can_u_human|can_u_elf
+ReqStr=90
+TEVENTS=t_equipitem
+DUPELIST=0141a
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01413]
+DEFNAME=i_platemail_gorget
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+VALUE=40
+WEIGHT=2.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 56.4,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Gorget
+CanUse=can_u_human|can_u_elf
+ReqStr=45
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01414]
+DEFNAME=i_platemail_gloves
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+VALUE=48
+WEIGHT=2.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 58.9,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Gloves
+CanUse=can_u_human|can_u_elf
+ReqStr=70
+TEVENTS=t_equipitem
+DUPELIST=01418
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01408]
+DEFNAME=i_helm_closed
+TYPE=t_armor
+FLIP=1
+//ARMOR=30
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Helmets
+DESCRIPTION=Close Helmet
+CanUse=can_u_human|can_u_elf
+ReqStr=55
+TEVENTS=t_equipitem
+DUPELIST=01409
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 01409]
+//close helmet
+DUPEITEM=01408
+
+[ITEMDEF 01bd1]
+DEFNAME=i_feather
+TYPE=t_feather
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Feathers (White)
+DUPELIST=0dfa,0dfb,01bd2,01bd3
+
+[ITEMDEF 01bd2]
+//feathers (3)
+DUPEITEM=01bd1

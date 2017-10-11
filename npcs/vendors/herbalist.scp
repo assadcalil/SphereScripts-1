@@ -1,0 +1,158 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_herbalist]
+ID=c_man
+NAME=#NAMES_HUMANMALE the herbalist
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Herbalist (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ALCHEMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   COOKING={20.0 30.0}
+   FENCING={20.0 30.0}
+   HEALING={20.0 30.0}
+   IMBUING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGERY={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MYSTICISM={20.0 30.0}
+   NECROMANCY={20.0 30.0}
+   SPELLWEAVING={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_pants_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_green
+   ITEM=random_hats
+   COLOR=colors_brown
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+  
+   SELL=VENDOR_S_HERBALIST_SHOP
+   BUY=VENDOR_B_HERBALIST_SHOP
+
+[CHARDEF c_herbalist_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the herbalist
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Herbalist (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   CARPENTRY={50.0 75.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MINING={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   PARRYING={20.0 30.0}
+   REMOVETRAP={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TINKERING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_green
+   ITEM=random_skirts_human
+   COLOR=colors_brown
+   ITEM=random_footwear_human
+   COLOR=colors_green
+   ITEM=random_hats
+   COLOR=colors_brown
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_dagger
+  
+   SELL=VENDOR_S_HERBALIST_SHOP
+   BUY=VENDOR_B_HERBALIST_SHOP
+   
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_HERBALIST_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=herbalist
+SELL=i_bottle_empty,{10 20}
+SELL=i_mortar_pestle,{5 10}
+SELL=i_reag_ginseng,{20 40}
+SELL=i_reag_garlic,{20 40}
+SELL=i_reag_mandrake_root,{20 40}
+SELL=i_reag_nightshade,{20 40}
+SELL=i_reag_blood_moss,{20 40}
+
+[TEMPLATE VENDOR_B_HERBALIST_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=herbalist
+BUY=i_bottle_empty,{10 20}
+BUY=i_mortar_pestle,{5 10}
+BUY=i_reag_ginseng,{20 40}
+BUY=i_reag_garlic,{20 40}
+BUY=i_reag_mandrake_root,{20 40}
+BUY=i_reag_nightshade,{20 40}
+BUY=i_reag_blood_moss,{20 40}
+
+[EOF]

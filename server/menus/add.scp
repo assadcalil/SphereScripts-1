@@ -1,0 +1,43 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+// Main start menu, used when /add with no parms are passed
+[MENU MENU_ADDITEM]
+SPHERE Main GM Menu
+ON=0 GameMaster Features
+MENU M_GMFEATURES
+ON=0 Valuables
+MENU M_ADDI_VAL
+ON=0 NPCs
+MENU M_ADDN
+ON=0 Magic Items
+MENU M_ADDI_MAGIC
+ON=0 Tools & Trades
+MENU M_ADDI_TOOLS
+ON=0 Raw Materials
+MENU M_ADDI_RAWMAT
+ON=0 Potions & Flasks
+MENU M_ADDI_POTION
+ON=0 Scattered Materials
+MENU M_ADDI_RAWMAT_MISC
+ON=0 Weapons & Armor
+MENU M_ADDI_WEPARM
+ON=0 Magic Weapons & Armor
+MENU M_ADDI_WEPARM_MAGIC
+ON=0 Equipment & Items
+MENU M_ADDI_PROV
+ON=0 Clothing
+MENU M_ADDI_CLOTHING
+ON=0 Banners & Signs
+MENU M_ADDI_SIGNS
+ON=0 Food
+MENU M_ADDI_FOOD
+ON=0 Plants
+MENU M_ADDI_PLANTS
+ON=0 Rocks, Stones, Boulders
+MENU M_ADDI_STONE
+ON=0 Structures
+MENU M_ADDI_STRUCTURE
+
+[EOF]

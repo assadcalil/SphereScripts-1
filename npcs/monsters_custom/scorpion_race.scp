@@ -1,0 +1,154 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////////////////
+// Scorpion Race //
+///////////////////
+
+[CHARDEF c_scorpion_prince]
+ID=c_scorpion_giant
+NAME=scorpion prince
+CAN=MT_WALK|MT_RUN
+DAM=16,25
+ARMOR=30
+TAG.SlayerGroup=SCORPION,ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Scorpion Race
+DESCRIPTION=Scorpion Prince
+ON=@Create
+   COLOR=0387
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={150 175}
+   DEX={76 95}
+   INT={16 30}
+   MAGICRESISTANCE={40.0 45.0}
+   PARRYING={70.0 80.0}
+   POISONING={90.0 100.0}
+   TACTICS={70.0 85.0}
+   WRESTLING={60.0 75.0}
+   RESCOLD={1 10}
+   RESENERGY={30 40}
+   RESFIRE={10 20}
+   RESPOISON={60 70}
+ON=@NPCRestock
+   ITEM={ random_jewel 1 0 1 }
+   ITEM={ random_jewel 1 0 1 }
+   ITEM=i_gold,{100 200}
+   ITEM={ meager_backpack 1 average_backpack 2 }
+
+[CHARDEF c_scorpion_king]
+ID=c_scorpion_giant
+NAME=king scorpion
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_USEHANDS
+DAM=20,38
+ARMOR=40
+TAG.SlayerGroup=SCORPION,ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Scorpion Race
+DESCRIPTION=Scorpion King
+ON=@Create
+   COLOR=0505
+   NPC=brain_monster
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   STR={300 350}
+   DEX={80 95}
+   INT={300 350}
+   MAXHITS={400 500}
+   EVALUATINGINTEL={90.0 95.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={50.0 65.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={80.0 90.0}
+   POISONING={99.0 100.0}
+   TACTICS={80.0 95.0}
+   WRESTLING={70.0 85.0}
+   RESCOLD={1 10}
+   RESENERGY={30 40}
+   RESFIRE={10 20}
+   RESPOISON={60 70}
+ON=@NPCRestock
+   ITEM=i_gold,{600 800}
+   ITEM=random_jewel,{1 2}
+   ITEM=random_upper_scroll,{1 2}
+   ITEM={ rich_backpack 1 average_backpack 2 }
+
+[CHARDEF c_scorpion_queen]
+ID=c_scorpion_giant
+NAME=queen scorpion
+CAN=MT_WALK|MT_RUN|MT_FIRE_IMMUNE|MT_EQUIP|MT_USEHANDS
+DAM=30,50
+ARMOR=50
+TAG.SlayerGroup=SCORPION,ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Scorpion Race
+DESCRIPTION=Scorpion Queen
+ON=@Create
+   COLOR=0513
+   NPC=brain_monster
+   FAME={3000 3499}
+   KARMA={-3000 -3499}
+   STR={450 500}
+   DEX={80 95}
+   INT={600 650}
+   MAXHITS={500 600}
+   ARCHERY={90.0 100.0}
+   DETECTINGHIDDEN={90.0 100.0}
+   EVALUATINGINTEL={90.0 95.0}
+   FENCING={10.0 20.0}
+   MACEFIGHTING={10.0 20.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={50.0 65.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={80.0 90.0}
+   SWORDSMANSHIP={80.0 100.0}
+   POISONING={99.0 100.0}
+   TACTICS={80.0 95.0}
+   WRESTLING={70.0 85.0}
+   RESCOLD={20 30}
+   RESENERGY={30 40}
+   RESFIRE={10 20}
+   RESPOISON={70 80}
+ON=@NPCRestock
+   ITEM=loot_ai_hard
+   ITEM=random_jewel,R3
+   ITEM=random_jewel,R3
+   ITEM=i_gold,{800 1200}
+   ITEM=random_upper_scroll,{1 2}
+   ITEM={ rich_backpack 1 average_backpack 2 }
+
+[CHARDEF c_scorpion_thrall]
+ID=c_spider_giant
+NAME=scorpion thrall
+CAN=MT_WALK|MT_RUN
+DAM=15,25
+ARMOR=22
+TAG.SlayerGroup=ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Scorpion Race
+DESCRIPTION=Scorpion Thrall
+ON=@Create
+   COLOR=colors_gray
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={100 150}
+   DEX={100 150}
+   INT={36 60}
+   MAGICRESISTANCE={25.0 40.0}
+   PARRYING={55.0 65.0}
+   POISONING={90.0 99.0}
+   TACTICS={55.0 70.0}
+   WRESTLING={70.0 85.0}
+   RESCOLD={1 10}
+   RESENERGY={10 20}
+   RESFIRE={30 40}
+   RESPOISON={40 50}
+ON=@NPCRestock
+   ITEM={ i_reag_spider_silk 1 0 1 },{3 10}
+   ITEM={ random_jewel 1 0 1 }
+   ITEM=i_gold,{50 100}
+   ITEM={ meager_backpack 1 average_backpack 2 }

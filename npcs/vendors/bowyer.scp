@@ -1,0 +1,154 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_bowyer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the bowyer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Bowyer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARCHERY={50.0 75.0}
+   ARMSLORE={50.0 75.0}
+   BOWCRAFT={50.0 75.0}
+   BUSHIDO={20.0 30.0}
+   CARPENTRY={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   THROWING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_brown
+   ITEM=random_pants_human
+   COLOR=colors_green
+   ITEM=random_footwear_human
+   COLOR=colors_brown
+   ITEM=random_hats
+   COLOR=colors_green
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_archer_normal
+
+   SELL=VENDOR_S_BOWYER
+   BUY=VENDOR_B_BOWYER
+
+[CHARDEF c_bowyer_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the bowyer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Bowyer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARCHERY={50.0 75.0}
+   ARMSLORE={50.0 75.0}
+   BOWCRAFT={50.0 75.0}
+   BUSHIDO={20.0 30.0}
+   CARPENTRY={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   THROWING={50.0 75.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_brown
+   ITEM=random_skirts_human
+   COLOR=colors_green
+   ITEM=random_footwear_human
+   COLOR=colors_brown
+   ITEM=random_hats
+   COLOR=colors_green
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_archer_normal
+
+   SELL=VENDOR_S_BOWYER
+   BUY=VENDOR_B_BOWYER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_BOWYER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Bowyer
+SELL=i_crossbow,{4 12}
+SELL=i_crossbow_heavy,{4 12}
+SELL=i_xbolt,{24 72}
+SELL=i_bow,{4 12}
+SELL=i_arrow,{24 72}
+SELL=i_feather,{24 72}
+SELL=i_ARROW_SHAFT,{24 72}
+
+[TEMPLATE VENDOR_B_BOWYER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Bowyer
+BUY=i_crossbow,{4 12}
+BUY=i_xbolt,{24 72}
+BUY=i_crossbow_heavy,{4 12}
+BUY=i_bow,{4 12}
+BUY=i_arrow,{24 72}
+BUY=i_feather,{24 72}
+BUY=i_ARROW_SHAFT,{24 72}
+BUY=i_log,{24 72}
+
+[EOF]

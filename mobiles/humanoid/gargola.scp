@@ -1,0 +1,396 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////////////////
+//Default Margola//
+///////////////////
+
+[NEWBIE MALE_DEFAULT GARG]
+ITEM=i_gold,1000
+ITEM=i_book_sm
+ITEM=i_candle
+ITEM=i_dagger
+
+[NEWBIE FEMALE_DEFAULT GARG]
+ITEM=i_gold,1000
+ITEM=i_book_sm
+ITEM=i_candle
+ITEM=i_dagger
+
+//////////////////////
+//Profession Margola//
+//////////////////////
+
+[NEWBIE PROFESSION_WARRIOR GARG]
+ITEM=i_gargish_leather_chest
+
+[NEWBIE PROFESSION_NECROMANCER GARG]
+ITEM=i_spellbook_necromancy
+MORE1=08981
+ITEM=i_sword_glass
+ITEM=i_gargish_leather_chest
+COLOR=02c3
+ITEM=i_gargish_leather_arms
+COLOR=02c3
+ITEM=i_gargish_leather_leggings
+COLOR=02c3
+ITEM=i_gargish_leather_kilt
+COLOR=02c3
+
+[NEWBIE PROFESSION_PALADIN GARG]
+ITEM=i_spellbook_chivalry
+MORE1=03ff
+ITEM=i_sword_dread
+ITEM=i_gargish_plate_chest
+ITEM=i_gargish_plate_arms
+ITEM=i_gargish_plate_leggings
+ITEM=i_gargish_plate_kilt
+
+[NEWBIE PROFESSION_SAMURAI GARG]
+ITEM=i_spellbook_bushido
+ITEM=i_scissors
+ITEM=i_bandage,50
+ITEM=i_sword_glass
+ITEM=i_gargish_plate_chest
+ITEM=i_gargish_plate_arms
+ITEM=i_gargish_plate_leggings
+ITEM=i_gargish_plate_kilt
+
+[NEWBIE PROFESSION_NINJA GARG]
+ITEM=i_spellbook_ninjitsu
+ITEM=i_bomb_smoke
+ITEM=i_gargish_dagger
+TO-DO: The following //ITEMs must have the same rand color instead use a new rand for each one
+ITEM=i_gargish_cloth_chest
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+ITEM=i_gargish_cloth_arms
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+ITEM=i_gargish_cloth_leggings
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+ITEM=i_gargish_cloth_kilt
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+
+/////////////////////
+// Skill templates //
+/////////////////////
+
+[NEWBIE ARMSLORE GARG]
+ITEM={i_bloodblade 1 i_sword_glass 1 i_mace_disc 1}
+
+[NEWBIE BEGGING GARG]
+ITEM=i_staff_serpentstone
+
+[NEWBIE FENCING GARG]
+ITEM=i_bloodblade
+
+[NEWBIE ITEMID GARG]
+ITEM=i_staff_serpentstone
+
+[NEWBIE LUMBERJACKING GARG]
+ITEM=i_dual_shortaxes
+
+[NEWBIE MACEFIGHTING GARG]
+ITEM=i_mace_disc
+
+[NEWBIE PARRYING GARG]
+ITEM=i_shield_gargish_wooden
+
+[NEWBIE SWORDSMANSHIP GARG]
+ITEM=i_sword_glass
+
+[NEWBIE TACTICS GARG]
+ITEM=i_sword_glass
+
+[NEWBIE TRACKING GARG]
+ITEM=i_knife_skinning
+
+[NEWBIE WRESTLING GARG]
+ITEM=i_gargish_leather_arms
+
+[NEWBIE THROWING GARG]
+ITEM=i_spellbook_mystic
+MORE1=0ab
+ITEM=i_boomerang
+
+///////////////////
+//Chardef Gargola//
+///////////////////
+
+[CHARDEF 029a]
+DEFNAME=c_gargoyle_male
+NAME=#NAMES_GARGOYLE_MALE
+ICON=i_pet_gargoyle_male
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+DAM=1,4
+//ARMOR=
+DESIRES=i_gold
+AVERSIONS=t_trap
+FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=30
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_human_hearunk
+RESLEVEL=7
+RESDISPDNID=c_man
+RESDISPDNHUE=0410
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle (male)
+
+ON=@Create
+   COLOR=colors_skin_gargoyle
+   NPC=brain_human
+   ALCHEMY={15.0 40.0}
+   ANATOMY={15.0 40.0}
+   ANIMALLORE={15.0 40.0}
+   ITEMID={15.0 40.0}
+   ARMSLORE={15.0 40.0}
+   PARRYING={15.0 40.0}
+   BEGGING={15.0 40.0}
+   BLACKSMITHING={15.0 40.0}
+   BOWCRAFT={15.0 40.0}
+   PEACEMAKING={15.0 40.0}
+   CAMPING={15.0 40.0}
+   CARPENTRY={15.0 40.0}
+   CARTOGRAPHY={15.0 40.0}
+   COOKING={15.0 40.0}
+   DETECTINGHIDDEN={15.0 40.0}
+   ENTICEMENT={15.0 40.0}
+   EVALUATINGINTEL={15.0 40.0}
+   HEALING={15.0 40.0}
+   FISHING={15.0 40.0}
+   FORENSICS={15.0 40.0}
+   HERDING={15.0 40.0}
+//   HIDING={15.0 40.0}
+   PROVOCATION={15.0 40.0}
+   INSCRIPTION={15.0 40.0}
+   LOCKPICKING={15.0 40.0}
+   MAGERY={15.0 40.0}
+   MAGICRESISTANCE={15.0 40.0}
+   TACTICS={15.0 40.0}
+   SNOOPING={15.0 40.0}
+   MUSICIANSHIP={15.0 40.0}
+   POISONING={15.0 40.0}
+   ARCHERY={15.0 40.0}
+   SPIRITSPEAK={15.0 40.0}
+   STEALING={15.0 40.0}
+   TAILORING={15.0 40.0}
+//   TAMING={15.0 40.0}
+   TASTEID={15.0 40.0}
+   TINKERING={15.0 40.0}
+   TRACKING={15.0 40.0}
+   VETERINARY={15.0 40.0}
+   SWORDSMANSHIP={15.0 40.0}
+   MACEFIGHTING={15.0 40.0}
+   FENCING={15.0 40.0}
+   WRESTLING={15.0 40.0}
+   LUMBERJACKING={15.0 40.0}
+   MINING={15.0 40.0}
+   MEDITATION={15.0 40.0}
+//   STEALTH={15.0 40.0}
+   REMOVETRAP={15.0 40.0}
+   NECROMANCY={15.0 40.0}
+   FOCUS={15.0 40.0}
+   CHIVALRY={15.0 40.0}
+   BUSHIDO={15.0 40.0}
+   NINJITSU={15.0 40.0}
+   SPELLWEAVING={15.0 40.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_all
+
+[CHARDEF 029b]
+DEFNAME=c_gargoyle_female
+NAME=#NAMES_GARGOYLE_FEMALE
+ICON=i_pet_gargoyle_female
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_FEMALE
+DAM=1,4
+//ARMOR=
+DESIRES=i_gold
+AVERSIONS=t_trap
+FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=20
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_human_hearunk
+RESLEVEL=5
+RESDISPDNID=c_woman
+RESDISPDNHUE=0410
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle (female)
+
+ON=@Create
+   COLOR=colors_skin_gargoyle
+   NPC=brain_human
+   ALCHEMY={15.0 40.0}
+   ANATOMY={15.0 40.0}
+   ANIMALLORE={15.0 40.0}
+   ITEMID={15.0 40.0}
+   ARMSLORE={15.0 40.0}
+   PARRYING={15.0 40.0}
+   BEGGING={15.0 40.0}
+   BLACKSMITHING={15.0 40.0}
+   BOWCRAFT={15.0 40.0}
+   PEACEMAKING={15.0 40.0}
+   CAMPING={15.0 40.0}
+   CARPENTRY={15.0 40.0}
+   CARTOGRAPHY={15.0 40.0}
+   COOKING={15.0 40.0}
+   DETECTINGHIDDEN={15.0 40.0}
+   ENTICEMENT={15.0 40.0}
+   EVALUATINGINTEL={15.0 40.0}
+   HEALING={15.0 40.0}
+   FISHING={15.0 40.0}
+   FORENSICS={15.0 40.0}
+   HERDING={15.0 40.0}
+//   HIDING={15.0 40.0}
+   PROVOCATION={15.0 40.0}
+   INSCRIPTION={15.0 40.0}
+   LOCKPICKING={15.0 40.0}
+   MAGERY={15.0 40.0}
+   MAGICRESISTANCE={15.0 40.0}
+   TACTICS={15.0 40.0}
+   SNOOPING={15.0 40.0}
+   MUSICIANSHIP={15.0 40.0}
+   POISONING={15.0 40.0}
+   ARCHERY={15.0 40.0}
+   SPIRITSPEAK={15.0 40.0}
+   STEALING={15.0 40.0}
+   TAILORING={15.0 40.0}
+//   TAMING={15.0 40.0}
+   TASTEID={15.0 40.0}
+   TINKERING={15.0 40.0}
+   TRACKING={15.0 40.0}
+   VETERINARY={15.0 40.0}
+   SWORDSMANSHIP={15.0 40.0}
+   MACEFIGHTING={15.0 40.0}
+   FENCING={15.0 40.0}
+   WRESTLING={15.0 40.0}
+   LUMBERJACKING={15.0 40.0}
+   MINING={15.0 40.0}
+   MEDITATION={15.0 40.0}
+//   STEALTH={15.0 40.0}
+   REMOVETRAP={15.0 40.0}
+   NECROMANCY={15.0 40.0}
+   FOCUS={15.0 40.0}
+   CHIVALRY={15.0 40.0}
+   BUSHIDO={15.0 40.0}
+   NINJITSU={15.0 40.0}
+   SPELLWEAVING={15.0 40.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_all
+
+
+[CHARDEF 02b1]
+//FIXME: No Stratics entry
+//This could be an undead creature instead...
+DEFNAME=c_time_lord
+NAME=Time Lord
+//ICON=
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+DAM=16,32
+ARMOR=135
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+CATEGORY=Monsters
+SUBSECTION=Miscellaneous
+DESCRIPTION=Time Lord
+ON=@Create
+   NPC=brain_monster
+   FLAGS |= (statf_invul|statf_conjured)
+   FAME={9500 9999}
+   KARMA={-9500 -9999}
+   STR={200 250}
+   MAXHITS={200 250}
+   DEX={150 180}
+   MAXSTAM={150 180}
+   INT={150 160}
+   MAXMANA={150 160}
+   MAGICRESISTANCE={80.0 95.0}
+   PARRYING={85.0 95.0}
+   SWORDSMANSHIP={60.0 90.0}
+   TACTICS={140.0 150.0}
+   WRESTLING={120.0 150.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+
+
+[CHARDEF 02b6]
+DEFNAME=c_garg_ghost_man
+NAME=ghost
+ICON=i_pet_gargoyle_male
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_GHOST
+//DAM=
+//ARMOR=
+DESIRES=i_gold
+AVERSIONS=t_trap
+FOODTYPE=
+MAXFOOD=
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+BLOODCOLOR=-1
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle ghost (male)
+RESLEVEL=7
+RESDISPDNID=c_ghost_man
+RESDISPDNHUE=0410
+ON=@Create
+   NPC=brain_human
+
+[CHARDEF 02b7]
+DEFNAME=c_garg_ghost_woman
+NAME=ghost
+ICON=i_pet_gargoyle_female
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_GHOST|MT_FEMALE
+//DAM=
+//ARMOR=
+DESIRES=i_gold
+AVERSIONS=t_trap
+FOODTYPE=
+MAXFOOD=
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg
+BLOODCOLOR=-1
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle ghost (female)
+RESLEVEL=7
+RESDISPDNID=c_ghost_woman
+RESDISPDNHUE=0410
+ON=@Create
+   NPC=brain_human

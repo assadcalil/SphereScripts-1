@@ -1,0 +1,38 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME colors_resources_wood]
+color_l_heartwood  04a9
+
+////////
+//Logs//
+////////
+
+[ITEMDEF i_log_heartwood]
+ID=i_log
+NAME=heartwoodlog%s
+TYPE=t_log
+CATEGORY=Resources
+SUBSECTION=Wood
+DESCRIPTION=Heartwood Log
+
+ON=@Create
+COLOR=color_l_heartwood
+
+/////////
+//Board//
+/////////
+
+[ITEMDEF i_board_heartwood]
+ID=i_board
+NAME=heartwood board%s
+TYPE=t_board
+CATEGORY=Resources
+SUBSECTION=Boards
+DESCRIPTION=Heartwood Board
+
+ON=@Create
+COLOR=color_l_heartwood
+
+[EOF]

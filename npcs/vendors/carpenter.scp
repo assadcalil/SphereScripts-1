@@ -1,0 +1,191 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_carpenter]
+ID=c_man
+NAME=#NAMES_HUMANMALE the carpenter
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Carpenter (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={50 75}
+   DEX={45 55}
+   INT={45 55}
+
+   CARPENTRY={50.0 75.0}
+   FENCING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_sword_long_b
+   ITEM=random_shield
+
+   SELL=VENDOR_S_CARPENTER
+   BUY=VENDOR_B_CARPENTER
+
+[CHARDEF c_carpenter_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the carpenter
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Carpenter (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={50 75}
+   DEX={45 55}
+   INT={45 55}
+
+   CARPENTRY={50.0 75.0}
+   FENCING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   LUMBERJACKING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_sword_long_b
+   ITEM=random_shield
+
+   SELL=VENDOR_S_CARPENTER
+   BUY=VENDOR_B_CARPENTER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_CARPENTER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Carpenter
+SELL=i_log,{30 80}
+SELL=i_board,{30 80}
+SELL=i_sticks,{10 30}
+SELL=i_nails,{10 30}
+SELL=i_knife_draw,{10 30}
+SELL=i_froe,{10 30}
+SELL=i_inshave,{10 30}
+SELL=i_scorp,{10 30}
+SELL=i_saw_dovetail,{10 30}
+SELL=i_saw,{10 30}
+SELL=i_hammer,{10 30}
+SELL=i_plane_moulding,{10 30}
+SELL=i_plane_smoothing,{10 30}
+SELL=i_plane_jointing,{10 30}
+SELL=i_drum,{10 30}
+SELL=i_tambourine,{10 30}
+SELL=i_lyre,{10 30}
+SELL=i_lute,{10 30}
+
+[TEMPLATE VENDOR_B_CARPENTER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Carpenter
+BUY=i_drum,{5 15}
+BUY=i_tambourine,{5 15}
+BUY=i_lyre,{5 15}
+BUY=i_lute,{5 15}
+BUY=i_sticks,{5 15}
+BUY=i_log,{5 15}
+BUY=i_board,{5 15}
+BUY=i_knife_draw,{5 15}
+BUY=i_froe,{5 15}
+BUY=i_inshave,{5 15}
+BUY=i_scorp,{5 15}
+BUY=i_saw_dovetail,{5 15}
+BUY=i_saw,{5 15}
+BUY=i_hammer,{5 15}
+BUY=i_plane_moulding,{5 15}
+BUY=i_plane_smoothing,{5 15}
+BUY=i_plane_jointing,{5 15}
+BUY=i_CHAIR_WOOD_BAMBOO,{5 15}
+BUY=i_CHAIR_WOOD,{5 15}
+BUY=i_chair_wood_fancy_cushion,{5 15}
+BUY=i_chair_wood_cushion,{5 15}
+BUY=i_CHAIR_WOOD_ROUGH_DARK,{5 15}
+BUY=i_chair_stool,{5 15}
+BUY=i_chair_stool_bar,{5 15}
+BUY=i_bench_marble,{5 15}
+BUY=i_bench_wood_dark,{5 15}
+BUY=i_chair_THRONE,{5 15}
+BUY=i_table_bamboo_end,{5 15}
+BUY=i_table_writing,{5 15}
+BUY=i_TABLE_WOOD_ROUGH_SMALL,{5 15}
+BUY=i_TABLE_WOOD_ROUGH_BOARD,{5 15}
+BUY=i_Box_Wood,{5 15}
+BUY=i_crate_small,{5 15}
+BUY=i_crate_md,{5 15}
+BUY=i_crate_lg,{5 15}
+BUY=i_chest_metal,{5 15}
+BUY=i_chest_wooden_brass,{5 15}
+BUY=i_bookcase,{5 15}
+BUY=i_armoir_dk,{5 15}
+BUY=i_armoir_lt,{5 15}
+
+[EOF]

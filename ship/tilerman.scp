@@ -1,0 +1,99 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[TYPEDEF t_ship_tiller]
+ON=@Dclick
+IF !(<src.isgm>)
+ IF (<src.uid>==<LINK.MORE1>)
+  SDIALOG d_ship_pod 1
+ ELSE
+  SDIALOG d_ship_pod 2
+ ENDIF
+else
+ SDIALOG d_ship_pod 1
+endif
+return 1
+
+[TYPEDEF T_SHIP]
+ON=@Dclick
+IF !(<src.isgm>)
+ IF (<src.uid>==<MORE1>)
+  LINK.SDIALOG d_ship_pod 1
+ ELSE
+  LINK.SDIALOG d_ship_pod 2
+ ENDIF
+else
+ LINK.SDIALOG d_ship_pod 1
+endif
+return 1
+
+[DIALOG d_ship_pod]
+200,200
+PAGE 0
+resizepic 20 20 3600 220 170
+checkertrans 20 20 220 170
+dtext 95 35 88 Ship System
+PAGE 1
+dtext 40 60 1152 Nome:
+dtext 80 60 2010 <link.name>
+button 40 90 093A 0939 1 0 1
+dtext 55 85 1152 Dono:
+dtext 90 85 2010 <uid.<link.more1>.name>
+button 40 120 093A 0939 1 0 2
+dtext 55 115 1152 Redeed
+button 40 150 093A 0939 1 0 3
+dtext 55 145 1152 Controle remoto
+
+PAGE 2
+dtext 40 60 1152 Nome:
+dtext 80 60 2010 <link.name>
+dtext 55 90 1152 Dono:
+dtext 90 90 2010 <uid.<link.more1>.name>
+
+[DIALOG d_ship_pod BUTTON]
+ON=1
+link.targetf transfer_owner_boat
+src.sysmessage Quem vai ser o novo dono?
+
+ON=2
+serv.newitem=i_deed_ship
+new.more=<link.baseid>
+new.name=<link.name> deed
+new.bounce
+link.remove
+ENDIF
+
+ON=3
+src.sysmessage Utilize o comando .navegar para controlar o barco.
+return 1
+
+[FUNCTION transfer_owner_boat]
+IF (<argo.uid>==<src>)
+src.sysmessage Voce nao pode dar seu barco para voce mesmo.
+ELIF (<distance> > 10)
+src.sysmessage O Barco esta longe demais!
+ELIF !(<argo.canseelos>)
+src.sysmessage Voce nao consegue ver o alvo.
+ELIF !(<argo.isplayer>)
+src.sysmessage Voce deve escolher um player!
+ELIF (<argo.barcos>==2)
+src.sysmessage <argo.name> ja tem 2 barcos.
+ELSE
+try uid.<more1>.removeboat <uid> <argo.uid>
+try uid.<argo.uid>.sysmessage @07a3 <uid.<more1>.name> lhe deu esse barco.
+more1=<argo.uid>
+timer -1
+ENDIF
+
+[FUNCTION f_count_barcos]
+FOR 0 <eval <SRC.RESCOUNT>-1>
+    IF (<UID.<SRC.FINDCONT(<LOCAL._FOR>).LINK>.ISITEM>)
+        IF STRMATCH("t_ship","<UID.<SRC.FINDCONT(<LOCAL._FOR>).LINK>.TYPE>")
+   LOCAL.FOUND ++
+  ENDIF
+ ENDIF
+ENDFOR
+return <LOCAL.FOUND>
+
+[EOF]

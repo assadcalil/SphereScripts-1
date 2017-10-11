@@ -1,0 +1,29 @@
+﻿// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[function animal]
+dialog d_animal
+
+[DIALOG d_animal]
+0,0
+page 0
+resizepic 13 13 9270 296 119
+button 31 93 247 248 1 0 0
+button 223 93 241 248 1 0 1
+htmlgump 30 31 258 48 0 1 0
+
+[DIALOG d_animal text]
+Deseja mesmo que seu animal ou humano não continua seguindo você ?
+
+[DIALOG d_animal button]
+ON=0
+// Button 1
+ src.release 1
+ src.sysmessage O animal nao seguira mais voce!
+
+ON=1
+// Button 2
+ src.sysmessage Ele continuara seguindo voce.
+
+[EOF]

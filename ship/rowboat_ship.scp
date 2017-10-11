@@ -1,0 +1,69 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Deed//
+////////
+
+[ITEMDEF i_deed_rowboat_n]
+ID=i_deed_ship
+NAME=Deed to a Rowboat
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Rowboat
+WEIGHT=1
+VALUE=1
+On=@DCLICK
+src.dialog d_ship
+return 1
+
+/////////////
+//Deed Ship//
+/////////////
+
+[ITEMDEF i_deed_rowboat_n]
+ID=i_deed_ship
+NAME=Deed to a Rowboat
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Rowboat
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_rowboat_n
+
+[ITEMDEF i_deed_rowboat_e]
+ID=i_deed_ship
+NAME=Deed to a Rowboat
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Rowboat
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_rowboat_e
+
+[ITEMDEF i_deed_rowboat_w]
+ID=i_deed_ship
+NAME=Deed to a Rowboat
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Rowboat
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_rowboat_w
+
+[ITEMDEF i_deed_rowboat_s]
+ID=i_deed_ship
+NAME=Deed to a Rowboat
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Rowboat
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_rowboat_s
+
+[EOF]

@@ -1,0 +1,91 @@
+﻿// Created 11/10/2017 10:04:47, with Gump Studio.
+// Exported with with SphereExporter ver 1.1.
+// Script for 0.56/Revisions
+
+[function barco]
+dialog d_ship_2
+
+[DIALOG d_ship_2]
+0,0
+page 0
+resizepic 31 21 9270 222 182
+checkertrans 41 31 200 160
+htmlgump 45 36 192 42 0 1 0
+button 51 99 4005 4005 1 0 1
+button 52 148 4005 4005 1 0 2
+button 151 99 4005 4005 1 0 3
+button 151 148 4005 4005 1 0 4
+dtext 83 100 047e  Norte
+dtext 85 150 047e  Sul
+dtext 183 101 047e Leste
+dtext 183 151 047e Oeste
+
+[DIALOG d_ship_2 text]
+Qual lado você deseja seu barco?
+Norte
+Sul
+Leste
+Oeste
+
+[DIALOG d_ship_2 button]
+ON=1
+// Button 1
+if !(<src.isplayer>)
+    return 1
+endif
+
+serv.newitem i_deed_small_ship_n
+src.consume i_deed_small_ship
+serv.new.cont <src.findlayer(21)>
+serv.new.bounce
+//src.sysmessage Seu barco esta para o lado NORTE!
+
+remove
+return 1
+
+ON=2
+// Button 2
+if !(<src.isplayer>)
+    return 1
+endif
+
+serv.newitem i_deed_small_ship_s
+src.consume i_deed_small_ship
+serv.new.cont <src.findlayer(21)>
+serv.new.bounce
+src.sysmessage Seu barco esta para o lado SUL!
+
+remove
+return 1
+
+ON=3
+// Button 3
+if !(<src.isplayer>)
+    return 1
+endif
+
+serv.newitem i_deed_small_ship_e
+src.consume i_deed_small_ship
+serv.new.cont <src.findlayer(21)>
+serv.new.bounce
+src.sysmessage Seu barco esta para o lado LESTE!
+
+remove
+return 1
+
+ON=4
+// Button 4
+if !(<src.isplayer>)
+    return 1
+endif
+
+serv.newitem i_deed_small_ship_w
+src.consume i_deed_small_ship
+serv.new.cont <src.findlayer(21)>
+serv.new.bounce
+src.sysmessage Seu barco esta para o lado OESTE!
+
+remove
+return 1
+
+[EOF]

@@ -1,0 +1,452 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME COLOR_ORE]
+color_o_oldcopper  0590
+
+//////////
+// Ores //
+//////////
+
+[ITEMDEF i_ore_old_copper]
+// this is really just a variety of copper. copper makes terrible armor
+ID=i_ore_iron
+NAME=Old Copper Ore
+SKILLMAKE=mining 60.0
+TDATA1=i_ingot_old_copper
+VALUE=15
+ON=@Create
+   COLOR=color_o_oldcopper
+
+////////////
+// Ingots //
+////////////
+
+[ITEMDEF i_ingot_old_copper]
+NAME=Old Copper Ingot
+ID=i_ingot_iron
+RESOURCES=i_ore_old_copper
+SKILLMAKE=mining 60.0
+TDATA1=50.0
+TDATA2=80.0
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Old Copper Ingot
+ON=@Create
+   COLOR=color_o_oldcopper
+
+/////////////
+//Platemail//
+/////////////
+
+[ITEMDEF i_OLD_COPPER_PLATEMAIL]
+NAME=Old Copper Platemail
+ID=i_platemail_chest
+WEIGHT=10.0
+ARMOR=25
+REQSTR=60
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Platemail
+RESOURCES=25 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 76.0
+
+ON=@Create
+	HITPOINTS=51
+	COLOR=color_o_oldcopper
+
+[ITEMDEF i_OLD_COPPER_PLATEMAIL_ARMS]
+NAME=Old Copper Platemail Arms
+ID=i_platemail_arms
+ARMOR=25
+REQSTR=40
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Platemail Arms
+RESOURCES=18 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 64.5
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_PLATEMAIL_leggings]
+NAME=Old Copper Platemail Legs
+ID=i_platemail_leggings
+ARMOR=25
+REQSTR=60
+WEIGHT=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Platemail Legs
+RESOURCES=20 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 67.8
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_PLATE_HELM]
+NAME=Old Copper Plate Helm
+ID=i_platemail_helm
+ARMOR=25
+REQSTR=40
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Plate Helm
+RESOURCES=15 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 59.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=46
+
+[ITEMDEF i_OLD_COPPER_PLATEMAIL_GORGET]
+NAME=Old Copper Platemail Gorget
+ID=i_platemail_gorget
+ARMOR=25
+REQSTR=30
+WEIGHT=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Platemail Gorget
+RESOURCES=10 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 51.4
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_PLATEMAIL_GAUNTLETS]
+NAME=Old Copper Platemail Gauntlets
+ID=i_platemail_gloves
+ARMOR=25
+REQSTR=30
+WEIGHT=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Platemail Gauntlets
+RESOURCES=12 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 54.7
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_FEMALE_PLATEMAIL]
+NAME=Old Copper Platemail
+ID=i_armor_female_plate
+ARMOR=14
+REQSTR=15
+WEIGHT=6
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Female Platemail
+RESOURCES=22 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 71.0
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS={51 65}
+
+[ITEMDEF i_OLD_COPPER_CHAINMAIL_COIF]
+NAME=Old Copper Chainmail Coif
+ID=i_chainmail_coif
+ARMOR=20
+REQSTR=20
+WEIGHT=7
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Chainmail Coif
+RESOURCES=10 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 28.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=36
+
+[ITEMDEF i_OLD_COPPER_CHAINMAIL_LEGGINGS]
+NAME=Old Copper Chainmail Leggings
+ID=i_chainmail_leggings
+ARMOR=20
+REQSTR=20
+WEIGHT=7
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Chainmail Leggings
+RESOURCES=18 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 32.1
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=46
+
+[ITEMDEF i_OLD_COPPER_CHAINMAIL_TUNIC]
+NAME=Old Copper Chainmail Tunic
+ID=i_chainmail_tunic
+ARMOR=20
+REQSTR=20
+WEIGHT=7
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Chainmail Tunic
+RESOURCES=20 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 44.8
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=46
+
+[ITEMDEF i_OLD_COPPER_RINGMAIL_LEGGINGS]
+NAME=Old Copper Ringmail Leggings
+ID=i_ringmail_leggings
+ARMOR=18
+REQSTR=20
+WEIGHT=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Ringmail Leggings
+RESOURCES=16 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 28.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=41
+
+[ITEMDEF i_OLD_COPPER_RINGMAIL_SLEEVES]
+NAME=Old Copper Ringmail Sleeves
+ID=i_ringmail_sleeves
+ARMOR=18
+REQSTR=20
+WEIGHT=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Ringmail Sleeves
+RESOURCES=14 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 25.3
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=41
+
+[ITEMDEF i_OLD_COPPER_RINGMAIL_GLOVES]
+NAME=Old Copper Ringmail Gloves
+ID=i_ringmail_gloves
+ARMOR=18
+REQSTR=20
+WEIGHT=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Ringmail Gloves
+RESOURCES=12 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 18.8
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=41
+
+[ITEMDEF i_OLD_COPPER_RINGMAIL_TUNIC]
+NAME=Old Copper Ringmail Tunic
+ID=i_ringmail_tunic
+ARMOR=18
+REQSTR=20
+WEIGHT=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Ringmail Tunic
+RESOURCES=18 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 32.1
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=41
+
+[ITEMDEF i_OLD_COPPER_METAL_SHIELD]
+NAME=Old Copper Metal Shield
+ID=i_shield_round_metal
+ARMOR=10
+REQSTR=15
+WEIGHT=6
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Metal Shield
+RESOURCES=14 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 16.0
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_HEATER_SHIELD]
+NAME=Old Copper Heater Shield
+ID=I_SHIELD_HEATER
+ARMOR=20
+REQSTR=30
+WEIGHT=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Heater Shield
+RESOURCES=18 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 41.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=31
+
+[ITEMDEF i_OLD_COPPER_BUCKLER_SHIELD]
+NAME=Old Copper Buckler
+ID=i_shield_buckler
+ARMOR=6
+REQSTR=15
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Buckler
+RESOURCES=10 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 6.0
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=41
+
+[ITEMDEF i_OLD_COPPER_CLOSED_HELM]
+NAME=Old Copper Closed Helm
+ID=i_helm_closed
+ARMOR=25
+REQSTR=20
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Closed Helm
+RESOURCES=15 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 59.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=101
+
+[ITEMDEF i_OLD_COPPER_HELMET]
+NAME=Old Copper Helmet
+ID=i_helm_open
+ARMOR=25
+REQSTR=10
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=helmet
+RESOURCES=15 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 59.6
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=51
+
+[ITEMDEF i_OLD_COPPER_BASCINET]
+NAME=Old Copper Bascinet
+ID=i_bascinet
+ARMOR=25
+REQSTR=10
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Bascinet
+RESOURCES=15 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 20.2
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=101
+
+[ITEMDEF i_OLD_COPPER_NOSE_HELM]
+NAME=Old Copper Nose Helm
+ID=i_helm_nose
+ARMOR=25
+REQSTR=0
+WEIGHT=5
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Old Copper
+DESCRIPTION=Nose Helm
+RESOURCES=15 i_ingot_old_copper
+SKILLMAKE=BLACKSMITHING 59.6
+// Rusty Armor
+
+ON=@Create
+	COLOR=color_o_oldcopper
+	HITPOINTS=101   
+
+////////
+//MENU//
+////////
+
+
+[SKILLMENU sm_old_copper_armor]
+Old Copper Armor
+
+ON=i_OLD_COPPER_PLATE_HELM <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATE_HELM
+
+ON=i_OLD_COPPER_PLATEMAIL_GORGET <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATEMAIL_GORGET
+
+ON=i_OLD_COPPER_PLATEMAIL_GAUNTLETS <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATEMAIL_GAUNTLETS
+
+ON=i_OLD_COPPER_PLATEMAIL_ARMS <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATEMAIL_ARMS
+
+ON=i_OLD_COPPER_PLATEMAIL_LEGGINGS <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATEMAIL_LEGGINGS
+
+ON=i_OLD_COPPER_FEMALE_PLATEMAIL <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_FEMALE_PLATEMAIL
+
+ON=i_OLD_COPPER_PLATEMAIL <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_PLATEMAIL
+
+ON=i_OLD_COPPER_CHAINMAIL_COIF <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_CHAINMAIL_COIF
+
+ON=i_OLD_COPPER_CHAINMAIL_LEGGINGS <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_CHAINMAIL_LEGGINGS
+
+ON=i_OLD_COPPER_CHAINMAIL_TUNIC <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_CHAINMAIL_TUNIC
+
+ON=i_OLD_COPPER_RINGMAIL_GLOVES <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_RINGMAIL_GLOVES
+
+ON=i_OLD_COPPER_RINGMAIL_SLEEVES <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_RINGMAIL_SLEEVES
+
+ON=i_OLD_COPPER_RINGMAIL_LEGGINGS <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_RINGMAIL_LEGGINGS
+
+ON=i_OLD_COPPER_RINGMAIL_TUNIC <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_RINGMAIL_TUNIC
+
+ON=i_OLD_COPPER_BUCKLER_SHIELD <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_BUCKLER_SHIELD
+
+ON=i_OLD_COPPER_METAL_SHIELD <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_METAL_SHIELD
+
+ON=i_OLD_COPPER_HEATER_SHIELD <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_HEATER_SHIELD
+
+ON=i_OLD_COPPER_CLOSED_HELM <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_CLOSED_HELM
+
+ON=i_OLD_COPPER_CLOSED_HELM <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_HELMET
+
+ON=i_OLD_COPPER_BASCINET <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_BASCINET
+
+ON=i_OLD_COPPER_NOSE_HELM <name> (<resmake>)
+MAKEITEM=i_OLD_COPPER_NOSE_HELM
+
+
+[EOF]

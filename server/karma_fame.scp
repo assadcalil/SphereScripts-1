@@ -1,0 +1,136 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[FAME]
+0,2000,6000
+Anonymous
+Known
+Famous
+
+[KARMA]
+-10000,-6000,-2000,2001,6001
+Wicked
+Belligerent
+Neutral
+Kindly
+Goodhearted
+
+[DEFNAME alignments]
+// ranges of karma ?
+evil                  {-10000 -6001}
+chaotic               {-6000 -2001}
+good                  {2000 10000}
+wicked                {-10000 -6001}
+belligerent           {-6000 -2001}
+neutral               {-2000 1999}
+kindly                {2000 5999}
+goodhearted           {6000 10000}
+
+infamous              {-10000 -6001}
+outlaw                {-6000 -2001}
+anonymous             {-2000 1999}
+known                 {2000 5999}
+famous                {6000 10000}
+
+[NOTOTITLES] // NotoTitles
+9900,5000,1000,500,100,-100,-500,-1000,-5000,-9900    // karma levels
+500,1000,5000,9900                                    // fame levels
+
+// highest karma
+Trustworthy
+Estimable
+Great
+Glorious
+Glorious
+
+Honest
+Commendable
+Famed
+Illustrious
+Illustrious
+
+Good
+Honorable
+Admirable
+Noble
+Noble
+
+Kind
+Respectable
+Proper
+Eminent
+Eminent
+
+Fair
+Upstanding
+Reputable
+Distinguished
+Distinguished
+
+<none>
+Notable
+Prominent
+Renowned
+Renowned
+
+Rude
+Disreputable
+Notorious
+Infamous
+Dishonored
+
+Unsavory
+Dishonorable
+Ignoble
+Sinister
+Sinister
+
+Scoundrel
+Malicious
+Vile
+Villainous
+Dark
+
+Despicable
+Dastardly
+Wicked
+Evil
+Evil
+
+Outcast
+Wretched
+Nefarious
+Dread
+Dread
+
+
+[RUNES]
+An
+Bet
+Corp
+Des
+Ex
+Flam
+Grav
+Hur
+In
+Jux
+Kal
+Lor
+Mani
+Nox
+Ort
+Por
+Quas
+Rel
+Sanct
+Tym
+Uus
+Vas
+Wis
+Xen
+Ylem
+Zan
+
+[EOF]

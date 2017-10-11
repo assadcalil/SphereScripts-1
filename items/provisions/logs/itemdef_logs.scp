@@ -1,0 +1,80 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Logs//
+////////
+
+[ITEMDEF 01bdd]
+DEFNAME=i_log
+NAME=log%s
+TYPE=t_log
+VALUE=1
+WEIGHT=2.0
+DUPELIST=01bde,01bdf,01be0,01be1,01be2
+
+CATEGORY=Resources
+SUBSECTION=Wood (logs)
+DESCRIPTION=Log
+
+[ITEMDEF 01bde]
+DUPEITEM=01bdd
+DESCRIPTION=Logs (3)
+
+[ITEMDEF 01bdf]
+DUPEITEM=01bdd
+DESCRIPTION=Logs (Many)
+
+[ITEMDEF 01be0]
+//log
+DUPEITEM=01bdd
+
+[ITEMDEF 01be1]
+DUPEITEM=01bdd
+DESCRIPTION=Logs (3)
+
+[ITEMDEF 01be2]
+DUPEITEM=01bdd
+DESCRIPTION=Logs (Many)
+
+/////////
+//Board//
+/////////
+
+[ITEMDEF 01bd7]
+DEFNAME=i_board
+TYPE=t_board
+VALUE=2
+WEIGHT=1.0
+REPLICATE=1
+RESOURCES=1 i_log
+SKILLMAKE=Carpentry 0.0, t_carpentry
+DUPELIST=01bd8,01bd9,01bda,01bdb,01bdc
+
+CATEGORY=Resources
+SUBSECTION=Wood (boards)
+DESCRIPTION=Board
+
+[ITEMDEF 01bd8]
+DUPEITEM=01bd7
+DESCRIPTION=Boards (3)
+
+[ITEMDEF 01bd9]
+DUPEITEM=01bd7
+DESCRIPTION=Boards (8)
+
+[ITEMDEF 01bda]
+//board
+DUPEITEM=01bd7
+
+[ITEMDEF 01bdb]
+DUPEITEM=01bd7
+DESCRIPTION=Boards (3)
+
+[ITEMDEF 01bdc]
+DUPEITEM=01bd7
+DESCRIPTION=Boards (8)
+
+
+[EOF]

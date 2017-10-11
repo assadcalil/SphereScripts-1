@@ -1,0 +1,161 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_animaltrainer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the animal trainer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Animal Trainer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_animal_trainer
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   BUSHIDO={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAMING={50.0 75.0}
+   VETERINARY={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_all
+   ITEM=random_hats,1,R5
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal
+
+   SELL=VENDOR_S_TRAINER
+   BUY=VENDOR_B_TRAINER
+
+[CHARDEF c_animaltrainer_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the animal trainer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Animal Trainer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_animal_trainer
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={50.0 75.0}
+   BUSHIDO={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TAMING={50.0 75.0}
+   VETERINARY={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_all
+   ITEM=random_hats,1,R5
+   COLOR=colors_neutral
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal
+
+   SELL=VENDOR_S_TRAINER
+   BUY=VENDOR_B_TRAINER
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_TRAINER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Animal Trainer
+SELL=i_pet_cat,{2 18}
+SELL=i_pet_dog,{2 18}
+SELL=i_pet_horse_tan,{0 2}
+SELL=i_pet_horse_gray,{0 2}
+SELL=i_pet_horse_brown_lt,{0 2}
+SELL=i_pet_horse_brown_dk,{0 2}
+SELL=i_pet_horse_pack,{1 5}
+SELL=i_pet_llama_pack,{1 5}
+SELL=i_pet_raven,{2 18}
+SELL=i_pet_rat,{2 18}
+SELL=i_pet_rabbit,{2 18}
+SELL=i_pet_wolf,{2 18}
+SELL=i_pet_bear_black,{2 18}
+SELL=i_pet_grizzly,{2 18}
+SELL=i_pet_eagle,{2 18}
+SELL=i_pet_panther,{2 18}
+
+[TEMPLATE VENDOR_B_TRAINER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Animal Trainer
+BUY=i_hay_sheaf,{22 48}
+BUY=i_fruit_apple,{22 48}
+BUY=i_fruit_carrot,{22 48}
+BUY=i_fruit_lettuce,{22 48}
+BUY=i_ribs_raw,{22 48}
+BUY=i_bird_raw,{22 48}
+BUY=i_CARCASS_BEEF,{22 48}
+BUY=i_CARCASS_OTHER,{22 48}
+
+[EOF]

@@ -1,0 +1,89 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////////////
+// Prisoners //
+///////////////
+
+[CHARDEF c_prisoner]
+ID=c_man
+NAME=#NAMES_HUMANMALE the prisoner
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+CATEGORY=Evil NPC
+SUBSECTION=Outlaws & Rogues
+DESCRIPTION=Prisoner (male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   FAME={1000 1499}
+   KARMA={-500 -999}
+   STR={11 25}
+   DEX={11 25}
+   INT={31 45}
+   TACTICS={15.0 38.0}
+   WRESTLING={15.0 38.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=random_light
+   ITEM=i_pants_short
+   COLOR=colors_all
+
+[CHARDEF c_prisoner_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the prisoner
+DESIRES=i_gold,t_gem
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+CATEGORY=Evil NPC
+SUBSECTION=Outlaws & Rogues
+DESCRIPTION=Prisoner (female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   FAME={1000 1499}
+   KARMA={-500 -999}
+   STR={11 25}
+   DEX={11 25}
+   INT={31 45}
+   TACTICS={15.0 38.0}
+   WRESTLING={15.0 38.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+ON=@NPCRestock
+   ITEM={ i_servered_human_ears 1 0 9 }
+   ITEM=random_light
+   ITEM=i_shirt_plain
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all

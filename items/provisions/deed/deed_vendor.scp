@@ -1,0 +1,32 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF i_deed_vendor]
+ID=i_deed
+NAME=Deed to a Vendor
+VALUE=15000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Vendor Deeds
+DESCRIPTION=Player Vendor
+WEIGHT=1
+VALUE=1
+ON=@DClick
+   SRC.MESSAGE Your vendor has been created.
+   SERV.newnpc { c_h_vendor 1 c_h_vendor_f 1 }
+   REF1=<NEW>
+   REF1.P=<SRC.P>
+   SRC.UPDATE
+   // give the vendor some starting gold.
+   SERV.NEWITEM=i_bankbox
+   NEW.MORE1=500
+   NEW.CONT=<REF1>
+   // tell him he works for you.
+   SERV.NEWITEM=i_memory
+   NEW.COLOR=memory_ipet
+   NEW.LINK=<SRC.UID>
+   NEW.LAYER=layer_special
+   NEW.CONT=<REF1>
+   // get rid of the deed.
+   REMOVE
+   RETURN 1

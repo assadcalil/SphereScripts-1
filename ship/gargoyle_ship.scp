@@ -1,0 +1,70 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Deed//
+////////
+
+[ITEMDEF i_deed_gargoyle_ship]
+ID=i_deed_ship
+NAME=Deed to a Gargoyle Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Gargoyle Ship
+WEIGHT=1
+VALUE=1
+
+On=@DCLICK
+src.dialog d_ship
+return 1
+
+/////////////
+//Deed Ship//
+/////////////
+
+[ITEMDEF i_deed_gargoyle_ship_n]
+ID=i_deed_ship
+NAME=Deed to a Gargoyle Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Gargoyle Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_gargoyle_ship_n
+
+[ITEMDEF i_deed_gargoyle_ship_e]
+ID=i_deed_ship
+NAME=Deed to a Gargoyle Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Gargoyle Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_gargoyle_ship_e
+
+[ITEMDEF i_deed_gargoyle_ship_s]
+ID=i_deed_ship
+NAME=Deed to a Gargoyle Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Gargoyle Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_gargoyle_ship_s
+
+[ITEMDEF i_deed_gargoyle_ship_w]
+ID=i_deed_ship
+NAME=Deed to a Gargoyle Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Gargoyle Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_gargoyle_ship_w
+
+[EOF]

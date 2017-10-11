@@ -1,0 +1,38 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[NAMES NAMES_ELF_MALE]
+14
+Azayn
+Arnen
+Coribrar
+Daegalen
+Dhoudrim
+Elwing
+Gilthathar
+Hanchall
+Kandrialis
+Koliumder
+Laeroll
+Nemin
+Ormaen
+Theninorn 
+
+[NAMES NAMES_ELF_FEMALE]
+13
+Besran
+Caraphrestol
+Edhelarth
+Fiaro
+Fisonna
+Ilithia
+Jealian
+Kiliatha
+Merilcheleg
+Nelfael
+Nimbilin
+Silivin
+Versal 
+
+[EOF]

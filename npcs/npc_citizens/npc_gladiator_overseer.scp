@@ -1,0 +1,59 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_gladiator_overseer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the gladiator overseer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Gladiator Overseer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={75 100}
+   DEX={75 100}
+   INT={45 55}
+
+   FENCING={50.0 95.0}
+   MACEFIGHTING={70.0 95.0}
+   PARRYING={50.0 95.0}
+   SWORDSMANSHIP={70.0 95.0}
+   TACTICS={50.0 95.0}
+   WRESTLING={70.0 95.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=i_ringmail_tunic
+   ITEM=i_ringmail_leggings
+   ITEM=i_ringmail_sleeves
+   ITEM=i_ringmail_gloves
+   ITEM=i_chainmail_coif
+   ITEM=i_leather_gorget
+   ITEM=i_boots_calf
+   COLOR=colors_red
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_shield
+   ITEM=i_sword_broad

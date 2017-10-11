@@ -1,0 +1,135 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_noble]
+ID=c_man
+NAME=#NAMES_HUMANMALE the noble
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Noble (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   HEALING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGERY={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MEDITATION={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=i_cape
+   COLOR=colors_all
+   ITEM=i_sash
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_black
+   ITEM=random_hats,1,R3
+   COLOR=colors_all
+   ITEM=random_jewelry
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+ON=@NPCRestock
+   ITEM=loaded_backpack
+   ITEM=random_weapon_sword_normal
+   ITEM=random_armor_shield_european
+
+[CHARDEF c_noble_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the noble
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Noble (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   EVALUATINGINTEL={20.0 30.0}
+   FENCING={20.0 30.0}
+   HEALING={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MAGERY={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MEDITATION={20.0 30.0}
+   PARRYING={20.0 30.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   TASTEID={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_dresses
+   COLOR=colors_all
+   ITEM=i_cape
+   COLOR=colors_all
+   ITEM=i_sash
+   COLOR=colors_all
+   ITEM=random_shoes
+   COLOR=colors_all
+   ITEM=random_hats,1,R3
+   COLOR=colors_all
+   ITEM=random_jewelry
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+ON=@NPCRestock
+   ITEM=loaded_backpack
+   ITEM=random_weapon_sword_normal
+   ITEM=random_armor_shield_european

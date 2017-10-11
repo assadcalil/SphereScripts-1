@@ -1,0 +1,12 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[NAMES NAMES_EVIL_MAGE_LORD]
+4
+Kwan Li, Lord of the Mists
+Bazerion, the Wizard-Lord
+Ylthallynon, the Insane
+Xarot the Black Archmage
+
+[EOF]

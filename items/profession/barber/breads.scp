@@ -1,0 +1,82 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[ITEMDEF 0203e]
+DEFNAME=i_beard_long
+NAME=Long Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Long
+ON=@Create
+   ATTR=attr_newbie
+   
+[ITEMDEF 0203f]
+DEFNAME=i_beard_short
+NAME=Short Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Short
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02040]
+DEFNAME=i_beard_goatee
+NAME=Goatee
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Goatee
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02041]
+DEFNAME=i_beard_mustache
+NAME=Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204b]
+DEFNAME=i_beard_short_med
+NAME=Short Beard & Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Short Beard & Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204c]
+DEFNAME=i_beard_long_med
+NAME=Long Beard & Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Long Beard & Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204d]
+DEFNAME=i_beard_vandyke
+NAME=Vandyke
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Vandyke
+ON=@Create
+   ATTR=attr_newbie
+
+[EOF]

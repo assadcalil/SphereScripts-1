@@ -1,0 +1,104 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////////
+// Undead //
+////////////
+
+[CHARDEF c_skeletonarcher]
+ID=c_skeleton_w_axe
+NAME=skeleton archer
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+DAM=4,8
+ARMOR=12
+TAG.SlayerGroup=UNDEAD
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Skeleton Archer
+ON=@Create
+   NPC=brain_monster
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={75 90}
+   DEX={56 75}
+   INT={16 40}
+   ARCHERY={91.0 100.0}
+   MAGICRESISTANCE={45.0 60.0}
+   PARRYING={45.0 55.0}
+   SWORDSMANSHIP={45.0 55.0}
+   TACTICS={45.0 60.0}
+   WRESTLING={15.0 25.0}
+   RESCOLD={20 30}
+   RESENERGY={20 30}
+   RESFIRE=0
+   RESPOISON={20 30}
+ON=@NPCRestock
+   ITEM=loot_ai_archer
+   ITEM=average_undead_backpack
+   ITEM={ random_armor_bone 1 0 15 }
+
+[CHARDEF c_wraith]
+ID=c_spectre
+NAME=wraith
+ICON=i_pet_ghoul
+SOUND=snd_monster_shadows
+CAN=MT_GHOST|MT_WALK|MT_EQUIP|MT_USEHANDS//|MT_PASSWALLS
+DAM=12,20
+ARMOR=20
+TAG.SlayerGroup=UNDEAD
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Wraith
+ON=@Create
+   COLOR=color_spectral
+   NPC=brain_monster
+   KARMA={-1500 -1999}
+   FAME={1500 1999}
+   STR={100 125}
+   DEX={90 120}
+   INT={60 90}
+   MAGICRESISTANCE={60.0 85.0}
+   PARRYING={60.0 85.0}
+   TACTICS={60.0 85.0}
+   WRESTLING={60.0 85.0}
+   RESCOLD={20 30}
+   RESENERGY={10 20}
+   RESFIRE={30 40}
+   RESPOISON={10 20}
+ON=@NPCRestock
+   ITEM=loot_wraith
+
+[CHARDEF c_ghost]
+ID=c_phantom
+NAME=ghost
+CAN=MT_GHOST|MT_WALK//|MT_PASSWALLS
+DAM=12,20
+ARMOR=20
+TAG.SlayerGroup=UNDEAD
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Ghost
+ON=@Create
+   COLOR=colors_gray
+   NPC=brain_monster
+   KARMA={-1500 -1999}
+   FAME={1500 1999}
+   STR={100 125}
+   DEX={60 79}
+   INT={60 90}
+   MAGICRESISTANCE={60.0 85.0}
+   PARRYING={60.0 85.0}
+   TACTICS={60.0 85.0}
+   WRESTLING={60.0 75.0}
+   RESCOLD={20 30}
+   RESENERGY={10 20}
+   RESFIRE={40 50}
+   RESPOISON={10 20}
+ON=@GetHit
+   REMOVEFROMVIEW
+   IF !(<R2>)
+      SRC.UPDATE
+   ENDIF
+ON=@NPCRestock
+   ITEM=average_undead_backpack

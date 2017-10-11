@@ -1,0 +1,109 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 0f06]
+DEFNAME=i_bottle_black
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Black)(Nightsite)
+ON=@Create
+   MORE1=s_night_sight
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f07]
+DEFNAME=i_bottle_orange
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Orange)(Cure)
+ON=@Create
+   MORE1=s_cure
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f08]
+DEFNAME=i_bottle_blue
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Blue)(Agility)
+ON=@Create
+   MORE1=s_agility
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f09]
+DEFNAME=i_bottle_white
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (White)(Strength)
+ON=@Create
+   MORE1=s_strength
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f0a]
+DEFNAME=i_bottle_green
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Green)(Poison)
+ON=@Create
+   MORE1=s_poison
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f0b]
+DEFNAME=i_bottle_red
+TYPE=t_potion
+TDATA1=i_bottle_empty
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Red)(Refresh)
+ON=@Create
+   MORE1=s_refresh
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f0c]
+DEFNAME=i_bottle_yellow
+TYPE=t_potion
+TDATA1=i_bottle_empty
+RESOURCES=1 i_bottle_empty
+WEIGHT=1.0
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Yellow)(Heal)
+ON=@Create
+   MORE1=s_heal
+   MORE2={30.0 90.0}
+
+[ITEMDEF 0f0d]
+DEFNAME=i_bottle_purple
+TYPE=t_potion
+TDATA1=0
+WEIGHT=1.0
+RESOURCES=1 i_bottle_empty
+CATEGORY=Magic
+SUBSECTION=Potions (basic)
+DESCRIPTION=Potion (Purple)(Explosion)
+ON=@Create
+   MORE1=s_explosion
+   MORE2={30.0 90.0}
+
+[EOF]

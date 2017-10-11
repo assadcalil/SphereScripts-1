@@ -1,0 +1,7 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[EVENTS e_npcs]
+
+[EOF]

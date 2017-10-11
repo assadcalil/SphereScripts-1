@@ -1,0 +1,119 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: João Escribano
+VERSION=0.56d
+
+[RESOURCES]
+// Pre-loads
+scripts/server/general_defnames.scp
+
+// Server
+scripts/server/
+scripts/server/admin/
+scripts/server/books/
+scripts/server/dialog/
+scripts/server/events/
+scripts/server/maps/
+scripts/server/menus/
+scripts/server/name/
+scripts/server/skillsmenu/
+scripts/server/triggers/
+
+// Maps
+scripts/server/maps/felucca/
+scripts/server/maps/trammel/
+scripts/server/maps/ilshenar/
+scripts/server/maps/malas/
+scripts/server/maps/tokuno/
+scripts/server/maps/ter_mur/
+
+// Economy
+scripts/economy/
+
+// Mobiles
+scripts/speechs/
+scripts/mobiles/
+scripts/mobiles/humanoid/
+
+// Mobiles Npc
+scripts/npcs/
+scripts/npcs/char_evil/
+scripts/npcs/char_human/
+scripts/npcs/guildmaster/
+scripts/npcs/monsters/
+scripts/npcs/monsters_custom/
+scripts/npcs/npc_citizens/
+scripts/npcs/vendors/
+
+// Items
+scripts/items/
+scripts/items/animations/
+scripts/items/artifacts/
+scripts/items/boulders/
+scripts/items/building/
+scripts/items/charicons/
+// Decoration
+scripts/items/decoration/carpet/
+scripts/items/decoration/dungeons/
+scripts/items/decoration/fireplace/
+scripts/items/decoration/furniture/
+scripts/items/decoration/hangings/
+scripts/items/decoration/lightsources/
+scripts/items/decoration/miniatures/
+scripts/items/decoration/signs/
+scripts/items/decoration/statues/
+scripts/items/decoration/virtues/
+scripts/items/ground_tiles/
+scripts/items/holiday/
+// Magic
+scripts/items/magic/armor/
+scripts/items/magic/jewelry/
+scripts/items/magic/leather/
+scripts/items/magic/spellbook/
+scripts/items/magic/wands/
+scripts/items/magic/weapon/
+scripts/items/memories/
+// Mining
+scripts/items/mining/ore/
+scripts/items/misc/
+scripts/items/multis/
+scripts/items/offset/
+// Profession
+scripts/items/profession/
+scripts/items/profession/barber/
+scripts/items/provisions/armor/
+scripts/items/provisions/clothing/
+scripts/items/provisions/deed/
+scripts/items/provisions/jewelry/
+scripts/items/provisions/logs/
+scripts/items/provisions/misc/
+scripts/items/provisions/potions/
+scripts/items/provisions/shields/
+scripts/items/provisions/weapons/
+scripts/items/quest/
+scripts/items/resources/
+scripts/items/ship/
+scripts/items/siege/
+scripts/items/themepack/
+scripts/items/unsorted/
+scripts/items/vegetation/
+scripts/items/wedding/
+
+// Containers
+scripts/containers/
+
+// Templates
+scripts/templates/
+
+// SpellBook
+scripts/spellbook/
+
+// SHIP
+scripts/ship/
+
+// TYPES
+scripts/types/
+
+// COMANDS GM
+scripts/comand_gm/
+
+[EOF]

@@ -1,0 +1,296 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+[CHARDEF c_armorer]
+ID=c_man
+NAME=#NAMES_HUMANMALE the armorer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Armorer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={80 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={50.0 75.0}
+   BLACKSMITHING={50.0 75.0}
+   CHIVALRY={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MINING={20.0 30.0}
+   PARRYING={50.0 75.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+   ITEM=i_apron_half
+   COLOR=colors_blue
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM={ i_hammer_sledge 1 i_hammer_smith 1 }
+
+   SELL=VENDOR_S_ARMORER_WOODANDSTONE
+   SELL=VENDOR_S_ARMORER_SHIELDS
+   SELL=VENDOR_S_ARMORER_PLATE
+   SELL=VENDOR_S_ARMORER_CHAIN
+   SELL=VENDOR_S_ARMORER_RING
+   SELL=VENDOR_S_ARMORER_LEATHER
+   BUY=VENDOR_B_ARMORER_WOODANDSTONE
+   BUY=VENDOR_B_ARMORER_SHIELDS
+   BUY=VENDOR_B_ARMORER_PLATE
+   BUY=VENDOR_B_ARMORER_CHAIN
+   BUY=VENDOR_B_ARMORER_RING
+   BUY=VENDOR_B_ARMORER_LEATHER
+
+[CHARDEF c_armorer_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the armorer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Armorer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={85 95}
+   DEX={45 55}
+   INT={45 55}
+
+   ANATOMY={20.0 30.0}
+   ARMSLORE={50.0 75.0}
+   BLACKSMITHING={50.0 75.0}
+   CHIVALRY={20.0 30.0}
+   ITEMID={20.0 30.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MINING={20.0 30.0}
+   PARRYING={50.0 75.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_boots_human
+   COLOR=colors_neutral
+   ITEM=i_apron_half
+   COLOR=colors_blue
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM={ i_hammer_sledge 1 i_hammer_smith 1 }
+
+   //SELL=VENDOR_S_ARMORER_WOODANDSTONE
+   SELL=VENDOR_S_ARMORER_SHIELDS
+   SELL=VENDOR_S_ARMORER_PLATE
+   SELL=VENDOR_S_ARMORER_CHAIN
+   SELL=VENDOR_S_ARMORER_RING
+   SELL=VENDOR_S_ARMORER_LEATHER
+   //BUY=VENDOR_B_ARMORER_WOODANDSTONE
+   BUY=VENDOR_B_ARMORER_SHIELDS
+   BUY=VENDOR_B_ARMORER_PLATE
+   BUY=VENDOR_B_ARMORER_CHAIN
+   BUY=VENDOR_B_ARMORER_RING
+   BUY=VENDOR_B_ARMORER_LEATHER
+
+/////////////////
+//Template vend//
+/////////////////
+
+//Shields
+
+[TEMPLATE VENDOR_S_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Shield Armourer
+SELL=i_shield_buckler,{10 15}
+SELL=i_shield_wood,{10 15}
+SELL=i_shield_kite_wood,{10 15}
+COLOR=colors_all
+SELL=i_shield_kite_metal,{10 15}
+COLOR=colors_all
+SELL=i_shield_round_bronze,{10 15}
+SELL=i_shield_round_metal,{10 15}
+SELL=i_shield_heater,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Shield Armourer
+BUY=i_shield_buckler,{10 15}
+BUY=i_shield_wood,{10 15}
+BUY=i_shield_kite_wood,{10 15}
+BUY=i_shield_kite_metal,{10 15}
+BUY=i_shield_round_bronze,{10 15}
+BUY=i_shield_round_metal,{10 15}
+BUY=i_shield_heater,{10 15}
+
+//Plate
+
+[TEMPLATE VENDOR_S_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Plate Armourer
+SELL=i_platemail_gorget,{10 15}
+SELL=i_platemail_chest,{10 15}
+SELL=i_platemail_leggings,{10 15}
+SELL=i_platemail_arms,{10 15}
+SELL=i_platemail_gloves,{10 15}
+SELL=i_platemail_helm,{10 15}
+SELL=i_helm_closed,{10 15}
+SELL=i_helm_open,{10 15}
+SELL=i_helm_nose,{10 15}
+SELL=i_bascinet,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Plate Armourer
+BUY=i_platemail_gorget,{10 15}
+BUY=i_platemail_chest,{10 15}
+BUY=i_platemail_leggings,{10 15}
+BUY=i_platemail_arms,{10 15}
+BUY=i_platemail_gloves,{10 15}
+BUY=i_platemail_helm,{10 15}
+BUY=i_helm_closed,{10 15}
+BUY=i_helm_open,{10 15}
+BUY=i_helm_nose,{10 15}
+BUY=i_bascinet,{10 15}
+
+//Chain
+
+[TEMPLATE VENDOR_S_ARMORER_CHAIN]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Chain Armourer
+SELL=i_chainmail_coif,{10 15}
+COLOR=colors_metal
+SELL=i_chainmail_tunic,{10 15}
+COLOR=colors_metal
+SELL=i_chainmail_leggings,{10 15}
+COLOR=colors_metal
+
+[TEMPLATE VENDOR_B_ARMORER_CHAIN]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Chain Armourer
+BUY=i_chainmail_coif,{10 15}
+BUY=i_chainmail_tunic,{10 15}
+BUY=i_chainmail_leggings,{10 15}
+
+//Ring
+
+[TEMPLATE VENDOR_S_ARMORER_RING]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Ring Armourer
+SELL=i_ringmail_tunic,{10 15}
+SELL=i_ringmail_leggings,{10 15}
+SELL=i_ringmail_sleeves,{10 15}
+SELL=i_ringmail_gloves,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_RING]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Ring Armourer
+BUY=i_ringmail_tunic,{10 15}
+BUY=i_ringmail_leggings,{10 15}
+BUY=i_ringmail_sleeves,{10 15}
+BUY=i_ringmail_gloves,{10 15}
+
+//Leather
+
+[TEMPLATE VENDOR_S_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Leather Armourer
+SELL=i_leather_cap,{10 15}
+SELL=i_leather_gorget,{10 15}
+SELL=i_leather_sleeves,{10 15}
+SELL=i_leather_tunic,{10 15}
+SELL=i_leather_leggings,{10 15}
+SELL=i_leather_gloves,{10 15}
+SELL=i_studded_gorget,{10 15}
+SELL=i_studded_sleeves,{10 15}
+SELL=i_studded_tunic,{10 15}
+SELL=i_studded_leggings,{10 15}
+SELL=i_studded_gloves,{10 15}
+SELL=i_armor_female_studded,{10 15}
+SELL=i_armor_female_leather,{10 15}
+SELL=i_armor_female_shorts,{10 15}
+SELL=i_armor_female_skirt,{10 15}
+SELL=i_armor_female_bustier,{10 15}
+SELL=i_armor_female_bustier_studded,{10 15}
+
+[TEMPLATE VENDOR_B_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Leather Armourer
+BUY=i_leather_gorget,{10 15}
+BUY=i_leather_cap,{10 15}
+BUY=i_leather_sleeves,{10 15}
+BUY=i_leather_tunic,{10 15}
+BUY=i_leather_leggings,{10 15}
+BUY=i_leather_gloves,{10 15}
+BUY=i_studded_gorget,{10 15}
+BUY=i_studded_sleeves,{10 15}
+BUY=i_studded_tunic,{10 15}
+BUY=i_studded_leggings,{10 15}
+BUY=i_studded_gloves,{10 15}
+BUY=i_armor_female_studded,{10 15}
+BUY=i_armor_female_leather,{10 15}
+BUY=i_armor_female_shorts,{10 15}
+BUY=i_armor_female_skirt,{10 15}
+BUY=i_armor_female_bustier,{10 15}
+BUY=i_armor_female_bustier_studded,{10 15}

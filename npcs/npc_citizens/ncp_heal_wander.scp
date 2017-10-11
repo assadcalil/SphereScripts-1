@@ -1,0 +1,119 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_heal_wander]
+ID=c_man
+NAME=#NAMES_HUMANMALE the wandering healer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Wandering Healer (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_healer
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   CAMPING={20.0 30.0}
+   COOKING={20.0 30.0}
+   EVALUATINGINTEL={50.0 75.0}
+   FORENSICS={20.0 30.0}
+   HEALING={50.0 75.0}
+   MACEFIGHTING={50.0 75.0}
+   MAGERY={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={50.0 75.0}
+   SPIRITSPEAK={50.0 75.0}
+   TACTICS={50.0 75.0}
+   WRESTLING={50.0 75.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+   ITEM=i_robe
+   COLOR=colors_yellow
+   ITEM=i_sandals
+   COLOR=colors_yellow
+   ITEM=random_hats
+   COLOR=colors_yellow
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal
+
+[CHARDEF c_heal_wander_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the wandering healer
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Villagers
+DESCRIPTION=Wandering Healer (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_healer
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={85 95}
+
+   ANATOMY={20.0 30.0}
+   ANIMALLORE={20.0 30.0}
+   CAMPING={20.0 30.0}
+   COOKING={20.0 30.0}
+   EVALUATINGINTEL={50.0 75.0}
+   FORENSICS={20.0 30.0}
+   HEALING={50.0 75.0}
+   MACEFIGHTING={50.0 75.0}
+   MAGERY={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={50.0 75.0}
+   SPIRITSPEAK={50.0 75.0}
+   TACTICS={50.0 75.0}
+   WRESTLING={50.0 75.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=i_robe
+   COLOR=colors_yellow
+   ITEM=i_sandals
+   COLOR=colors_yellow
+   ITEM=random_hats
+   COLOR=colors_yellow
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_staff_normal

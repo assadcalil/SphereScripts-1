@@ -1,0 +1,91 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_magincia_servant]
+ID=c_man
+NAME=#NAMES_HUMANMALE the Magincia servant
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Magincia Town Members
+DESCRIPTION=Magincia Servant (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={20 25}
+
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_yellow
+   ITEM=random_pants_human
+   COLOR=colors_yellow
+   ITEM=i_sandals
+   COLOR=colors_black
+ON=@NPCRestock
+   ITEM=random_coin_purse
+
+[CHARDEF c_magincia_servant_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the Magincia servant
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Magincia Town Members
+DESCRIPTION=Magincia Servant (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={20 25}
+
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_yellow
+   ITEM=random_skirts_human
+   COLOR=colors_yellow
+   ITEM=i_sandals
+   COLOR=colors_black
+ON=@NPCRestock
+   ITEM=random_coin_purse

@@ -1,0 +1,111 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////////
+// Giants //
+////////////
+
+[CHARDEF c_frost_ettin]
+ID=c_ettin
+NAME=frost ettin
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_USEHANDS
+DAM=13,35
+ARMOR=37
+BLOODCOLOR=colors_white
+TAG.SlayerGroup=REPOND
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Frost Ettin
+ON=@Create
+   COLOR=color_snow
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={135 155}
+   INT={71 95}
+   DEX={50 60}
+   MAGICRESISTANCE={56.9 65.8}
+   PARRYING={56.6 75.8}
+   TACTICS={52.1 78.8}
+   SWORDSMANSHIP={80.0 100.0}
+   WRESTLING={68.4 77.6}
+   RESCOLD={40 50}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={20 30}
+ON=@NPCRestock
+   ITEM=random_weapon_sword_normal
+   ITEM=loot_ettin
+
+[CHARDEF c_ettin_lord]
+ID=c_ettin_w_hammer
+NAME=ettin lord
+CAN=MT_WALK|MT_EQUIP|MT_USEHANDS
+DAM=25,40
+ARMOR=32
+TAG.SlayerGroup=TROLL,REPOND
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Ettin Lord
+ON=@Create
+   NPC=brain_monster
+   FAME={2000 2999}
+   KARMA={-2000 -2999}
+   STR={255 300}
+   DEX={86 115}
+   INT={91 125}
+   MAXHITS={800 1200}
+   ARCHERY={90.0 100.0}
+   EVALUATINGINTEL={70.0 80.0}
+   FENCING={10.0 20.0}
+   MACEFIGHTING={10.0 20.0}
+   MAGERY={30.0 55.0}
+   MAGICRESISTANCE={40.0 55.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={50.0 60.0}
+   SWORDSMANSHIP={60.0 75.0}
+   TACTICS={60.0 70.0}
+   WRESTLING={50.0 60.0}
+   RESCOLD={20 30}
+   RESENERGY={20 30}
+   RESFIRE={20 30}
+   RESPOISON={20 30}
+ON=@NPCRestock
+   ITEM=loot_ai_hard
+   ITEM=loot_ettin_lord
+
+[CHARDEF c_cyclops_king]
+ID=c_cyclops
+NAME=cyclops king
+CAN=MT_WALK|MT_RUN|MT_EQUIP|MT_USEHANDS
+DAM=36,50
+ARMOR=58
+TAG.SlayerGroup=REPOND
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Cyclops King
+ON=@Create
+   NPC=brain_monster
+   FAME={3500 3999}
+   KARMA={-3500 -3999}
+   STR={480 590}
+   DEX={95 100}
+   INT={97 158}
+   MAXHITS={600 900}
+   ARCHERY={90.0 100.0}
+   FENCING={10.0 20.0}
+   MACEFIGHTING={10.0 20.0}
+   MAGICRESISTANCE={60.0 75.0}
+   PARRYING={70.0 80.0}
+   SWORDSMANSHIP={80.0 90.0}
+   TACTICS={80.0 100.0}
+   WRESTLING={80.0 90.0}
+   RESCOLD={40 50}
+   RESENERGY={40 50}
+   RESFIRE={40 50}
+   RESPOISON={40 50}
+ON=@NPCRestock
+   ITEM=loot_ai_hard
+   ITEM=loot_ogre
+

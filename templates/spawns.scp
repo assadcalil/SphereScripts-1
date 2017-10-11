@@ -1,0 +1,9 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME items_random_spawns]
+random_all_items       { random_armor_all 3 random_scroll 3 random_wearables 2 random_activators 1 random_reagent 1 }
+
+
+[EOF]

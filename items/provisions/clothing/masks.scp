@@ -1,0 +1,214 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[ITEMDEF 0141b]
+DEFNAME=i_mask_orc
+TYPE=t_clothing
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=10
+VALUE=23
+WEIGHT=4.0
+RESOURCES=2 i_hides_cut,1 i_thread
+SKILLMAKE=Tailoring 100.0,t_sewing_kit,Anatomy 58.3
+CanUse=can_u_human|can_u_elf
+ReqStr=10
+TEVENTS=t_equipitem
+DUPELIST=0141c
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Orc Mask
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=7
+   RESENERGY=8
+   RESFIRE=1
+   RESPHYSICAL=1
+   RESPOISON=7
+
+[ITEMDEF 0141c]
+//orc mask
+DUPEITEM=0141b
+
+
+[ITEMDEF 01545]
+DEFNAME=i_mask_bear
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=6
+VALUE=14
+WEIGHT=3.1
+RESOURCES=1 i_thread,1 i_fur_dark
+SKILLMAKE=Tailoring 16.1,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+ReqStr=10
+TEVENTS=t_equipitem
+DUPELIST=01546
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Bear Mask
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=5
+   RESFIRE=3
+   RESCOLD=8
+   RESPOISON=4
+   RESENERGY=4
+
+[ITEMDEF 01546]
+//bear mask
+DUPEITEM=01545
+
+[ITEMDEF 01547]
+DEFNAME=i_mask_deer
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=6
+VALUE=14
+WEIGHT=3.1
+RESOURCES=1 i_thread,1 i_fur_dark
+SKILLMAKE=Tailoring 16.1,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+ReqStr=10
+TEVENTS=t_equipitem
+DUPELIST=01548
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Deer Mask
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=2
+   RESFIRE=6
+   RESCOLD=8
+   RESPOISON=1
+   RESENERGY=7
+
+[ITEMDEF 01548]
+//deer mask
+DUPEITEM=01547
+
+[ITEMDEF 01549]
+DEFNAME=i_mask_blue
+//DEFNAME=i_mask_tribal_large
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=5
+VALUE=15
+WEIGHT=4.4
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+ReqStr=10
+TEVENTS=t_equipitem
+DUPELIST=0154a
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Tribal Mask (fancy)
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=6
+   RESFIRE=9
+   RESCOLD=0
+   RESPOISON=4
+   RESENERGY=5
+
+[ITEMDEF 0154a]
+//tribal mask
+DUPEITEM=01549
+
+[ITEMDEF 0154b]
+DEFNAME=i_mask_tribal_red
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=5
+VALUE=15
+WEIGHT=5.1
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+ReqStr=10
+TEVENTS=t_equipitem
+DUPELIST=0154c
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Tribal Mask (red)
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=0
+   RESCOLD=6
+   RESPOISON=10
+   RESENERGY=5
+
+[ITEMDEF 0154c]
+//tribal mask
+DUPEITEM=0154b
+
+[ITEMDEF 026a1]
+//appears like a (FIXME: what kind of hat) on paperdoll
+DEFNAME=i_mask_feathered
+TYPE=t_clothing
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=5
+VALUE=26
+WEIGHT=3.6
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 16.1,t_sewing_kit
+CanUse=can_u_human|can_u_elf|can_u_none
+ReqStr=10
+DUPELIST=026a2
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Feathered Mask (unwearable)
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=5
+   RESFIRE=1
+   RESPHYSICAL=1
+   RESPOISON=5
+
+[ITEMDEF 026a2]
+//feathered mask
+DUPEITEM=026a1
+
+[ITEMDEF 026a3]
+//appears like nothing on paperdoll
+DEFNAME=i_hood_ninja_2
+NAME=ninja hood
+TYPE=t_clothing
+FLIP=1
+//LAYER=layer_helm
+//ARMOR=7
+VALUE=83
+WEIGHT=14.1
+RESOURCES=14 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf|can_u_none
+ReqStr=10
+DUPELIST=026a4
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Ninja Hood (unwearable)
+ON=@Create
+   HITPOINTS={36 48}
+   RESFIRE=5
+   RESCOLD=9
+   RESPOISON=5
+   RESENERGY=5
+
+[ITEMDEF 026a4]
+//ninja hood
+DUPEITEM=026a3
+
+[EOF]

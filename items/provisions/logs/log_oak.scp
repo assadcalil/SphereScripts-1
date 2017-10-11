@@ -1,0 +1,23 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME colors_resources_wood]
+color_l_oak        07da
+
+////////
+//Logs//
+////////
+
+[ITEMDEF i_log_oak]
+ID=i_log
+NAME=oak log%s
+TYPE=t_log
+CATEGORY=Resources
+SUBSECTION=Wood
+DESCRIPTION=Oak Log
+
+ON=@Create
+COLOR=color_l_oak
+
+[EOF]

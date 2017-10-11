@@ -1,0 +1,37 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Deed//
+////////
+
+[ITEMDEF i_deed_orc_ship]
+ID=i_deed_ship
+NAME=Deed to a Orc Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Orc Ship
+WEIGHT=1
+VALUE=1
+
+On=@DCLICK
+src.dialog d_ship
+return 1
+
+/////////////
+//Deed Ship//
+/////////////
+
+   [ITEMDEF i_deed_orc_ship_n]
+ID=i_deed_ship
+NAME=Deed to a Orc Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Orc Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_orc_ship_n
+
+[EOF]

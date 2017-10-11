@@ -1,0 +1,155 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////
+//NPC//
+///////
+
+
+[CHARDEF c_shepherd]
+ID=c_man
+NAME=#NAMES_HUMANMALE the shepherd
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Shepherd (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANIMALLORE={20.0 30.0}
+   CAMPING={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   VETERINARY={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_hats
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_shepherds_crook
+
+   SELL=VENDOR_S_SHEPHERD
+   BUY=VENDOR_B_SHEPHERD
+
+[CHARDEF c_shepherd_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the shepherdess
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Shepherd (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ANIMALLORE={20.0 30.0}
+   CAMPING={20.0 30.0}
+   HERDING={50.0 75.0}
+   MACEFIGHTING={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   TACTICS={20.0 30.0}
+   VETERINARY={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_hats
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=i_shepherds_crook
+
+   SELL=VENDOR_S_SHEPHERD
+   BUY=VENDOR_B_SHEPHERD
+
+/////////////////
+//Template vend//
+/////////////////
+
+[TEMPLATE VENDOR_S_SHEPHERD]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Shepherd
+SELL=I_WOOL,{6 34}
+SELL=i_shepherds_crook,{6 34}
+
+[TEMPLATE VENDOR_B_SHEPHERD]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Shepherd
+BUY=i_hay,{116 334}
+BUY=i_bread_loaf,{6 34}
+BUY=i_bread_french,{6 34}
+BUY=i_PLATE_COOKIES,{6 34}
+BUY=i_pie_baked,{6 34}
+BUY=i_cake,{6 34}
+BUY=i_muffin,{6 34}
+BUY=i_cheese_wheel,{6 34}
+BUY=i_bird_cooked,{6 34}
+BUY=i_ribs_cooked,{6 34}
+BUY=i_lamb_leg,{6 34}
+BUY=i_chicken_leg,{6 34}
+BUY=i_bowl_wood_carrots,{6 34}
+BUY=i_bowl_wood_corn,{6 34}
+BUY=i_bowl_wood_lettuce,{6 34}
+BUY=i_bowl_wood_peas,{6 34}
+BUY=i_bowl_pewter_potatoes,{6 34}
+BUY=i_bowl_stew_lg,{6 34}
+BUY=i_bowl_TOMATO_SOUP,{6 34}
+
+[EOF]

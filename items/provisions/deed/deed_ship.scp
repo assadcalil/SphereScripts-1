@@ -1,0 +1,23 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Deed//
+////////
+
+[ITEMDEF 014f1]
+DEFNAME=i_deed_ship
+TYPE=t_deed
+FLIP=1
+WEIGHT=1
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Ship Plans (Blank)
+DUPELIST=014f2
+
+[ITEMDEF 014f2]
+//ship plans
+DUPEITEM=014f1
+
+[EOF]

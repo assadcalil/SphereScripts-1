@@ -1,0 +1,416 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+///////////////
+//Default ELF//
+///////////////
+
+[NEWBIE MALE_DEFAULT ELF]
+ITEM=i_gold,1000
+ITEM=i_book_sm
+ITEM=i_candle
+ITEM=i_dagger
+ITEM=i_shirt_plain
+ITEM=i_pants_short
+ITEM=i_shoes_plain
+
+[NEWBIE FEMALE_DEFAULT ELF]
+ITEM=i_gold,1000
+ITEM=i_book_sm
+ITEM=i_candle
+ITEM=i_dagger
+ITEM=i_shirt_plain
+ITEM=i_pants_short
+ITEM=i_shoes_plain
+
+//////////////////
+//Profession ELF//
+//////////////////
+
+[NEWBIE PROFESSION_WARRIOR ELF]
+ITEM=i_leaf_chest
+
+[NEWBIE PROFESSION_NECROMANCER ELF]
+ITEM=i_spellbook_necromancy
+MORE1=08981
+ITEM=i_bone_helmet
+ITEM=i_elven_machete
+ITEM=i_leaf_chest
+COLOR=02c3
+ITEM=i_leaf_arms
+COLOR=02c3
+ITEM=i_leaf_gloves
+COLOR=02c3
+ITEM=i_leaf_gorget
+COLOR=02c3
+ITEM=i_leaf_leggings
+COLOR=02c3
+ITEM=i_elven_pants
+COLOR=02c3
+ITEM=i_elven_boots
+
+[NEWBIE PROFESSION_PALADIN ELF]
+ITEM=i_spellbook_chivalry
+MORE1=03ff
+ITEM=i_elven_machete
+ITEM=i_helm_winged_2
+ITEM=i_leaf_gorget
+ITEM=i_leaf_arms
+ITEM=i_leaf_chest
+ITEM=i_leaf_leggings
+ITEM=i_elven_boots
+
+[NEWBIE PROFESSION_SAMURAI ELF]
+ITEM=i_spellbook_bushido
+ITEM=i_scissors
+ITEM=i_bandage,50
+ITEM=i_hakama_shita
+COLOR=02c3
+ITEM=i_hakama
+COLOR=02c3
+ITEM=i_shoes_tabi
+COLOR=02c3
+ITEM=i_hakama_tattsuke
+COLOR=022d
+ITEM=i_bokuto
+ITEM=i_helm_raven
+
+[NEWBIE PROFESSION_NINJA ELF]
+ITEM=i_spellbook_ninjitsu
+ITEM=i_hat_kasa
+ITEM=i_hakama_tattsuke
+COLOR={089 1 090 1 099 1 0b5 1 0ec 1 01a8 1 0336 1}
+ITEM=i_hakama_shita
+COLOR=02c3
+ITEM=i_boots_tabi
+COLOR=02c3
+ITEM=i_bomb_smoke
+ITEM=i_sword_assassin_spike
+
+/////////////////////
+// Skill templates //
+/////////////////////
+
+[NEWBIE ALCHEMY ELF]
+ITEM=i_bottle_empty,4
+ITEM=i_mortar_pestle
+ITEM={i_elven_male_robe1 1 i_elven_male_robe2 1}
+COLOR=COLORs_pink
+
+[NEWBIE ANATOMY ELF]
+ITEM=i_bandage,3
+ITEM={i_elven_male_robe1 1 i_elven_male_robe2 1}
+COLOR=COLORs_yellow
+
+[NEWBIE ANIMALLORE ELF]
+ITEM=i_shepherds_crook
+ITEM={i_elven_male_robe1 1 i_elven_male_robe2 1}
+COLOR=COLORs_blue
+
+[NEWBIE ARCHERY ELF]
+ITEM=i_arrow,25
+ITEM=i_elven_composite_longbow
+
+[NEWBIE ARMSLORE ELF]
+ITEM={i_sword_leafblade 1 i_rune_blade 1 i_mace_diamond 1}
+
+[NEWBIE BEGGING ELF]
+ITEM=i_staff_wild
+
+[NEWBIE FENCING ELF]
+ITEM=i_sword_leafblade
+
+[NEWBIE FISHING ELF]
+ITEM=i_fishing_pole
+COLOR=COLORs_yellow
+ITEM=i_helm_circlet1
+COLOR=COLORs_yellow
+
+[NEWBIE HERDING ELF]
+ITEM=i_staff_wild
+
+[NEWBIE ITEMID ELF]
+ITEM=i_staff_wild
+
+[NEWBIE LUMBERJACKING ELF]
+ITEM=i_hatchet
+
+[NEWBIE MACEFIGHTING ELF]
+ITEM=i_mace_diamond
+
+[NEWBIE MAGERY ELF]
+ITEM=i_spellbook
+MORE1=0382a8c38    //3 spells on circle 1-4 (to enable full spellbook just set MORE1=0ffffffff and MORE2=0ffffffff)
+ITEM=random_first_circle
+ITEM=random_second_circle
+ITEM=random_third_circle
+ITEM=i_helm_circlet1
+ITEM={i_elven_male_robe1 1 i_elven_male_robe2 1}
+COLOR=COLORs_blue
+
+[NEWBIE PARRYING ELF]
+ITEM=i_shield_wood
+
+[NEWBIE SWORDSMANSHIP ELF]
+ITEM=i_rune_blade
+
+[NEWBIE TACTICS ELF]
+ITEM=i_rune_blade
+
+[NEWBIE TRACKING ELF]
+ITEM=i_knife_skinning
+ITEM=i_elven_boots
+COLOR=COLORs_yellow
+
+[NEWBIE WRESTLING ELF]
+ITEM=i_leaf_gloves
+
+////////////////////
+//Chardef ELF MALE//
+////////////////////
+
+[CHARDEF 025d]
+DEFNAME=c_elf_male
+NAME=#NAMES_ELF_MALE
+ICON=i_pet_man
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_MOUNT
+DAM=1,4
+//ARMOR=
+DESIRES=r_civilization,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,e_carnivores3
+FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=20
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_servered_elf_ears
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=0410
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Elf (male)
+
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   ALCHEMY={15.0 40.0}
+   ANATOMY={15.0 40.0}
+   ANIMALLORE={15.0 40.0}
+   ITEMID={15.0 40.0}
+   ARMSLORE={15.0 40.0}
+   PARRYING={15.0 40.0}
+   BEGGING={15.0 40.0}
+   BLACKSMITHING={15.0 40.0}
+   BOWCRAFT={15.0 40.0}
+   PEACEMAKING={15.0 40.0}
+   CAMPING={15.0 40.0}
+   CARPENTRY={15.0 40.0}
+   CARTOGRAPHY={15.0 40.0}
+   COOKING={15.0 40.0}
+   DETECTINGHIDDEN={15.0 40.0}
+   ENTICEMENT={15.0 40.0}
+   EVALUATINGINTEL={15.0 40.0}
+   HEALING={15.0 40.0}
+   FISHING={15.0 40.0}
+   FORENSICS={15.0 40.0}
+   HERDING={15.0 40.0}
+//   HIDING={15.0 40.0}
+   PROVOCATION={15.0 40.0}
+   INSCRIPTION={15.0 40.0}
+   LOCKPICKING={15.0 40.0}
+   MAGERY={15.0 40.0}
+   MAGICRESISTANCE={15.0 40.0}
+   TACTICS={15.0 40.0}
+   SNOOPING={15.0 40.0}
+   MUSICIANSHIP={15.0 40.0}
+   POISONING={15.0 40.0}
+   ARCHERY={15.0 40.0}
+   SPIRITSPEAK={15.0 40.0}
+   STEALING={15.0 40.0}
+   TAILORING={15.0 40.0}
+//   TAMING={15.0 40.0}
+   TASTEID={15.0 40.0}
+   TINKERING={15.0 40.0}
+   TRACKING={15.0 40.0}
+   VETERINARY={15.0 40.0}
+   SWORDSMANSHIP={15.0 40.0}
+   MACEFIGHTING={15.0 40.0}
+   FENCING={15.0 40.0}
+   WRESTLING={15.0 40.0}
+   LUMBERJACKING={15.0 40.0}
+   MINING={15.0 40.0}
+   MEDITATION={15.0 40.0}
+//   STEALTH={15.0 40.0}
+   REMOVETRAP={15.0 40.0}
+   NECROMANCY={15.0 40.0}
+   FOCUS={15.0 40.0}
+   CHIVALRY={15.0 40.0}
+   BUSHIDO={15.0 40.0}
+   NINJITSU={15.0 40.0}
+   SPELLWEAVING={15.0 40.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_male_elf_hair
+   COLOR=colors_all
+
+[CHARDEF 025e]
+DEFNAME=c_elf_female
+NAME=#NAMES_ELF_FEMALE
+ICON=i_pet_woman
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_USEHANDS|MT_EQUIP|MT_MOUNT
+DAM=1,4
+//ARMOR=
+DESIRES=r_civilization,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,e_carnivores3
+FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=20
+RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_servered_elf_ears
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+RESLEVEL=5
+RESDISPDNID=c_woman
+RESDISPDNHUE=0410
+MAXFOLLOWER=5
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=70
+INCREASEDEFCHANCEMAX=70
+
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Elf (female)
+
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   ALCHEMY={15.0 40.0}
+   ANATOMY={15.0 40.0}
+   ANIMALLORE={15.0 40.0}
+   ITEMID={15.0 40.0}
+   ARMSLORE={15.0 40.0}
+   PARRYING={15.0 40.0}
+   BEGGING={15.0 40.0}
+   BLACKSMITHING={15.0 40.0}
+   BOWCRAFT={15.0 40.0}
+   PEACEMAKING={15.0 40.0}
+   CAMPING={15.0 40.0}
+   CARPENTRY={15.0 40.0}
+   CARTOGRAPHY={15.0 40.0}
+   COOKING={15.0 40.0}
+   DETECTINGHIDDEN={15.0 40.0}
+   ENTICEMENT={15.0 40.0}
+   EVALUATINGINTEL={15.0 40.0}
+   HEALING={15.0 40.0}
+   FISHING={15.0 40.0}
+   FORENSICS={15.0 40.0}
+   HERDING={15.0 40.0}
+//   HIDING={15.0 40.0}
+   PROVOCATION={15.0 40.0}
+   INSCRIPTION={15.0 40.0}
+   LOCKPICKING={15.0 40.0}
+   MAGERY={15.0 40.0}
+   MAGICRESISTANCE={15.0 40.0}
+   TACTICS={15.0 40.0}
+   SNOOPING={15.0 40.0}
+   MUSICIANSHIP={15.0 40.0}
+   POISONING={15.0 40.0}
+   ARCHERY={15.0 40.0}
+   SPIRITSPEAK={15.0 40.0}
+   STEALING={15.0 40.0}
+   TAILORING={15.0 40.0}
+//   TAMING={15.0 40.0}
+   TASTEID={15.0 40.0}
+   TINKERING={15.0 40.0}
+   TRACKING={15.0 40.0}
+   VETERINARY={15.0 40.0}
+   SWORDSMANSHIP={15.0 40.0}
+   MACEFIGHTING={15.0 40.0}
+   FENCING={15.0 40.0}
+   WRESTLING={15.0 40.0}
+   LUMBERJACKING={15.0 40.0}
+   MINING={15.0 40.0}
+   MEDITATION={15.0 40.0}
+//   STEALTH={15.0 40.0}
+   REMOVETRAP={15.0 40.0}
+   NECROMANCY={15.0 40.0}
+   FOCUS={15.0 40.0}
+   CHIVALRY={15.0 40.0}
+   BUSHIDO={15.0 40.0}
+   NINJITSU={15.0 40.0}
+   SPELLWEAVING={15.0 40.0}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+   ITEMNEWBIE=random_female_elf_hair
+   COLOR=colors_all
+
+[CHARDEF 025f]
+DEFNAME=c_elf_ghost_man
+NAME=ghost
+ICON=i_pet_man
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_GHOST|MT_EQUIP
+//DAM=
+//ARMOR=
+DESIRES=r_civilization
+AVERSIONS=t_trap,e_carnivores3
+RESOURCES=
+FOODTYPE=
+MAXFOOD=
+BLOODCOLOR=-1
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Elf ghost (male)
+RESLEVEL=5
+RESDISPDNID=c_ghost_man
+RESDISPDNHUE=0
+ON=@Create
+   NPC=brain_human
+
+[CHARDEF 0260]
+DEFNAME=c_elf_ghost_woman
+NAME=ghost
+ICON=i_pet_woman
+//SOUND=
+CAN=MT_WALK|MT_RUN|MT_GHOST|MT_FEMALE|MT_EQUIP
+//DAM=
+//ARMOR=
+DESIRES=r_civilization
+AVERSIONS=t_trap,e_carnivores3
+FOODTYPE=
+MAXFOOD=
+RESOURCES=
+BLOODCOLOR=-1
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Elf ghost (female)
+RESLEVEL=5
+RESDISPDNHUE=0
+RESDISPDNID=c_ghost_woman
+ON=@Create
+   NPC=brain_human
+
+[CHARDEF 027d]
+//Spectral Armor
+NAME=Spectral Armor
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+[EOF]

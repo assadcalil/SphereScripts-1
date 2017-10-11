@@ -1,0 +1,16 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[SPEECH spk_bodysculptor]
+ON=*buy*
+	IF (<SRC.f_isgarg>)
+		SRC.SYSMESSAGE Gargoyles cannot use the services of a body sculptor.
+		return 1
+	ELIF !((<SRC.CLIENTISKR>) || (<SRC.CLIENTISSA>))
+		SRC.SYSMESSAGE Your legacy self looks too good to change.
+		return 1
+	ENDIF
+	SDIALOG d_body_sculptor
+
+	[EOF]

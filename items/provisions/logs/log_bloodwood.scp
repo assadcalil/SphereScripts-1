@@ -1,0 +1,36 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[DEFNAME colors_resources_wood]
+color_l_bloodwood  04aa
+
+////////
+//Logs//
+////////
+
+[ITEMDEF i_log_bloodwood]
+ID=i_log
+NAME=bloodwood log%s
+TYPE=t_log
+CATEGORY=Resources
+SUBSECTION=Wood
+DESCRIPTION=Bloodwood Log
+
+ON=@Create
+COLOR=color_l_bloodwood
+
+/////////
+//Board//
+/////////
+
+[ITEMDEF i_board_bloodwood]
+ID=i_board
+NAME=bloodwood board%s
+TYPE=t_board
+CATEGORY=Resources
+SUBSECTION=Boards
+DESCRIPTION=Bloodwood Board
+
+ON=@Create
+COLOR=color_l_bloodwood

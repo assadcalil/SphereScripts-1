@@ -1,0 +1,102 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+
+[CHARDEF c_guild_merchant]
+ID=c_man
+NAME=#NAMES_HUMANMALE the merchant guildmaster
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Guildmasters
+DESCRIPTION=Merchant (human male)
+ON=@Create
+   TAG.OVERRIDE.TRAINSKILLMAX=500
+   TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
+   NPC=brain_human
+   COLOR=colors_skin
+   STR={71 85}
+   DEX={86 100}
+   INT={86 100}
+   ITEMID={55.0 78.0}
+   FENCING={15.0 38.0}
+   SWORDSMANSHIP={15.0 38.0}
+   WRESTLING={15.0 38.0}
+   MACEFIGHTING={15.0 38.0}
+   TACTICS={35.0 55.0}
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair
+   COLOR=match_hair
+ON=@NPCRestock
+   ITEM=random_light
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=i_pants_long
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   ITEM=random_rings
+   COLOR=colors_neutral
+   ITEM=random_coin_purse
+
+[CHARDEF c_guild_merchant_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the merchant guildmistress
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Guildmasters
+DESCRIPTION=Merchant (human female)
+ON=@Create
+   TAG.OVERRIDE.TRAINSKILLMAX=500
+   TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
+   NPC=brain_human
+   COLOR=colors_skin
+   STR={71 85}
+   DEX={86 100}
+   INT={86 100}
+   ITEMID={55.0 78.0}
+   FENCING={15.0 38.0}
+   SWORDSMANSHIP={15.0 38.0}
+   WRESTLING={15.0 38.0}
+   MACEFIGHTING={15.0 38.0}
+   TACTICS={35.0 55.0}
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+ON=@NPCRestock
+   ITEM=random_light
+   ITEM=random_shirts_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_neutral
+   ITEM=random_rings
+   ITEM=random_coin_purse
+
+[EOF]

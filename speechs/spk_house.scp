@@ -1,0 +1,9 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[SPEECH spk_house_cmds]
+//All house commands goes here. Empty by default.
+
+
+[EOF]

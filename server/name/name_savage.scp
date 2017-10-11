@@ -1,0 +1,33 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[NAMES NAMES_SAVAGE_FEMALE]
+11
+Aicee
+Araka
+Arda
+Bhora
+Cordee
+Evocah
+Jexa
+Khaonem
+La'Loh
+Rhunda
+Sinthe
+
+[NAMES NAMES_SAVAGE_MALE]
+11
+Adrok
+Atar
+Bishor
+Bonkie
+Ghrom
+Halex
+Kahl
+Malen
+Ogger
+Sai'ge
+Yar
+
+[EOF]

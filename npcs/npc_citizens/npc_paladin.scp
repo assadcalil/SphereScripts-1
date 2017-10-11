@@ -1,0 +1,133 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_paladin]
+ID=c_man
+NAME=#NAMES_HUMANMALE the paladin
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Paladin (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 110}
+   DEX={55 75}
+   INT={55 75}
+
+   ANATOMY={50.0 75.0}
+   ARCHERY={50.0 75.0}
+   ARMSLORE={20.0 30.0}
+   BUSHIDO={20.0 30.0}
+   CHIVALRY={50.0 75.0}
+   FENCING={50.0 75.0}
+   HEALING={50.0 75.0}
+   MACEFIGHTING={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={20.0 30.0}
+   PARRYING={50.0 75.0}
+   SWORDSMANSHIP={50.0 75.0}
+   TACTICS={50.0 75.0}
+   THROWING={50.0 75.0}
+   WRESTLING={50.0 75.0}
+
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=i_platemail_chest
+   ITEM=i_platemail_leggings
+   ITEM=i_platemail_arms
+   ITEM=i_platemail_gloves
+   ITEM=i_platemail_gorget
+   ITEM=random_armor_head_european
+   ITEM={ random_tunics_manly 1 random_robes_manly 1 }
+   COLOR=colors_all
+   ITEM=random_capes_all
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=loaded_backpack
+   ITEM=random_weapon_all_normal
+   ITEM=random_weapon_all_normal
+   ITEM=random_armor_shield_european
+   ITEM=i_mt_horse_tan,1,R2
+
+[CHARDEF c_paladin_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the paladin
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Fighters
+DESCRIPTION=Paladin (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={85 110}
+   DEX={55 75}
+   INT={55 75}
+
+   ANATOMY={50.0 75.0}
+   ARCHERY={50.0 75.0}
+   ARMSLORE={20.0 30.0}
+   BUSHIDO={20.0 30.0}
+   CHIVALRY={50.0 75.0}
+   FENCING={50.0 75.0}
+   HEALING={50.0 75.0}
+   MACEFIGHTING={50.0 75.0}
+   MAGICRESISTANCE={50.0 75.0}
+   MEDITATION={20.0 30.0}
+   PARRYING={50.0 75.0}
+   SWORDSMANSHIP={50.0 75.0}
+   TACTICS={50.0 75.0}
+   THROWING={50.0 75.0}
+   WRESTLING={50.0 75.0}
+
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=i_platemail_chest
+   ITEM=i_platemail_leggings
+   ITEM=i_platemail_arms
+   ITEM=i_platemail_gloves
+   ITEM=i_platemail_gorget
+   ITEM=random_armor_head_european
+   ITEM={ random_tunics_manly 1 random_robes_manly 1 }
+   COLOR=colors_all
+   ITEM=random_capes_all
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=loaded_backpack
+   ITEM=random_weapon_all_normal
+   ITEM=random_weapon_all_normal
+   ITEM=random_armor_shield_european
+   ITEM=i_mt_horse_tan,1,R2

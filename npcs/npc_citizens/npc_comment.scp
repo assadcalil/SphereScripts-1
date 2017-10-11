@@ -1,0 +1,26 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[COMMENT npc_citizen]
+FIXME: NPC citizen "to do" list
+- fix DESIRES and AVERSIONS
+- make new NPCs listed below
+- make elven versions of most NPCs
+- make gargoyle versions of most NPCs
+
+c_adventurer
+c_adventurer_f (has treasure hunting skills)
+c_mystic
+c_mystic_f
+c_spellweaver
+c_spellweaver_f
+c_samurai
+c_samurai_f
+c_wandering_recluse (has a skill in excess of 100)
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[EOF]

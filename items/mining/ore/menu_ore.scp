@@ -1,0 +1,53 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+[SKILLMENU sm_colored_armor]
+Colored Armor & Shields
+
+ON=i_platemail_chest Bronze Plate Armor
+SKILLMENU=sm_bronze_armor
+
+ON=i_decorative_armor Rusty Armor
+SKILLMENU=sm_rusty_armor
+
+ON=i_decorative_armor Old Copper Armor
+SKILLMENU=sm_old_copper_armor
+
+ON=i_decorative_armor Dull Copper Armor
+SKILLMENU=sm_dull_copper_armor
+
+ON=i_decorative_armor Copper Armor
+SKILLMENU=sm_copper_armor
+
+ON=i_decorative_armor Silver Armor
+SKILLMENU=sm_silver_armor
+
+ON=i_decorative_armor Golden Armor
+SKILLMENU=sm_golden_armor
+
+ON=i_decorative_armor Black Rock Armor
+SKILLMENU=sm_blackrock_armor
+
+ON=i_decorative_armor Blood Rock Armor
+SKILLMENU=sm_bloodrock_armor
+
+ON=i_decorative_armor Mytheril Armor
+SKILLMENU=sm_mytheril_armor
+
+ON=i_decorative_armor Verite Armor
+SKILLMENU=sm_verite_armor
+
+ON=i_decorative_armor Valorite Armor
+SKILLMENU=sm_valorite_armor
+
+ON=i_decorative_armor Rose Armor
+SKILLMENU=sm_rose_armor
+
+ON=i_decorative_armor Agapite Armor
+SKILLMENU=sm_agapite_armor
+
+ON=i_decorative_armor Shadow Armor
+SKILLMENU=sm_shadow_armor
+
+[EOF]

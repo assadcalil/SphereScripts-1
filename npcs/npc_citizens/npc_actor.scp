@@ -1,0 +1,133 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////////
+// NPC Citizens //
+//////////////////
+
+[CHARDEF c_actor]
+ID=c_man
+NAME=#NAMES_HUMANMALE the actor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Arts & Music
+DESCRIPTION=Actor (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={50 75}
+   DEX={50 75}
+   INT={50 75}
+
+   ANATOMY={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MUSICIANSHIP={30.0 50.0}
+   PEACEMAKING={30.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_hair
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=random_shirts_all
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_sword_normal,1,R2
+   ITEM=random_hats,1,R2
+   COLOR=colors_all
+   ITEM=random_masks,1,R5
+   COLOR=colors_all
+   ITEM=random_tunics_all,R2
+   COLOR=colors_all
+   ITEM=random_robes_manly,R2
+   COLOR=colors_all
+   ITEM=random_capes_all,R5
+   COLOR=colors_all
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+
+[CHARDEF c_actor_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the actress
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Arts & Music
+DESCRIPTION=Actor (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_human
+   NEED=i_gold
+   STR={25 50}
+   DEX={25 50}
+   INT={25 50}
+
+   ANATOMY={20.0 30.0}
+   MAGICRESISTANCE={20.0 30.0}
+   MUSICIANSHIP={30.0 50.0}
+   PEACEMAKING={30.0 50.0}
+   SWORDSMANSHIP={20.0 30.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_hair
+   ITEM=random_shirts_all
+   COLOR=colors_all
+   ITEM=random_pants_human
+   COLOR=colors_all
+   ITEM=random_skirts_human
+   COLOR=colors_all
+   ITEM=random_footwear_human
+   COLOR=colors_all
+ON=@NPCRestock
+   ITEM=random_coin_purse
+   ITEM=random_weapon_sword_normal,1,R2
+   ITEM=random_hats,1,R2
+   COLOR=colors_all
+   ITEM=random_masks,1,R5
+   COLOR=colors_all
+   ITEM=random_tunics_all,1,R2
+   COLOR=colors_all
+   ITEM=random_robes_all,1,R2
+   COLOR=colors_all
+   ITEM=random_capes_all,1,R5
+   COLOR=colors_all
+   ITEM=random_jewelry,1,R2
+   ITEM=random_jewelry,1,R2
+
+

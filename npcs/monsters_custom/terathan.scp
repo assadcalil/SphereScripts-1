@@ -1,0 +1,43 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+//////////////
+// Terathan //
+//////////////
+
+[CHARDEF c_terathan_assassin]
+ID=c_terathan_warrior
+NAME=terathan assassin
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+DAM=27,42
+ARMOR=52
+TAG.SlayerGroup=Terathan,ARACHNID
+CATEGORY=Monsters
+SUBSECTION=Terathans
+DESCRIPTION=Terathan Assassin
+ON=@Create
+   NPC=brain_monster
+   STR={380 420}
+   DEX={75 99}
+   INT={146 170}
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   ARCHERY={10.0 20.0}
+   EVALUATINGINTEL={70.0 80.0}
+   FENCING={10.0 20.0}
+   MACEFIGHTING={10.0 20.0}
+   MAGERY={70.0 80.0}
+   MAGICRESISTANCE={65.0 80.0}
+   MEDITATION={65.0 75.0}
+   PARRYING={75.0 85.0}
+   SWORDSMANSHIP={80.0 100.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={90.0 100.0}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={20 30}
+ON=@NPCRestock
+   ITEM=loot_ai_hard
+   ITEM=loot_terathan_avenger

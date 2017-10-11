@@ -1,0 +1,70 @@
+// Ultima Online Brasil - Script Pack
+// Pack rebuilded by: Thiago Calil
+VERSION=0.56d
+
+////////
+//Deed//
+////////
+
+[ITEMDEF i_deed_large_dragon_ship]
+ID=i_deed_ship
+NAME=Deed to a Long Dragon Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Long Dragon Ship
+WEIGHT=1
+VALUE=1
+
+On=@DCLICK
+src.dialog d_ship
+return 1
+
+/////////////
+//Ship Deed//
+/////////////
+
+[ITEMDEF i_deed_large_dragon_ship_n]
+ID=i_deed_ship
+NAME=Deed to a Long Dragon Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Long Dragon Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_large_dragon_ship_n
+
+[ITEMDEF i_deed_large_dragon_ship_e]
+ID=i_deed_ship
+NAME=Deed to a Long Dragon Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Long Dragon Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_large_dragon_ship_e
+
+[ITEMDEF i_deed_large_dragon_ship_w]
+ID=i_deed_ship
+NAME=Deed to a Long Dragon Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Long Dragon Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_large_dragon_ship_w
+
+[ITEMDEF i_deed_large_dragon_ship_s]
+ID=i_deed_ship
+NAME=Deed to a Long Dragon Ship
+CATEGORY=Provisions - Deeds
+SUBSECTION=Ship Plans
+DESCRIPTION=Long Dragon Ship
+WEIGHT=1
+VALUE=1
+ON=@Create
+   MORE=m_large_dragon_ship_s
+
+[EOF]
